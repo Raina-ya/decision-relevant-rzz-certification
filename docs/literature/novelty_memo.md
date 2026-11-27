@@ -40,6 +40,26 @@ and transpiler version instead of relying on prose alone.
 
 ## Contribution-by-contribution preliminary assessment
 
+### Cross-cutting QAOA sensitivity prior art
+
+`QUIROZ2021` directly models coherent and stochastic QAOA parameter
+misspecification as control noise and derives bounds on observable error,
+approximation ratio, gradients, and unitary error. `DONG2019` optimizes a QAOA
+objective against a bounded coherent-Hamiltonian uncertainty set. Consequently,
+the broad idea of propagating coherent angle/control uncertainty into a QAOA
+output or worst-case objective is established prior art. Ch4's defensible
+question must start after that step: how to obtain a finite-shot, diagnostically
+qualified uncertainty set from a native fractional RZZ implementation and how
+to turn it into an error-controlled decision for a prespecified instance and
+budget.
+
+`SCAVINO2026` is even closer at the decision layer: it propagates finite-shot
+QEM residuals into QAOA-MaxCut candidate gaps, compares MSE with selection risk
+at matched acquisition cost, and connects decision-certification limits to KL
+and local Fisher geometry. It does not estimate a native RZZ residual, but it
+means that decision-aware quantum estimation, equal-budget ranking risk, and
+margin/covariance sample-cost analysis are not broad Ch4 novelty claims.
+
 ### C1 - Identifiability
 
 **Preliminary classification: substantially overlapped; narrow or remove the
@@ -79,9 +99,13 @@ finite-sample gate verification and ideal sample scaling proportional to
 governed by the least distinguishable outside-tolerance alternative through KL
 divergence and local Fisher information. Classical equivalence work also
 includes prospective power planning. A generic claim that Ch4 first connects
-tolerance, confidence, and sample cost is untenable. Only new fixed-budget
-bounds for this RZZ probe family and nonlinear downstream decision functional,
-if proved and shown nontrivial relative to these baselines, remain candidates.
+tolerance, confidence, and sample cost is untenable. `QUIROZ2021` rules out any
+broad claim that QAOA output-error bounds under coherent parameter noise are
+new. `SCAVINO2026` also supplies decision-margin, covariance, KL/Fisher, and
+fixed-cost selection analyses for quantum estimates. Only new finite-sample
+bounds joining this native-RZZ probe family and its diagnostics to the
+nonlinear downstream decision functional, if proved and shown nontrivial
+relative to these baselines, remain candidates.
 
 ### C4 - Prospective power gate
 
@@ -89,13 +113,17 @@ Treat this as a methodological safeguard, not a novelty claim.
 
 ### C5 - Equal-shot plug-in comparison
 
-**Preliminary classification: evaluation contribution, not a general novelty
-claim.** Equivalence-testing literature already explains why a nonsignificant
-or plug-in estimate inside a practical region does not establish equivalence;
-uncertainty must be included and an underpowered result remains undetermined.
-An equal-shot empirical comparison may still quantify the practical failure of
-a named plug-in baseline for this RZZ/QAOA setting, but it should be presented
-as an application-specific evaluation unless a distinct theorem is proved.
+**Preliminary classification: substantially overlapped; retain only as a
+problem-specific comparator.** Equivalence-testing literature already explains
+why a plug-in estimate inside a practical region does not establish
+equivalence. More directly, `SCAVINO2026` compares estimation accuracy with
+finite-shot QAOA-MaxCut selection risk at equal evaluation or total acquisition
+cost and demonstrates that lower MSE can coincide with unchanged or worse
+decision failure. Ch4 may still compare a named gate-calibration plug-in
+baseline against its native-RZZ certificate, but the equal-shot decision-risk
+comparison is not itself a novelty claim. Any remaining contribution must be
+specific to the experimentally inferred gate-error set and exact finite-sample
+false-certification control.
 
 ### C6 - Hardware result
 
