@@ -16,3 +16,11 @@ per-pair evidence before any hardware certification claim. All instances use
 exactly two shared edge angles and a fixed seeded rejection rule for near-tied
 ideal candidates. OD1/OD2 record the rationale and margin rule. This is
 `[exact]` development evidence, not a protocol lock.
+
+`regions.py` separates three evidence levels:
+
+- exact statevector membership at a supplied error point;
+- a globally valid conservative L1 inner ball and equal-width box;
+- sampled-and-bisected radial crossings for diagnostics or plots only.
+
+The numerical crossing is not used as a proof that an entire region is safe.
