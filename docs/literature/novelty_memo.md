@@ -3,6 +3,25 @@
 Status: **G1 open**. Search pass dated 2026-11-27. This is not a systematic
 review conclusion and does not support a novelty claim.
 
+## Update after library expansion (2026-11-27, 138 sources)
+
+The second search pass (S016-S027) found two sources that sit closer to Ch4
+than anything in the first pass, and changes the classification as follows.
+Details and a feature matrix are in `gap_map.md`.
+
+| Claim | Previous classification | Updated classification | Decisive sources |
+|---|---|---|---|
+| C1 identifiability | substantially overlapped | probe principle is prior art; only the delay-control separation, the off-diagonal diagnostic and the finite-sample treatment remain candidates | RUDINGER2025, CHAI2026, DENG2026 |
+| C2 three-outcome rule | generic rule overlapped | mechanics (prespecified tolerance, simultaneous confidence, unresolved outcome, model rejection kept separate) are prior art; only a decision-induced tolerance with strict finite-sample validity remains a candidate | DENG2026, EGGERS2026, BERGER1996, SCHUIRMANN1987 |
+| C3 N* bounds | narrowed | a matching two-point lower bound for the decision projection remains a candidate, because DENG2026 states it has none and MORELLI2026 is sequential and asymptotic | DENG2026, MORELLI2026, ZHANG2021 |
+| C5 plug-in comparison | overlapped | comparator only | SCAVINO2026 |
+| C7 (new) average-metric insufficiency | - | candidate: explicit pairs with equal twirled/angle-averaged fidelity and opposite decisions | KUENG2016, MERKEL2025, IBM-QPU-INFO |
+
+Recommended framing: the twirl-free gap (fractional gates cannot be twirled,
+so RB-type, layer-fidelity and Clifford-proxy guarantees do not apply) plus a
+decision-induced tolerance and strict finite-sample validity. G1 stays open
+until the forward-citation passes in `gap_map.md` Section 6 are complete.
+
 ## Immediate source corrections
 
 Two identifiers in the v0/v1 planning notes do not support the attached
