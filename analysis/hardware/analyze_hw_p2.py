@@ -192,6 +192,39 @@ def analyze_probe_records(records: list[dict], alpha: float = ALPHA) -> list[dic
     return outputs
 
 
+def control_flip_comparison(records: list[dict], alpha: float = ALPHA) -> list[dict]:
+    """Control-qubit flip rate with the control in |1>: RZZ probes versus delay-only.
+
+    Same k means the same elapsed time (delay = k * RZZ duration). Hoeffding
+    two-sided intervals per rate; `excess` = probe - delay with summed radii.
+    A delay rate close to the probe rate points to idle relaxation; a clear
+    positive excess points to gate-induced flips [post-lock analysis added
+    after account A, applied identically to all blocks].
+    """
+    sums: dict[tuple, list[int]] = defaultdict(lambda: [0, 0])
+    for record in records:
+        m = record["meta"]
+        if m["type"] != "probe" or m["control"] != 1 or m["circuit_kind"] not in ("probe", "delay"):
+            continue
+        zeros, total = _bits(record["counts"])
+        key = (tuple(m["pair"]), m["circuit_kind"], m["k"], m["role"])
+        sums[key][0] += zeros[1]  # control read 0 although prepared in 1
+        sums[key][1] += total
+    out = []
+    for (pair, kind, k, role), (flips, total) in sorted(sums.items()):
+        if kind != "probe":
+            continue
+        delay = sums.get((pair, "delay", k, role))
+        radius = sqrt(log(2 / alpha) / (2 * total))
+        row = {"pair": list(pair), "k": k, "role": role, "probe_rate": flips / total, "probe_radius": radius}
+        if delay and delay[1]:
+            d_radius = sqrt(log(2 / alpha) / (2 * delay[1]))
+            row.update({"delay_rate": delay[0] / delay[1], "delay_radius": d_radius,
+                        "excess": flips / total - delay[0] / delay[1], "excess_radius": radius + d_radius})
+        out.append(row)
+    return out
+
+
 def _box(entry: dict) -> tuple[EdgeError, EdgeError] | None:
     if entry is None or entry["epsilon"] is None:
         return None

@@ -10,7 +10,8 @@ class HwP2AnalysisTests(unittest.TestCase):
     def test_plans_have_expected_block_order(self):
         self.assertEqual(PLANS["A"][0].name, "A0-calibration")
         self.assertEqual(PLANS["A"][1].name, "A1-decision-2q")
-        self.assertEqual(PLANS["B"][1].pair, "A")  # cross-account replication of pair A
+        replicate = next(b for b in PLANS["B"] if b.name == "B2-replicate-2q-pairA")
+        self.assertEqual(replicate.pair, "A")  # cross-account replication of pair A
 
     def test_injected_residuals_fall_inside_finite_sample_boxes(self):
         model = SimModel()
@@ -29,6 +30,19 @@ class HwP2AnalysisTests(unittest.TestCase):
             self.assertLessEqual(b, entry["b"][1])
             for diag in entry["z_conservation"]:
                 self.assertNotEqual(diag["status"], "triggered")
+
+    def test_t1_reference_block_and_flip_comparison(self):
+        from analysis.hardware.analyze_hw_p2 import control_flip_comparison
+        from hardware.hw_p2_design import PLANS
+
+        names = [b.name for b in PLANS["A"]]
+        self.assertLess(names.index("A7-t1-reference"), names.index("A3-grid"))
+        rec = lambda kind, flips: {"meta": {"type": "probe", "pair": [1, 2], "control": 1, "circuit_kind": kind,
+                                             "k": 64, "role": 2, "theta": 0.6, "analysis_phase": 0.0},
+                                    "counts": {"00": flips, "10": 1000 - flips}}
+        rows = control_flip_comparison([rec("probe", 110), rec("delay", 100)])
+        self.assertEqual(len(rows), 1)
+        self.assertAlmostEqual(rows[0]["excess"], 0.01, places=12)
 
     def test_direct_decision_gap_from_counts(self):
         records = [
