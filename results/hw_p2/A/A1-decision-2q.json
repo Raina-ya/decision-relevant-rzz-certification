@@ -1,0 +1,7857 @@
+{
+ "schema": "hw-p2-block-v1",
+ "evidence": "[hardware-locked, exploratory pilot HW-P2]",
+ "label": "A",
+ "block": "A1-decision-2q",
+ "purpose": "residuals at 2q decision angles, k=1..64",
+ "backend": "ibm_marrakesh",
+ "chain": [
+  53,
+  54,
+  55
+ ],
+ "shots": 1000,
+ "submitted_utc": "2026-11-27T05:58:46.684142+00:00",
+ "finished_utc": "2026-11-27T06:01:18.201190+00:00",
+ "quantum_seconds": 102.0,
+ "approval_commit": "bb3cc9b75b6780ca2f7c61a5886580e14c5989e0",
+ "records": [
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 504,
+    "11": 476,
+    "01": 15,
+    "00": 5
+   },
+   "isa_sha256": "9629665187348b6b8dae0e2e5282b3d315afa5c86855abaa4a05b9fdd9f163e9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 997,
+    "01": 3
+   },
+   "isa_sha256": "0ba639791b84731ed2b5dcda7f7e621a2da8d6fbd417d038ddd8fcd3a6f85bf4"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 478,
+    "01": 518,
+    "10": 2,
+    "11": 2
+   },
+   "isa_sha256": "b385c0a4aec2f22f8769fbfcc0e17d5961c277592001f047e62ea9f25f9cefab"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 954,
+    "01": 43,
+    "10": 3
+   },
+   "isa_sha256": "a05683ecaf972e66d12abe7952c1ee09d197991ee6513d12e7559e5e24db6eff"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 723,
+    "01": 275,
+    "11": 2
+   },
+   "isa_sha256": "d19017c1b75e642ac675bf50bceedd49dec13e77ec21a098481f3ae9fcb7c70b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 633,
+    "00": 361,
+    "11": 5,
+    "10": 1
+   },
+   "isa_sha256": "50665b1dac8a4c270f1f239042fac5123a2417f9fa1781339824ef8a0ea96473"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 234,
+    "00": 763,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "526f6ae1a0baa6d322718953dba141ab43c9dbe11383006608e23c71be7701f7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "anchor"
+   },
+   "counts": {
+    "01": 546,
+    "00": 447,
+    "10": 4,
+    "11": 3
+   },
+   "isa_sha256": "8e1f7f2323ede8c09867b398357dfa69fc20a7c374eaec58da59f9f2edee0f76"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 522,
+    "00": 475,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "1b29cbe1686661080b7c08f02fb3b09abf941618551baea3f6a32577ba3ffddb"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 500,
+    "00": 497,
+    "10": 2,
+    "11": 1
+   },
+   "isa_sha256": "5bcbb3f80b0e7f1c2dba5b9e6762d17c3990a179de3a09b0ea5af8d3888860b5"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 952,
+    "10": 29,
+    "01": 9,
+    "00": 10
+   },
+   "isa_sha256": "2099bb6bdc71d06a057828e60409ac5aac1ff291fa2de52d837822095c0bec55"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 781,
+    "01": 65,
+    "10": 89,
+    "00": 65
+   },
+   "isa_sha256": "cd88e5a3bf62decb924da6ffdea001e563382df769d4a5217f1c75c1edb9e557"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 478,
+    "01": 521,
+    "10": 1
+   },
+   "isa_sha256": "7c77675df3def21d83abdb6bb0cfcdbe3c765bb382150234c99d71d5a35e4bb8"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 519,
+    "10": 469,
+    "00": 6,
+    "01": 6
+   },
+   "isa_sha256": "aa66579437b4eb84f9b6c9a2e76730e6cf5b3de3236b30820e58b485c16102b7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 985,
+    "01": 15
+   },
+   "isa_sha256": "8c5d34e81deb1e9e9e78eaf1c568f60b3fad2b92d73e0862f88f394ff3a0bf9d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 357,
+    "01": 642,
+    "10": 1
+   },
+   "isa_sha256": "2417f6ac8af296a3d9f234c69bf9c8b76612173cf0d4bf21c3ad0e2238d2fc47"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 975,
+    "10": 9,
+    "00": 1,
+    "01": 15
+   },
+   "isa_sha256": "ad1852a0aaaf266563e00325b9bec228095281fa9be235dbbcdd12d32cc756c5"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 114,
+    "01": 885,
+    "10": 1
+   },
+   "isa_sha256": "3ee449c69be08e9aea6a1cfb2356a846631e981f6fa93ff5093bfdd18969de70"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 544,
+    "10": 415,
+    "00": 13,
+    "01": 28
+   },
+   "isa_sha256": "5a8dac0a8a00b7c516902efc580c8e9e2fa222f3086b9d033b82747e7ddf81be"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 994,
+    "00": 4,
+    "11": 2
+   },
+   "isa_sha256": "caaafa71ff12288ef448cfd7e2ca3dad5bc9679e631efee2012175d97c0a8afa"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 960,
+    "11": 22,
+    "00": 13,
+    "01": 5
+   },
+   "isa_sha256": "8eb7c1ce08efe3a9dbad6556a8c04478583e0f447095cee0d62dabd481de8bbe"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 988,
+    "00": 9,
+    "11": 3
+   },
+   "isa_sha256": "9efab83506c1463a48e1c0ac8839fdaa9672a7bbd4d0660d40bf1c8070aa1d73"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 792,
+    "10": 169,
+    "01": 13,
+    "00": 26
+   },
+   "isa_sha256": "8a7bfb3e9d9d2d6145c0042f396285daa1ca55cbcf5d892902d07efbf18786d9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 960,
+    "01": 34,
+    "10": 6
+   },
+   "isa_sha256": "de5ca78dc624f2a0954bdf25a6d3364704b7dcbb6da6f3c3b9df9b066488e2b3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "00": 497,
+    "01": 500,
+    "11": 1,
+    "10": 2
+   },
+   "isa_sha256": "e6b1d09992fc8ebf0824be7a1e16bbf0f6c9b4429d3145b865b9a71749671f96"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 917,
+    "00": 81,
+    "10": 1,
+    "11": 1
+   },
+   "isa_sha256": "961b70ce5cc81fd3969135327cc5981b4029b6f686261d2b6fde0c5568b23911"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 796,
+    "00": 200,
+    "11": 3,
+    "10": 1
+   },
+   "isa_sha256": "ead7518a31ad75f49c632f77d7fc8104bfddeff41d2f172504b76f56be12b6c9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 986,
+    "01": 9,
+    "10": 5
+   },
+   "isa_sha256": "ac28f30883208e78a65c527dc5e910e2a6fc855f7371d89f400850756f12ed69"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 436,
+    "10": 549,
+    "01": 10,
+    "00": 5
+   },
+   "isa_sha256": "a37b304126487d0372bd8e537efab1150d76c0c8fc8be642724590ece0dedd66"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 986,
+    "00": 9,
+    "01": 3,
+    "11": 2
+   },
+   "isa_sha256": "10d12ab847e675a32823c3c1e8bdcd374dd451262c67c7ac8eb9b7c568608bc3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 956,
+    "00": 41,
+    "11": 3
+   },
+   "isa_sha256": "94f38c974fa313a2a23a04180d7ae1967e6d33bb070f33e8f296ad4f00398e02"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 550,
+    "00": 446,
+    "10": 3,
+    "11": 1
+   },
+   "isa_sha256": "c3697deedaccdd5f1de9dabf8425d831fbe51d5e3b22d76768b10e920ff6f378"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 882,
+    "00": 116,
+    "11": 2
+   },
+   "isa_sha256": "dee7d3186347d7ed19528013d1e216f346275393936d7ffba9120a838461cec1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "01": 516,
+    "00": 481,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "ef501d5598b718c0b684e7cacc92b8d72fb1e5dd850794c165a47857c438d6cc"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 738,
+    "01": 254,
+    "10": 5,
+    "11": 3
+   },
+   "isa_sha256": "490ed04ccd1e7934b5259c30a9ddc47961750501f43a56ae4989edc08c87c646"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 963,
+    "01": 35,
+    "10": 2
+   },
+   "isa_sha256": "19738a9ead2c73efe649e3f69ba9974f2a0882fd147970b57c75ab857aa22b13"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 519,
+    "00": 479,
+    "11": 1,
+    "10": 1
+   },
+   "isa_sha256": "ed2a0dac83c15f56425110139332408c571adb0d00ce16369e5f417f231ed6fc"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 437,
+    "00": 560,
+    "10": 2,
+    "11": 1
+   },
+   "isa_sha256": "d263c4602bf786c794cac013206701644d8e7b1b4d86c55b588ceb89534f6f3e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 515,
+    "01": 482,
+    "11": 3
+   },
+   "isa_sha256": "f9a88040574185595ebff59d08c0b505aff6a78ea1eef4de036817b829ecfd17"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 680,
+    "11": 267,
+    "01": 26,
+    "00": 27
+   },
+   "isa_sha256": "5e32712ff07e406ca7f321aaddc5aaab66b04b984413cb6c1ab1849c3f449f89"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 978,
+    "00": 9,
+    "11": 11,
+    "01": 2
+   },
+   "isa_sha256": "3c6a7b54129b654e29c093f8e76fd77f26036cbd2fdca0b355b9187b4c993ce1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "10": 984,
+    "00": 12,
+    "11": 4
+   },
+   "isa_sha256": "d528001ce566df3aec1d1a6c1c5dbcebefa60bbd2520ceef73704fa7ac6f5c3e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 468,
+    "01": 526,
+    "11": 6
+   },
+   "isa_sha256": "6ccd6e7328ee1cd4b663a62f5bb3e3dfd3738dc05c972d5259fb0dfb6b9c46b4"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 274,
+    "01": 720,
+    "11": 4,
+    "10": 2
+   },
+   "isa_sha256": "aad4e0c56149803b6805b258af928423e06b28444bc1fa2eb16b311e0d3e211a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 506,
+    "00": 492,
+    "11": 1,
+    "10": 1
+   },
+   "isa_sha256": "d903f3534ee8cbf17463e4fa5db2ba7dc51af647275b32f1a1ee657f956a926b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 976,
+    "11": 10,
+    "00": 9,
+    "01": 5
+   },
+   "isa_sha256": "ca83384a84752b207bfff8ed586b6f7c8b6f7b674d60d216e998db2ede2fd93d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 794,
+    "01": 46,
+    "00": 67,
+    "11": 93
+   },
+   "isa_sha256": "786553407322fd4da5d8905149092acc25e50f173a6d3d2be977e04e92269a53"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "01": 985,
+    "00": 11,
+    "11": 4
+   },
+   "isa_sha256": "c18ea713491408dca3107254eeb94c2dd816b59a7dc097c86197efccd17990e3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 733,
+    "01": 265,
+    "11": 2
+   },
+   "isa_sha256": "dda392b8bccd3df13a7e549b0bd0dfef9d3f4a17afe7362ba2fd69adeb2b4e54"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 987,
+    "00": 12,
+    "11": 1
+   },
+   "isa_sha256": "7f891b9a54f92f6b81b9d89dcaf0dd84e0ee9833d8e311257fc5464b21db2639"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 682,
+    "10": 247,
+    "00": 34,
+    "01": 37
+   },
+   "isa_sha256": "4a49fdb4ba74ae57ff6bdbe6b29f5d446f68e04a49a4d680a3f40316a5705ad1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 981,
+    "00": 17,
+    "11": 2
+   },
+   "isa_sha256": "3601ffefb9a4a83bb7a4f81fe91fa17dbf2be37ab777c849c6150dd38d794318"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 988,
+    "01": 7,
+    "10": 3,
+    "11": 2
+   },
+   "isa_sha256": "b02cfef57fa1c3a4bc48e457525e0c27505ead9fea5f4934a3c390dfdb3e3046"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 968,
+    "01": 17,
+    "00": 4,
+    "10": 11
+   },
+   "isa_sha256": "7e883291ea1f4dd561989e9ee02e3f42f9ab5ac39bde0892b1cfe8fc9f371e3b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 974,
+    "10": 18,
+    "00": 3,
+    "01": 5
+   },
+   "isa_sha256": "d9b7fc46c6472835808f6854a40e15f75d0233608656d76546a8209f576adf9f"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 865,
+    "10": 72,
+    "00": 26,
+    "01": 37
+   },
+   "isa_sha256": "5583f308b590e8139bd80e9f032a68028713f759e3d8ebd0bb1dbab12793ed11"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 498,
+    "00": 9,
+    "10": 490,
+    "01": 3
+   },
+   "isa_sha256": "911d0cc7951c9d44efe71dbd2082f7b63e164fa18df56cd030b52930edcdc003"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 895,
+    "11": 70,
+    "00": 21,
+    "01": 14
+   },
+   "isa_sha256": "b4fd327aae2340db673d2bf9ad12a110929fc1096ed0f8659249fc16ef80fd05"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 964,
+    "10": 1,
+    "00": 33,
+    "11": 2
+   },
+   "isa_sha256": "454aff1fbb90a0d7f729ab3006330b44c6d7f665ab7abcca4e49c47e371cccc7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 498,
+    "01": 501,
+    "11": 1
+   },
+   "isa_sha256": "6a3b1a410a69cdd0c78bf7ad3645508ae85f0ae8345b7662f62b49c6d7940b34"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 414,
+    "11": 570,
+    "01": 10,
+    "00": 6
+   },
+   "isa_sha256": "5a4845d72fe96cd5eb452e98ded2401afc8806b07741513d02c2143c5547e7c0"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 451,
+    "10": 534,
+    "00": 8,
+    "01": 7
+   },
+   "isa_sha256": "6c9cf857135922e16af5a43e5eb2505bec8d2c0b0b82ef27c6f520ba9fdb3eca"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 994,
+    "01": 4,
+    "10": 2
+   },
+   "isa_sha256": "e97d6225a57f5ad1b796a1e8be6c4241bd5ac6ad87fe59726bf128d8a2c082a9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 952,
+    "01": 43,
+    "10": 5
+   },
+   "isa_sha256": "1fa24384085f035fa09b7fb31753c2f3f779ef38ed73b2e87c64ea947b5c8e4b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 506,
+    "01": 490,
+    "11": 3,
+    "10": 1
+   },
+   "isa_sha256": "f5b4f810f94fa4791cf59dc36efa26f794434aca90ba5ae64f335edca2e20edc"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 921,
+    "10": 67,
+    "01": 4,
+    "00": 8
+   },
+   "isa_sha256": "3da742fe894dd66aadbf4b4baa9cd38432911511f3fb96d87cd4efd94f4ce5c2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 980,
+    "00": 19,
+    "11": 1
+   },
+   "isa_sha256": "a12b0b135932b9bf49a930fcc8e7801e9838b478c8c11ab7365f24fceac8bc55"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 484,
+    "01": 513,
+    "11": 1,
+    "10": 2
+   },
+   "isa_sha256": "41d76551225d4f6b66b8675e7554bd3015555b11f64d5680d926a23bd7a24fa1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 244,
+    "11": 699,
+    "00": 22,
+    "01": 35
+   },
+   "isa_sha256": "16e868b30a6df59eac5722fe564a0969c8e1f4e07cb335cc1a38815995a8c0d7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 503,
+    "01": 495,
+    "10": 2
+   },
+   "isa_sha256": "9cd9f09a962c563a509a81e33873ab6be6ff0213a43450cf0837e9a94b62dfe7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 604,
+    "10": 296,
+    "01": 53,
+    "00": 47
+   },
+   "isa_sha256": "9c2a2f5ca0c0feaabbbd3c3330c24a45e52d355085dc38e8bdc51437e2e5a735"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 550,
+    "11": 441,
+    "00": 6,
+    "01": 3
+   },
+   "isa_sha256": "1f54de2074709ac7341fa3b8057230a36f1d4e34a79e17f37da81f3ebfb41666"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 990,
+    "01": 7,
+    "10": 2,
+    "11": 1
+   },
+   "isa_sha256": "9e3159c325668a9d35c5ae03d585be3c7a3405cc39c5beb011c8a4dee84904c5"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 992,
+    "10": 1,
+    "01": 7
+   },
+   "isa_sha256": "d1910d018238b22cfc6c29f6ff748596e4c066bbfd82e43312d46f6a9123cb86"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 980,
+    "00": 13,
+    "11": 7
+   },
+   "isa_sha256": "76984e291781f301ce88e2be2dfc358e0a1cc3780ef5152a97877f304bb25adb"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 862,
+    "11": 70,
+    "01": 22,
+    "00": 46
+   },
+   "isa_sha256": "26055ee67e067ead3962f9986e8b2484afb8c09a6ea47ee7813435c8fbd3782b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 533,
+    "01": 6,
+    "11": 453,
+    "00": 8
+   },
+   "isa_sha256": "fe9a5bf41021ca5ccbbb36a18e75379198a4ab3c3a2e76a71e00d05d1b80d44a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 995,
+    "01": 3,
+    "10": 2
+   },
+   "isa_sha256": "3a2c73331088a0a3700d4826d3cda88458198aae3fd8f152608e55dd92e4435a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 978,
+    "00": 21,
+    "11": 1
+   },
+   "isa_sha256": "ec9dc80ae6cd5bc4253fa8268e5c03fb185b493ff4c0b13cee930169c0370bad"
+  },
+  {
+   "meta": {
+    "type": "readout",
+    "prepared": 2,
+    "qubits": 2,
+    "pair": [
+     53,
+     54
+    ]
+   },
+   "counts": {
+    "10": 993,
+    "00": 6,
+    "11": 1
+   },
+   "isa_sha256": "00002bfdc22d4b99859b6a7e207dc7ec802665d6f30859135d6b8cc7eb8875e2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 587,
+    "10": 394,
+    "00": 10,
+    "01": 9
+   },
+   "isa_sha256": "14e68eb72ff5e8c7a98094ada327657889102e254a304f07661e6fe6ff095186"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 512,
+    "00": 483,
+    "10": 5
+   },
+   "isa_sha256": "b3452fbc9218f3293ddbdac2198dd95cff1d2d681c7d902e7b41a5511b5b4f9a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 902,
+    "01": 94,
+    "11": 3,
+    "10": 1
+   },
+   "isa_sha256": "7073cee65f521fb01bbb46bd4ab05e98dcb45f79c05a51ae845d0dbf34d10e76"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 877,
+    "01": 119,
+    "10": 3,
+    "11": 1
+   },
+   "isa_sha256": "7b28c1982145ca02ae158cf4ca3b95ba86896d2babdfad0ae7958c7f1b5c4b6a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 979,
+    "00": 16,
+    "11": 5
+   },
+   "isa_sha256": "cfedad7dffa3ebd94544a74d90400131ca917e14029db79b49628c66f3be6de2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 502,
+    "00": 496,
+    "11": 2
+   },
+   "isa_sha256": "dd544422cbfd53e109091987a053ccb916df91a85826c0aafd8779b9821b431d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 356,
+    "01": 639,
+    "10": 3,
+    "11": 2
+   },
+   "isa_sha256": "fa810b3ac968b757930c3e077f8b6b635aaec17ee6eae9102f0b5018a727615b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 731,
+    "00": 263,
+    "11": 5,
+    "10": 1
+   },
+   "isa_sha256": "8daed7fb56e4b40553273724a68680d91c9663c5e4b41d03c1069ac89fef922f"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 528,
+    "01": 471,
+    "11": 1
+   },
+   "isa_sha256": "6e5130e00d6b966b9a59d0bc42dbda9511d7305892ec4c30e3fd952d0fdde399"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 976,
+    "00": 19,
+    "10": 1,
+    "11": 4
+   },
+   "isa_sha256": "894bb0764406f2bbe1581587d0227acc21c05cfb75e52827d377842cabf497de"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 640,
+    "00": 357,
+    "11": 1,
+    "10": 2
+   },
+   "isa_sha256": "5af3f412328a908c0c623a6d63d1fb3829296a06761ba6e9451e55539c13b741"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 481,
+    "10": 512,
+    "01": 5,
+    "00": 2
+   },
+   "isa_sha256": "25ae1ffab3ddb6196822696ef7c62141d1f29518d3b7118f13d485c6e2d99f79"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 961,
+    "10": 20,
+    "01": 13,
+    "00": 6
+   },
+   "isa_sha256": "648ec51a5664d28b837e07e1ea64db93a0daba36853484d92d061d284c2425f1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 953,
+    "00": 40,
+    "11": 6,
+    "10": 1
+   },
+   "isa_sha256": "2eee23d27221c3888c391efbc392e4505ee3d7724bba7efd68b05f8e5db1a125"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 56,
+    "10": 662,
+    "01": 56,
+    "11": 226
+   },
+   "isa_sha256": "268615f732177a7982af6cf95d05b67049350c38e90663373944ed00b50e104f"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 916,
+    "11": 52,
+    "01": 17,
+    "00": 15
+   },
+   "isa_sha256": "781c78b9946141cf7e7a6aa8fe467f2a83c27e9701016270d296c9b7aaad0633"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 455,
+    "00": 541,
+    "11": 4
+   },
+   "isa_sha256": "17fb7bd4697ff359985b887dbbe18e943cabe89ad354273d0a27e4cba3cf2975"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 975,
+    "11": 10,
+    "00": 12,
+    "01": 3
+   },
+   "isa_sha256": "f6e5b43e81de7e781c44cdb416ebb32f6e12577888e5a0e9d2675a71daeea95c"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 87,
+    "00": 912,
+    "11": 1
+   },
+   "isa_sha256": "16d91a9464f8742b56e2f37f03d42872c42918042ad8d7936798f01950db2fa9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 970,
+    "00": 23,
+    "11": 7
+   },
+   "isa_sha256": "21d4a8365c6904c534e8c13bccb9e56a99fe856e7b15c0e317eb440fd1dbb846"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 511,
+    "01": 486,
+    "10": 2,
+    "11": 1
+   },
+   "isa_sha256": "cf0de530b4cae5a84f54b66e1c1dd3422e1f3f58abae794743dffec237e96d58"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 467,
+    "00": 530,
+    "10": 3
+   },
+   "isa_sha256": "1557bdecdf0e1f4dce1173084da5cd104707cff81cbca92271b4bc0c986ef330"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 584,
+    "01": 409,
+    "10": 3,
+    "11": 4
+   },
+   "isa_sha256": "8e6089718c888566e45164701f798e13a2c3bfa34a5aaee8346dc9a81ee23f44"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 981,
+    "01": 15,
+    "10": 4
+   },
+   "isa_sha256": "f7dcc4715b499972ab0b5e19d9692725792698ffa516e564b6e57e982db61b84"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 882,
+    "11": 60,
+    "00": 37,
+    "01": 21
+   },
+   "isa_sha256": "1f993f53c1b2673bbf006ad797749e71239ab45e2178b86da89b135e9b042b40"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 500,
+    "00": 495,
+    "11": 4,
+    "10": 1
+   },
+   "isa_sha256": "48fc924b92cddfdb678e6df9f28cb863aa9a5ad8eca9ae33dcba30367348a485"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 949,
+    "01": 13,
+    "10": 30,
+    "00": 8
+   },
+   "isa_sha256": "10dc6f538b031a6a7b9dbabd28140e47073860e2e30047fd15c8ab3a97ea4424"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 501,
+    "01": 496,
+    "10": 3
+   },
+   "isa_sha256": "48de9aa8c5ccb95c662daacfdbd1cb0ac3eae669f7f242e5221baf2ba98cca97"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "anchor"
+   },
+   "counts": {
+    "00": 446,
+    "01": 548,
+    "10": 4,
+    "11": 2
+   },
+   "isa_sha256": "8e1f7f2323ede8c09867b398357dfa69fc20a7c374eaec58da59f9f2edee0f76"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 359,
+    "11": 617,
+    "00": 10,
+    "01": 14
+   },
+   "isa_sha256": "14d18bb8be155b0a03c197f47fc9bfc40dabd5c3d22eaea24c8ecef870a1a6d2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 522,
+    "01": 475,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "e3bc565097a42a2d7ef46aaadc7860cdf6bae7b8566140fddc3ff4e517a4aeb6"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 503,
+    "01": 494,
+    "10": 2,
+    "11": 1
+   },
+   "isa_sha256": "8323a3cf1b9aeb329426ac964ece28f90c12e187cbc3bde6fdfc446a7a5ab47b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 969,
+    "11": 15,
+    "01": 5,
+    "00": 11
+   },
+   "isa_sha256": "1216edb4c862200ab0e2ade82879f7414e9862c814d5e2bdd6098bf543f634ce"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 528,
+    "10": 452,
+    "01": 12,
+    "00": 8
+   },
+   "isa_sha256": "9ce7844f428cf8172942b22a08b649416c380089c82d159a51885e9b72677d8f"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 975,
+    "00": 22,
+    "10": 1,
+    "11": 2
+   },
+   "isa_sha256": "21d4a8365c6904c534e8c13bccb9e56a99fe856e7b15c0e317eb440fd1dbb846"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 888,
+    "00": 109,
+    "10": 1,
+    "11": 2
+   },
+   "isa_sha256": "afadd35ca08e4f7a0ffd6248d938a08814fc201272d328d848f8ab5376cf7d3f"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 956,
+    "01": 40,
+    "11": 3,
+    "10": 1
+   },
+   "isa_sha256": "ef0f5c1e4056d41812429e45201e2199d3288ec74df33dc36b7262b3d2d56d27"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "11": 979,
+    "01": 12,
+    "10": 9
+   },
+   "isa_sha256": "89fa3c62abd37eb21e1fb644d957a5c99ef3cb44b271330bdcd77d030925ece1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 503,
+    "01": 492,
+    "11": 3,
+    "10": 2
+   },
+   "isa_sha256": "6a3b1a410a69cdd0c78bf7ad3645508ae85f0ae8345b7662f62b49c6d7940b34"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 488,
+    "00": 508,
+    "11": 2,
+    "10": 2
+   },
+   "isa_sha256": "5b692ba349e48aace721caaf763683f3195048b1f7e006687582754fd93c2305"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 981,
+    "00": 17,
+    "11": 2
+   },
+   "isa_sha256": "ec9dc80ae6cd5bc4253fa8268e5c03fb185b493ff4c0b13cee930169c0370bad"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 967,
+    "00": 28,
+    "11": 5
+   },
+   "isa_sha256": "58dfe2599c78622a3b97b544fcb8f5162663574c98eaac4c3024e0f416beb180"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 976,
+    "00": 20,
+    "11": 4
+   },
+   "isa_sha256": "f18ec51dadf54f677204c7a1176ddb6ab81b99a2bcfd3ee907758c3118500044"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 487,
+    "00": 510,
+    "10": 1,
+    "11": 2
+   },
+   "isa_sha256": "04898c99d77979864b47f7a9c725c282fccaab308294e7a1175b85899c6e3330"
+  },
+  {
+   "meta": {
+    "type": "readout",
+    "prepared": 1,
+    "qubits": 2,
+    "pair": [
+     53,
+     54
+    ]
+   },
+   "counts": {
+    "01": 988,
+    "00": 8,
+    "11": 4
+   },
+   "isa_sha256": "31e93edc70b034926b3d7617263f73b4e451094887ff6d0b60457eeed82e1781"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 778,
+    "01": 217,
+    "10": 4,
+    "11": 1
+   },
+   "isa_sha256": "be9c7c2ad5aa42a31264a6c6bfcccdd35df1499c61eb629b8d8a100b51e87660"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 83,
+    "00": 915,
+    "10": 2
+   },
+   "isa_sha256": "a47834fd6162b9cdc3c956c8e2d3b208f259fd19ad60d5015fdbead6f994477b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 814,
+    "11": 151,
+    "00": 18,
+    "01": 17
+   },
+   "isa_sha256": "1c58781037d76cfe20815f71fa205988f7e417b4810fb346871d749c37b83794"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 235,
+    "01": 762,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "50424b00a554bc86ef43dbd31736e07aa022bd173ea223ea09a5f9032e887d05"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 969,
+    "00": 17,
+    "01": 6,
+    "11": 8
+   },
+   "isa_sha256": "36406b726a4fbcfb813910bf37b8aefb56dea0ae521e2a7ff6a10aaa0be7fcde"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 855,
+    "10": 70,
+    "00": 24,
+    "01": 51
+   },
+   "isa_sha256": "3c91b2ca89898fb51fbeae4ae3550fa52269d20b14a4e03260244e09a50863ab"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 533,
+    "00": 466,
+    "10": 1
+   },
+   "isa_sha256": "d48e1197aa4ac8963401259e508577e936b8ebb50061f8106f2284a8b3693487"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 975,
+    "00": 21,
+    "10": 1,
+    "11": 3
+   },
+   "isa_sha256": "caab6cf32df36f241d8261d6b50397d2395fb34ecc20a167749060820c5ed164"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 670,
+    "10": 2,
+    "00": 328
+   },
+   "isa_sha256": "b5cdd803aed7231b10579ee675a50d4cb4fc32810871b2d162facbde718470f3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 751,
+    "11": 226,
+    "00": 18,
+    "01": 5
+   },
+   "isa_sha256": "00b5a236f4f88368ee0bc1998575c599c73b3b703411f72940ec5819a749c94c"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 679,
+    "00": 44,
+    "11": 244,
+    "01": 33
+   },
+   "isa_sha256": "e967f9bbfdadb9ba9e51085433be49d7256e432c9181f14ae1690a5399afdf15"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 841,
+    "00": 155,
+    "10": 2,
+    "11": 2
+   },
+   "isa_sha256": "9683dcbd9a00a0b5b4fb8eebe46d3cdaff01face8bc1c9dc5ff2e3ed4f105bf2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 984,
+    "01": 14,
+    "10": 2
+   },
+   "isa_sha256": "11b3406364c7eb0d8e9538353de3cafef154aec8ae1385b3677ce177de1f9b3f"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 600,
+    "01": 50,
+    "11": 301,
+    "00": 49
+   },
+   "isa_sha256": "394b5bd0f23e13696ba256c522c94f8eb01058a458b2e58818b3134f0ceca077"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 7,
+    "10": 937,
+    "00": 19,
+    "11": 37
+   },
+   "isa_sha256": "d82e36be46bdd202accb06971585e2d85a0ca0cbf9c9cb5c266fedb065b4ca5b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 985,
+    "10": 3,
+    "01": 12
+   },
+   "isa_sha256": "8c5d34e81deb1e9e9e78eaf1c568f60b3fad2b92d73e0862f88f394ff3a0bf9d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 984,
+    "00": 15,
+    "10": 1
+   },
+   "isa_sha256": "80e119813c778eefb131e8c5a351932d31b58f9326050015822f1215bb6142a4"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 988,
+    "11": 2,
+    "01": 10
+   },
+   "isa_sha256": "51c5d4565f9db509620bb1bcbdf66049a742979a0034a49c9f97d7cdf7c0f40a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 446,
+    "00": 28,
+    "10": 488,
+    "01": 38
+   },
+   "isa_sha256": "481ef2282ccf8e6db531bb4f72adf1c3c0b37c1dac689587c79eeea165fb178b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 975,
+    "00": 22,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "124baa9d141fb24dbcf6de2ced02995c29ab890066d0d5bf054eb4c7696d8db7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "11": 512,
+    "10": 479,
+    "01": 4,
+    "00": 5
+   },
+   "isa_sha256": "f3b065b156071e77b4f1351ba4315b5724ff8fa207008f7024ab32655468b3ab"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 432,
+    "01": 562,
+    "10": 4,
+    "11": 2
+   },
+   "isa_sha256": "a5e2eb01ee4ce1fb108c8aab7b133c37daaa727dca3a4214fdfc2ba8c5d63993"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 976,
+    "01": 5,
+    "10": 15,
+    "00": 4
+   },
+   "isa_sha256": "864b150da8720742750d4387ec3522bcd2909d07a2720153cbe04b33f020fcb7"
+  },
+  {
+   "meta": {
+    "type": "readout",
+    "prepared": 3,
+    "qubits": 2,
+    "pair": [
+     53,
+     54
+    ]
+   },
+   "counts": {
+    "11": 984,
+    "10": 10,
+    "01": 6
+   },
+   "isa_sha256": "05b65d3a9736cbb19a069d8825210bbf0942acf9a37b393a65ba02832dd67113"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 526,
+    "00": 470,
+    "10": 2,
+    "11": 2
+   },
+   "isa_sha256": "48de9aa8c5ccb95c662daacfdbd1cb0ac3eae669f7f242e5221baf2ba98cca97"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 501,
+    "01": 495,
+    "10": 3,
+    "11": 1
+   },
+   "isa_sha256": "41d76551225d4f6b66b8675e7554bd3015555b11f64d5680d926a23bd7a24fa1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 989,
+    "01": 8,
+    "10": 2,
+    "11": 1
+   },
+   "isa_sha256": "7850dae312b249239adcd6d0a8ecc56a81fb91cb6001459a9f42c4e8a0f3afc5"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "11": 973,
+    "01": 12,
+    "10": 15
+   },
+   "isa_sha256": "5e13f1fb4d40c535ccfc57a284451de32e8c107ce84cef0aa57e08b2cc5a14a9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 987,
+    "11": 6,
+    "00": 7
+   },
+   "isa_sha256": "9e7f0667ba584fd1de9ebabe77d7643d0d7fb47ea91e81101494faca21a0544d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 370,
+    "00": 629,
+    "11": 1
+   },
+   "isa_sha256": "e449a08b3d92e4e19f15f8298540add327f38b64ea51fd78f6456bfe89d749ab"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 479,
+    "11": 504,
+    "01": 12,
+    "00": 5
+   },
+   "isa_sha256": "d02933db6cd0b0dd89600463a23fcac654047c4de9830eee5ada475bb948fb9e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 445,
+    "11": 529,
+    "00": 14,
+    "01": 12
+   },
+   "isa_sha256": "132d30b22a855d7e060c2dfae3396ed4c3db9f6a4a2497053697daa6402fa327"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "11": 479,
+    "10": 511,
+    "00": 6,
+    "01": 4
+   },
+   "isa_sha256": "2f907a0d9bf1d6b518efb6d7a01c3f8cd66e97488fba2642594439afebe36287"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 988,
+    "01": 10,
+    "11": 2
+   },
+   "isa_sha256": "516d615bc86eb5f2757f338545d15b27eac8adf5ca5f7147508f789dae85a06d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "anchor"
+   },
+   "counts": {
+    "01": 495,
+    "00": 503,
+    "10": 1,
+    "11": 1
+   },
+   "isa_sha256": "e3c50bd78ee3b0e4b084dfbed77d551e10bfdbf02d80f7473719d518da86f754"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "01": 981,
+    "00": 12,
+    "11": 7
+   },
+   "isa_sha256": "eecb230cd257e28879e9a725f35b3789ad4d4746e3ec551e3e66f9a8373e45a3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 517,
+    "00": 481,
+    "10": 1,
+    "11": 1
+   },
+   "isa_sha256": "bffc142a6fb3bf7f2dc21450a0b1466076bc5dd9c6b02b046da5f5a6ca78ca47"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 519,
+    "01": 476,
+    "10": 3,
+    "11": 2
+   },
+   "isa_sha256": "93991fbc84ca287436213fd4c4dc2628b4ccfaaa8b6e3c2f510c84936bb0e4e3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 982,
+    "00": 15,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "768ec045d9eed2fbdab5409e946cfb244abce9cd3586a6cddaa6cbe05618c9e1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 488,
+    "00": 508,
+    "11": 2,
+    "10": 2
+   },
+   "isa_sha256": "a4db8b69b1eff53cf188660d502422cb2b02805ad78f3238eef9353b31d78b0c"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 483,
+    "10": 506,
+    "00": 6,
+    "01": 5
+   },
+   "isa_sha256": "3fe430330b11dd8a0488731eb70487202ac3ad0230107fbaae89e63f3904a259"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 978,
+    "01": 18,
+    "10": 4
+   },
+   "isa_sha256": "051232951ee8d8f0e59df13a63090fcb754ea01175fccfc4f999dd1dd6b44fd0"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 489,
+    "00": 511
+   },
+   "isa_sha256": "49077617deac09593a7724555a1981083db77ae8db389bce30d4b48abf81342f"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 952,
+    "01": 43,
+    "11": 2,
+    "10": 3
+   },
+   "isa_sha256": "05bc0159fd4dff09ec58739a0f27582534a5e196533e185ccc578d801e83d358"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 987,
+    "10": 6,
+    "01": 7
+   },
+   "isa_sha256": "8e67c5426b1aecb917e343ec1c3928efa5eb130b630aedd8530bb83ac3336f08"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 495,
+    "10": 499,
+    "01": 4,
+    "00": 2
+   },
+   "isa_sha256": "7edcdd3192d50e12d9df58399cc25faf25ab9b6e6bbf0e408d752f4ee2a73dab"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 951,
+    "11": 32,
+    "00": 11,
+    "01": 6
+   },
+   "isa_sha256": "4bd02a93f1012d5713ddc1793b73bd12478966e9abdeec09648e62e63124ecba"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 632,
+    "00": 364,
+    "11": 2,
+    "10": 2
+   },
+   "isa_sha256": "49932f579ec3df18cbfbb9b262cf9c44851af1db3214765fd8f87d29cc2bde00"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 721,
+    "10": 254,
+    "00": 15,
+    "01": 10
+   },
+   "isa_sha256": "ba3c1f12990eb6c7d0052a0c40ad9006422b696545e6357135856284cbdc27ee"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 527,
+    "01": 471,
+    "10": 1,
+    "11": 1
+   },
+   "isa_sha256": "ed8edc73b973d3ae374b9631a8b699167015eb12285017fcce905a01a503187c"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 889,
+    "10": 81,
+    "01": 23,
+    "00": 7
+   },
+   "isa_sha256": "5c1892da5dcd23f18bf18f6a52340ff347adf943d0f5ea520b07ce1b432a306e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 992,
+    "10": 2,
+    "01": 6
+   },
+   "isa_sha256": "32da2933d2ee9a6549ab972718b000c71e0fd6c551bdc90f76ae78611c5e8fe5"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "01": 509,
+    "00": 488,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "41e9cea3dfc7d402cd7c41a2e1f642b972e13f339e215415d20249a85420ebc4"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 991,
+    "11": 1,
+    "01": 7,
+    "10": 1
+   },
+   "isa_sha256": "d0f261b6e6d1f10d56a848453f29765897475ff9f056ff4bb066f3bbadd8ba91"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 982,
+    "01": 15,
+    "10": 3
+   },
+   "isa_sha256": "e95ac358fd89ed9ab0209851b8d77bec2f079116e26b974236c21c33fc773117"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 993,
+    "10": 1,
+    "01": 6
+   },
+   "isa_sha256": "1308828aa3286097620ed607cfe95c1fba665f74c1c8aa82cf06686a2ef475af"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 985,
+    "00": 13,
+    "11": 2
+   },
+   "isa_sha256": "7a79c05527282d145b85f6f13ecbf36dc00c1b841ea76aea2f93de8d684af1a9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "anchor"
+   },
+   "counts": {
+    "00": 486,
+    "01": 512,
+    "11": 1,
+    "10": 1
+   },
+   "isa_sha256": "8e1f7f2323ede8c09867b398357dfa69fc20a7c374eaec58da59f9f2edee0f76"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 981,
+    "00": 18,
+    "11": 1
+   },
+   "isa_sha256": "32b038fd329e000edc40396ef0f6b23aa3774d38b7f03e7ba05553f1be323c76"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 338,
+    "11": 638,
+    "01": 18,
+    "00": 6
+   },
+   "isa_sha256": "3ae1591f9988993124ca362a938789a9ac35ab95b1ccc448f28ca7d385eb0ea6"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 502,
+    "00": 497,
+    "10": 1
+   },
+   "isa_sha256": "45ce52c4e4aa9a71bf8f970a8eb1d9065ab788e79d5d6fc6dad0bbb8a068f4db"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 765,
+    "01": 231,
+    "10": 3,
+    "11": 1
+   },
+   "isa_sha256": "d371ffc75f7ec3dc2d92d0ecd0b201ddd17feb38ef2223765722159963a35642"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 951,
+    "10": 30,
+    "00": 7,
+    "01": 12
+   },
+   "isa_sha256": "d8dca3aef649f936926fad831e25953111ea58f33aa6410b4d6d568fa72ddfe3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 259,
+    "11": 707,
+    "01": 17,
+    "00": 17
+   },
+   "isa_sha256": "024fc5b47945a311f703f7b728a790f250d828f846828c03037c02f7431ab68d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 791,
+    "00": 209
+   },
+   "isa_sha256": "32c940cc19315494145f66900d7249674d2a8de04a43bbaf6a0e900ab1d4c267"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 984,
+    "11": 6,
+    "00": 10
+   },
+   "isa_sha256": "bcd9b9c9592f04dba688f07d53541db6553269a9c1109829e9d99dd96388a6f8"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 622,
+    "00": 376,
+    "11": 1,
+    "10": 1
+   },
+   "isa_sha256": "742259d2d7b4e67d05c964320be64b420d963a8a2caf5faa875ac6eeff27af53"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 491,
+    "01": 503,
+    "11": 3,
+    "10": 3
+   },
+   "isa_sha256": "2b21f2553d98ea5cc6a0616335684ebb0bef6311c4dc6ec9644a5d6bed6a985e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 981,
+    "00": 15,
+    "11": 1,
+    "10": 3
+   },
+   "isa_sha256": "28571a29de385e93ae934e47c48196fa6cea61b1fad6a32e6a77e2a11d6a5521"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 482,
+    "11": 458,
+    "00": 26,
+    "01": 34
+   },
+   "isa_sha256": "ade24ec328bc929c7ee41e26e870bcbce66c21dcdce1a03802b33440b6205c85"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "11": 510,
+    "10": 475,
+    "01": 7,
+    "00": 8
+   },
+   "isa_sha256": "ade16d2fef059399fbe16e07271ed197441b7661f6580e3b0627be31d96d50b7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 879,
+    "11": 54,
+    "01": 32,
+    "00": 35
+   },
+   "isa_sha256": "2d6862a982dd949acefbb25a6bba1d1f30caf95987bff118e6d507b9ce9050f3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 653,
+    "01": 346,
+    "10": 1
+   },
+   "isa_sha256": "9be8b8ec421fcdf36d0180122e8758b21c4aeb19e4a378ef8c8cf41c92585d91"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 978,
+    "01": 16,
+    "10": 6
+   },
+   "isa_sha256": "fc89406167ddbcc1fadc5728ceff5c6379c5993ee901fcbf1e276962177e99da"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 989,
+    "00": 11
+   },
+   "isa_sha256": "caaafa71ff12288ef448cfd7e2ca3dad5bc9679e631efee2012175d97c0a8afa"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 980,
+    "10": 12,
+    "01": 7,
+    "00": 1
+   },
+   "isa_sha256": "aa571af976e9088772fa9d58208b3a97ac80aecc2dcbdde8ca7375b574f9aa2c"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 527,
+    "11": 463,
+    "00": 8,
+    "01": 2
+   },
+   "isa_sha256": "42a23814c5753eae6d955a2b79ef833a54bcbf933cf0dcb6ced03ad500b66c81"
+  },
+  {
+   "meta": {
+    "type": "readout",
+    "prepared": 0,
+    "qubits": 2,
+    "pair": [
+     53,
+     54
+    ]
+   },
+   "counts": {
+    "00": 989,
+    "10": 10,
+    "01": 1
+   },
+   "isa_sha256": "7c795ef03f32c5da8481806af942c4925caff677d167f7cb2a90ce857ae35bd9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 543,
+    "00": 452,
+    "11": 1,
+    "10": 4
+   },
+   "isa_sha256": "c0822f23ad9814f7164bd824e5c990364a91aea79a14effcb8b68b49cde147b8"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 527,
+    "10": 463,
+    "00": 6,
+    "01": 4
+   },
+   "isa_sha256": "5c30051cdb7cfce02eeab62d17b482c053abc7f58806b61f0caa62dd96e82a51"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "00": 995,
+    "01": 4,
+    "10": 1
+   },
+   "isa_sha256": "f264d27232fa23812ddc15ecc6e9562e805955653e8988b2aec0edd34d62bc43"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 6,
+    "11": 941,
+    "10": 32,
+    "01": 21
+   },
+   "isa_sha256": "7d11e0662276fc74fd60b46757beb8c053fc2e3058f76b9a3355bdad9c70d3d4"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 887,
+    "00": 105,
+    "11": 6,
+    "10": 2
+   },
+   "isa_sha256": "a6c63371b41c353796c0c411ac2f5b38592150bac0525e724e7bd2e56a814bc3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 306,
+    "10": 673,
+    "00": 16,
+    "01": 5
+   },
+   "isa_sha256": "de9b9d38d344fcea8d3a79b7cad88893b4667e3935b3011acb679c2295a0bdaf"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 960,
+    "01": 36,
+    "11": 1,
+    "10": 3
+   },
+   "isa_sha256": "37c98db4ecceeaa670af95fc7a174bfd495d0e3968b6dc0429a26d1bc75ae169"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 799,
+    "11": 171,
+    "01": 13,
+    "00": 17
+   },
+   "isa_sha256": "5d298fc68b3f8f83926ab6cd8603125bb5fd45cc6637a85247b18345f1736808"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 957,
+    "00": 38,
+    "10": 3,
+    "11": 2
+   },
+   "isa_sha256": "3423278e805dbe1df58317b37bf73926c1107d3b4a1be0c008848731bc972e80"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 452,
+    "01": 548
+   },
+   "isa_sha256": "97c3690588ea33220296fc89ed6115ed30f31d3a406e81f6a13eeac35012caaa"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 956,
+    "00": 43,
+    "11": 1
+   },
+   "isa_sha256": "61333d7634e5b969cbf0ba156af22e174b5d069d85411af5dbeebb3f59cbc6a4"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 546,
+    "10": 442,
+    "01": 7,
+    "00": 5
+   },
+   "isa_sha256": "8cd564aaadd6d9c040859a2a076bcbc2c62bb60b2b6cd5f224f34daa2e03c012"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 435,
+    "10": 539,
+    "01": 18,
+    "00": 8
+   },
+   "isa_sha256": "c73fa5d156db181eb33fe1d6bf5629d3cefd35e52dda3749c0087be027d05090"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 475,
+    "00": 523,
+    "10": 2
+   },
+   "isa_sha256": "436bd027bee68fd6087f587cf92ef4885ef788ef3216c21d9b02e383282c20ec"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 971,
+    "10": 20,
+    "00": 2,
+    "01": 7
+   },
+   "isa_sha256": "37ea1c18b930467b9acd2e983f0ad95bdc8c4d88cbb4a12ecd4fc04a7c86063a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "anchor"
+   },
+   "counts": {
+    "01": 524,
+    "00": 473,
+    "10": 2,
+    "11": 1
+   },
+   "isa_sha256": "8e1f7f2323ede8c09867b398357dfa69fc20a7c374eaec58da59f9f2edee0f76"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 955,
+    "10": 19,
+    "00": 5,
+    "01": 21
+   },
+   "isa_sha256": "804545448e61eec7b2c97ec2105d27b68a11c81fdc7f8d95e97e85377fc0f0ad"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 646,
+    "01": 348,
+    "10": 5,
+    "11": 1
+   },
+   "isa_sha256": "8b19103b9f37c702fca571fd9069bd476e5210a3ff31812db91a7b210b778958"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 501,
+    "00": 498,
+    "10": 1
+   },
+   "isa_sha256": "bc2d14f5e8b01a73673e9caf174c93e5b1ed943fa8ea6a9794826760508407f3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 990,
+    "00": 8,
+    "11": 2
+   },
+   "isa_sha256": "36577bf323613d74af0e33d4692ccda9cc394266e77580ef3cfe5bf73d95eb3e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 531,
+    "00": 468,
+    "11": 1
+   },
+   "isa_sha256": "a8f1fff664d6c7820a22d45a8a44444aff915ea8fc4b6185875ca19c9fb11a52"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 994,
+    "01": 4,
+    "10": 2
+   },
+   "isa_sha256": "9c401902e01481c466091a154c55a31176d392703fa9db8fc1fb29b98e46a3bb"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 802,
+    "10": 85,
+    "01": 67,
+    "00": 46
+   },
+   "isa_sha256": "70a6477ccbd84a0d25793be84545dfe8762c264f881873be9fd7d338efa763df"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 455,
+    "00": 544,
+    "10": 1
+   },
+   "isa_sha256": "8e6089718c888566e45164701f798e13a2c3bfa34a5aaee8346dc9a81ee23f44"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 971,
+    "00": 23,
+    "11": 6
+   },
+   "isa_sha256": "58dfe2599c78622a3b97b544fcb8f5162663574c98eaac4c3024e0f416beb180"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "11": 480,
+    "10": 504,
+    "00": 10,
+    "01": 6
+   },
+   "isa_sha256": "b2e9f356b765855f103e51ed4230392611e9abacaadf718c688568c57c344c24"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 983,
+    "01": 13,
+    "10": 4
+   },
+   "isa_sha256": "391653488948bda86b9dafaa98a66e60fef7148744fb010afcb367767b7340d9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 481,
+    "11": 511,
+    "01": 6,
+    "00": 2
+   },
+   "isa_sha256": "a870405a7c1b1ff0d350b7bb85af1eea6514e3fd4b1448cb511f5aff7468d247"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 886,
+    "01": 110,
+    "11": 1,
+    "10": 3
+   },
+   "isa_sha256": "8a11fd24b9ec3e4c9546b98fab9a038fab52c6695417777f98452953d38faee8"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 987,
+    "00": 10,
+    "11": 3
+   },
+   "isa_sha256": "22f222b6e03bcdefaa675b12ff30e47574de347df34675670ef9c80692fe4c2d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 463,
+    "00": 535,
+    "10": 1,
+    "11": 1
+   },
+   "isa_sha256": "05cf4e37ab848b328006b5cad1e345455ce1405a723f64e6650bb1061fa77d20"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 988,
+    "01": 7,
+    "10": 5
+   },
+   "isa_sha256": "b5cd330b2342545f2163d83ab73485d2018134763cb158539fcac6e3281206f2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 966,
+    "00": 29,
+    "11": 3,
+    "10": 2
+   },
+   "isa_sha256": "dcfad33f16b93e83becdaae786b706b4292c44b35b6c2140a01627e359c84735"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 987,
+    "00": 12,
+    "11": 1
+   },
+   "isa_sha256": "7a79c05527282d145b85f6f13ecbf36dc00c1b841ea76aea2f93de8d684af1a9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 457,
+    "00": 538,
+    "10": 5
+   },
+   "isa_sha256": "7f0e9c7ca3a44ec6cff11b4ae928a6cc62076eeb0ea9d54aa0a259a330d65d58"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 489,
+    "01": 510,
+    "11": 1
+   },
+   "isa_sha256": "d903f3534ee8cbf17463e4fa5db2ba7dc51af647275b32f1a1ee657f956a926b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 452,
+    "01": 544,
+    "10": 2,
+    "11": 2
+   },
+   "isa_sha256": "c0822f23ad9814f7164bd824e5c990364a91aea79a14effcb8b68b49cde147b8"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 430,
+    "00": 569,
+    "11": 1
+   },
+   "isa_sha256": "fafc4d918c1fc611adb66a944c5bcc62a91edda0d1f721bc706ecdf8b9a9cd50"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 746,
+    "00": 250,
+    "10": 2,
+    "11": 2
+   },
+   "isa_sha256": "8aa8a94688ea3a11b46d30a9a1a6afda54e5ba163268182f43d4fbd7c963b81d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 764,
+    "00": 236
+   },
+   "isa_sha256": "b7cc72231ad1a95b7024fa4564dea3d2cd3e70b3812a414a01455c8d26eeb61e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 525,
+    "01": 469,
+    "11": 2,
+    "10": 4
+   },
+   "isa_sha256": "2771cd6c74b0cd7cb43d6278ef737d7378fe00207ce9c973230497a85e9ed044"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 494,
+    "01": 505,
+    "11": 1
+   },
+   "isa_sha256": "55da58c71683283545e8863e366bbc8bd35a4184326c19ea514e8b3c9ecc71a1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 380,
+    "10": 610,
+    "01": 3,
+    "00": 7
+   },
+   "isa_sha256": "06d20d5a68ea2e4d8f9cb5c4587eefc5f81e52f16787b41984e0d334118be877"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 403,
+    "01": 591,
+    "11": 4,
+    "10": 2
+   },
+   "isa_sha256": "50afe522b081c55ccc92e38690735c348dc0bcc18a64bb6eed89d50483c24b70"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 977,
+    "11": 9,
+    "00": 13,
+    "01": 1
+   },
+   "isa_sha256": "620945ae7bb070efc4bf567f9296ca3c7eb78d8e322b59e9d074c99e9eb21ab7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 968,
+    "01": 30,
+    "10": 2
+   },
+   "isa_sha256": "2fea59238d026c1e9f066a840a1b88a4bb1154fe830858f079440cfe12139a92"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 462,
+    "00": 535,
+    "10": 2,
+    "11": 1
+   },
+   "isa_sha256": "ae7cf261456d65225f23d1c27aefdd2f2dadf4cfd1e1d4b52f6f2fb67a68f56c"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 988,
+    "00": 11,
+    "11": 1
+   },
+   "isa_sha256": "cfedad7dffa3ebd94544a74d90400131ca917e14029db79b49628c66f3be6de2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 456,
+    "00": 536,
+    "10": 6,
+    "11": 2
+   },
+   "isa_sha256": "5b692ba349e48aace721caaf763683f3195048b1f7e006687582754fd93c2305"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 786,
+    "01": 213,
+    "10": 1
+   },
+   "isa_sha256": "a8293edd055d3f657f2f1b0c4efbb32587da57a6803af8aae21dc00c1d752f61"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 552,
+    "00": 442,
+    "10": 3,
+    "11": 3
+   },
+   "isa_sha256": "c8b43d41b54f300a6ed5b304e4e2de798596a10c94c69d69d54a64382bfc9a09"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 941,
+    "01": 16,
+    "10": 37,
+    "00": 6
+   },
+   "isa_sha256": "330942baf536ab43c53a3329137d86eac6d240861d27cdeadd0d05a1200b78e4"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 540,
+    "01": 458,
+    "10": 2
+   },
+   "isa_sha256": "98b0521056dace128202305c09661c73e441e5fa4f1fa7b55b06b54837f0b944"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 960,
+    "01": 13,
+    "11": 12,
+    "00": 15
+   },
+   "isa_sha256": "e610ee1b9e81e3cb9f1cde734e576f12d9a1ed2425dd864bf7d3bdaf2e42f73c"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 512,
+    "00": 486,
+    "11": 2
+   },
+   "isa_sha256": "439c40152d18b464bc891c181386e12cd2cb4d379e7b1bb9f39dbd9d2ee5e681"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 893,
+    "00": 23,
+    "10": 71,
+    "01": 13
+   },
+   "isa_sha256": "af8ba5a4362ff2a9e679767aa15f750289b2c23684a8d3aa1178c564eb033da8"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 978,
+    "01": 13,
+    "10": 9
+   },
+   "isa_sha256": "fc89406167ddbcc1fadc5728ceff5c6379c5993ee901fcbf1e276962177e99da"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 981,
+    "01": 14,
+    "10": 5
+   },
+   "isa_sha256": "32da2933d2ee9a6549ab972718b000c71e0fd6c551bdc90f76ae78611c5e8fe5"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 513,
+    "01": 484,
+    "10": 2,
+    "11": 1
+   },
+   "isa_sha256": "439c40152d18b464bc891c181386e12cd2cb4d379e7b1bb9f39dbd9d2ee5e681"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 503,
+    "00": 496,
+    "10": 1
+   },
+   "isa_sha256": "7c77675df3def21d83abdb6bb0cfcdbe3c765bb382150234c99d71d5a35e4bb8"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 962,
+    "00": 35,
+    "11": 3
+   },
+   "isa_sha256": "8e5e5b08bd3e504e33e77331fede3918b01afcceda84460cea07c61682ca2f36"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 633,
+    "11": 333,
+    "01": 16,
+    "00": 18
+   },
+   "isa_sha256": "77e50710136092baa7a134dad4b96c5116070419cc80e28f8bbff8ae016fc079"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 886,
+    "00": 112,
+    "10": 1,
+    "11": 1
+   },
+   "isa_sha256": "759fd0fd17812bdfa4386afbb5d757a00418188651c4cb218dae49b52e88f1ac"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 543,
+    "10": 444,
+    "01": 4,
+    "00": 9
+   },
+   "isa_sha256": "cad1fda20d651b19ae61c959d942369890aa5337d1fd1d8058a0c8e35b6d608a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 987,
+    "10": 1,
+    "01": 12
+   },
+   "isa_sha256": "e95ac358fd89ed9ab0209851b8d77bec2f079116e26b974236c21c33fc773117"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 524,
+    "00": 474,
+    "11": 1,
+    "10": 1
+   },
+   "isa_sha256": "d960df967f88f236faf53a51c2a5defbff1224364b5f2e3a9971002517363f1f"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 828,
+    "00": 63,
+    "01": 52,
+    "11": 57
+   },
+   "isa_sha256": "4d08c50dcbc0a211e641a0c2391dcac367c5915e2ad26d6fb5fa6ac5d61da2e6"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "10": 989,
+    "00": 7,
+    "11": 4
+   },
+   "isa_sha256": "67b7b6903c917a9bace538d23e646d8f7aac17a50b8504a891a5d9d257ed7df0"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 733,
+    "00": 265,
+    "10": 1,
+    "11": 1
+   },
+   "isa_sha256": "d12f3a1cc0425d815f616b0832f908972572ca6c9a610acafac9a9dde8740015"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 983,
+    "00": 11,
+    "11": 5,
+    "10": 1
+   },
+   "isa_sha256": "f63a2a1c2c0a12a1ca01d9b77ef5f3b3a41c989c6c87df450393c696e431c734"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 983,
+    "01": 15,
+    "11": 2
+   },
+   "isa_sha256": "dae82d08fa989f98ab54e0f671976cfdf79fd79b66a80ccfbaabaf09c10e8145"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 851,
+    "01": 146,
+    "10": 1,
+    "11": 2
+   },
+   "isa_sha256": "351fc6cc54af42e784769108f23fbc3a8b5f555d1cb2eb6507a05f8fe8ac4444"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 365,
+    "10": 601,
+    "01": 14,
+    "00": 20
+   },
+   "isa_sha256": "97a524bee3ba02b34130c59e555384932d6cc0c2be74359f1c200b919c700172"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 514,
+    "10": 475,
+    "00": 9,
+    "01": 2
+   },
+   "isa_sha256": "c91c1fffaa9684c2893b9f8e5c8711fa4f7d4d82624c18195214a4f580b2ae2b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 516,
+    "01": 483,
+    "10": 1
+   },
+   "isa_sha256": "9bb8a197fb6db6be4b158e7f2b3dd797b2b7659ad438b35cfdeb693fa1b09eb8"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 537,
+    "10": 458,
+    "01": 4,
+    "00": 1
+   },
+   "isa_sha256": "ea387fc39d993c9036bf6a309072e0b4dcf2935d31485ac90191b645e6267fd6"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 869,
+    "10": 58,
+    "01": 34,
+    "00": 39
+   },
+   "isa_sha256": "acaf06e12ad6843a2c33cb44d139f2326880ef08dca76e95fb06252f479d0dce"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "00": 996,
+    "01": 3,
+    "10": 1
+   },
+   "isa_sha256": "12ef63582cf4a298135fac574945548548d2e7859d2c616be0a6cfbb4b1eaf41"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 631,
+    "01": 367,
+    "10": 2
+   },
+   "isa_sha256": "455897de5b5e904f96d377ece30996c3a735930047949f1ba53fae6019e4dd13"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 481,
+    "00": 515,
+    "10": 3,
+    "11": 1
+   },
+   "isa_sha256": "45a4a003077c4d6ea0902ff87d7bc8da45a76175df302f9eb12b8171f156a501"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 538,
+    "10": 448,
+    "00": 9,
+    "01": 5
+   },
+   "isa_sha256": "57150133e23ee5eb56f37457406843424386f79858c7dd46580c459658bd17c7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 913,
+    "01": 10,
+    "11": 55,
+    "00": 22
+   },
+   "isa_sha256": "059020aa93c98b66c3017421edb162bdc0536c5354f8b0aa01e596e251dccfce"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 559,
+    "01": 437,
+    "10": 3,
+    "11": 1
+   },
+   "isa_sha256": "80674bc12d903bb304c0aa976284c0427314e3814c7fd9b93c38ef5f4852460f"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 522,
+    "00": 476,
+    "10": 1,
+    "11": 1
+   },
+   "isa_sha256": "55da58c71683283545e8863e366bbc8bd35a4184326c19ea514e8b3c9ecc71a1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 474,
+    "00": 522,
+    "11": 4
+   },
+   "isa_sha256": "aac97450020178d88998e5dded7a9bfb71f6da6aba7bbdc1f2a4b6a345e653d6"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 643,
+    "01": 357
+   },
+   "isa_sha256": "a54e9fbffe170156ffec79c3ce2e627014ca3474a17c97dd82578ecb0794fc95"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 988,
+    "10": 4,
+    "01": 7,
+    "11": 1
+   },
+   "isa_sha256": "f7dcc4715b499972ab0b5e19d9692725792698ffa516e564b6e57e982db61b84"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 978,
+    "11": 13,
+    "00": 6,
+    "01": 3
+   },
+   "isa_sha256": "e9b34dd58805cf2bf1c5efcf35dc9e90e91c5ecaaa08ce7be2fbaf2d518b8ffe"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 972,
+    "00": 25,
+    "11": 3
+   },
+   "isa_sha256": "d8b6b3e3cdf3aac1a69494970a3b31985a9f181b0973756b8e229df6a7a85011"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 979,
+    "00": 19,
+    "11": 2
+   },
+   "isa_sha256": "6a7e4183d05d936368cf7995e82fe695ad2f18236e188e4778020f9f32197f0a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 971,
+    "01": 24,
+    "10": 5
+   },
+   "isa_sha256": "c4c5118f2d9db313cf8660e2c6388640bef5b5dfcc9e549dc50e4ee70ac1d2ff"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 967,
+    "01": 13,
+    "10": 18,
+    "00": 2
+   },
+   "isa_sha256": "b03e732c481270227f36195c286acda1e2e36d05781694cb31a22681b76b0b73"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 969,
+    "00": 30,
+    "11": 1
+   },
+   "isa_sha256": "700ef14c77209f70f0ed59380df24713f510f8b7249cdcdb14e51957e2e1b0ae"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 532,
+    "01": 462,
+    "10": 2,
+    "11": 4
+   },
+   "isa_sha256": "d0631f4df5576f17fff161395b43b2a41c17e56477e39f318cea2d654e84d1ea"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 470,
+    "01": 6,
+    "11": 521,
+    "00": 3
+   },
+   "isa_sha256": "e4205326b302c0a63c774819ad5e49bf62341299f8b68e7fb2d000de94cd2b34"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 510,
+    "01": 489,
+    "10": 1
+   },
+   "isa_sha256": "7f840f76befd5838b07e2530a03208de505f15d892137bcdf9badf1dcd252044"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 874,
+    "10": 70,
+    "01": 31,
+    "00": 25
+   },
+   "isa_sha256": "76d975f4fc708c6c12adb9b6c9950013d06148856bc2037e369ce2fc0ae0962c"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 585,
+    "11": 394,
+    "00": 10,
+    "01": 11
+   },
+   "isa_sha256": "26598a3e55fe2549a14be78905a76e41655f55482f6bfb5d4a548e00879d6d3e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 565,
+    "01": 429,
+    "11": 4,
+    "10": 2
+   },
+   "isa_sha256": "cc1d83f58c105ab27cbc434169194051eb2a5c652b3c8e07a51785680a5fe08d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 974,
+    "10": 4,
+    "01": 22
+   },
+   "isa_sha256": "f1c0bbe126442b20fdd3d53cfc8e0a783c70720af073f96c57ae66ba168870b4"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 901,
+    "01": 99
+   },
+   "isa_sha256": "f7e43683dfaca022197dac763196575f96f7a9ab092adf32b401889c05118b90"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 548,
+    "11": 448,
+    "01": 3,
+    "00": 1
+   },
+   "isa_sha256": "1878f66c5c27812c814b49bed31f432a38b21a1d0e33acb3b1be1d36b19b6a8d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 541,
+    "00": 457,
+    "10": 2
+   },
+   "isa_sha256": "62415224b1e5a6d61e76193540312b3b086abfd40c1c0e6bffc98b2cd84d7fe1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 958,
+    "00": 12,
+    "11": 25,
+    "01": 5
+   },
+   "isa_sha256": "683b6d8bba977394195b76d56059bd126c823db20d47c6747c42c27cce8a8066"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 995,
+    "01": 4,
+    "10": 1
+   },
+   "isa_sha256": "23c0b07df0fc5ada2902b46cc286c1dfcf6cced6ef44860c6629ea464c11bbae"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 983,
+    "01": 16,
+    "10": 1
+   },
+   "isa_sha256": "a1fb685f2ea25fc080f8b7fbc1f2945bd282942c813327c683f1412701ecc270"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 817,
+    "11": 86,
+    "00": 50,
+    "01": 47
+   },
+   "isa_sha256": "0a582f57b491327ef446272861e42e09ac986fb18974f8a1318cc0492fa92641"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 510,
+    "01": 489,
+    "11": 1
+   },
+   "isa_sha256": "bc2d14f5e8b01a73673e9caf174c93e5b1ed943fa8ea6a9794826760508407f3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 987,
+    "00": 7,
+    "11": 6
+   },
+   "isa_sha256": "c0a4cd46713685351e855e3d1ca1df2da0011027284b8f85515029b1bf892d97"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 988,
+    "00": 9,
+    "11": 3
+   },
+   "isa_sha256": "f7bf9d3ff9c956ca1b17c6542a9502902603be4d61ec25172aad666fb551bfe1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 981,
+    "00": 13,
+    "11": 6
+   },
+   "isa_sha256": "ddb7bd5d5a94393ce5728bd948d4c283e5df1e93a8f518c60a3848366419f12d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "anchor"
+   },
+   "counts": {
+    "00": 457,
+    "01": 542,
+    "10": 1
+   },
+   "isa_sha256": "e3c50bd78ee3b0e4b084dfbed77d551e10bfdbf02d80f7473719d518da86f754"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 977,
+    "10": 6,
+    "01": 17
+   },
+   "isa_sha256": "b54cbda9da2981387ca52ce935404c2929b0884f5641ca8d80dfe860f811fcc0"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 578,
+    "00": 419,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "6fad3b4146699a90f15c524210d8b5d64cfb452838638f9354f36d723a7f5619"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 350,
+    "10": 633,
+    "01": 9,
+    "00": 8
+   },
+   "isa_sha256": "7c4fabca121306f47464242de652b689c3b7cb83627615a812a3b25280f19f6b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 975,
+    "01": 5,
+    "10": 15,
+    "00": 5
+   },
+   "isa_sha256": "46d15ddf95149bbde080a93727b82baf2d876ecd4d0916a82650e1b403515757"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 987,
+    "01": 13
+   },
+   "isa_sha256": "b5cd330b2342545f2163d83ab73485d2018134763cb158539fcac6e3281206f2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 464,
+    "01": 535,
+    "11": 1
+   },
+   "isa_sha256": "9f7e4decba56960a4edd4a47df46b04449b568a0644761b3f02c349d0e927526"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.7853981633974483,
+    "k": 0,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "k_zero"
+   },
+   "counts": {
+    "01": 499,
+    "00": 496,
+    "10": 4,
+    "11": 1
+   },
+   "isa_sha256": "c55601dd10fe658746530c3a6487adbc3a220b82e0a93fe213b872c859488c68"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "anchor"
+   },
+   "counts": {
+    "00": 471,
+    "01": 525,
+    "11": 2,
+    "10": 2
+   },
+   "isa_sha256": "e3c50bd78ee3b0e4b084dfbed77d551e10bfdbf02d80f7473719d518da86f754"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 980,
+    "01": 18,
+    "10": 2
+   },
+   "isa_sha256": "378af8e9e7c4fb97a69114ec0e8fba32eea57e1b74765e6df9b4dcedbcf09a72"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 484,
+    "01": 513,
+    "10": 1,
+    "11": 2
+   },
+   "isa_sha256": "b385c0a4aec2f22f8769fbfcc0e17d5961c277592001f047e62ea9f25f9cefab"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 938,
+    "11": 7,
+    "00": 55
+   },
+   "isa_sha256": "ad23a92ea084c1dc7d82c64fd065a26549a3763e99916009adcf7c8e33ebd755"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 466,
+    "11": 527,
+    "00": 6,
+    "01": 1
+   },
+   "isa_sha256": "abb8d6ca9723379b8208e9f3371f1330f3abce0df8b040491baef21e0663dcd6"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 617,
+    "10": 350,
+    "00": 21,
+    "01": 12
+   },
+   "isa_sha256": "4ca37c7e952434904be8d6a9dfc0a414b054223a92788a3926009b879f43fc24"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 974,
+    "11": 5,
+    "00": 21
+   },
+   "isa_sha256": "f18ec51dadf54f677204c7a1176ddb6ab81b99a2bcfd3ee907758c3118500044"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 987,
+    "11": 8,
+    "00": 4,
+    "01": 1
+   },
+   "isa_sha256": "e177d8f57b5e3d217ab964d133159183e172a541552ff590a3654c0f398b0fd2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 887,
+    "01": 108,
+    "11": 3,
+    "10": 2
+   },
+   "isa_sha256": "04a1482d966e914459729e1997948ed88f656e4b109a0210951d690ecc169d39"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 482,
+    "01": 515,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "8323a3cf1b9aeb329426ac964ece28f90c12e187cbc3bde6fdfc446a7a5ab47b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 435,
+    "10": 550,
+    "01": 7,
+    "00": 8
+   },
+   "isa_sha256": "166ba881f5fb72eaab65bc73409ca2b08c16e9b51ac1b4baf8037df20b9bec19"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 229,
+    "11": 683,
+    "01": 48,
+    "00": 40
+   },
+   "isa_sha256": "a931e41ee528f46106851656f00838759f55147aeeab47443585764c6544ef7e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 482,
+    "01": 517,
+    "11": 1
+   },
+   "isa_sha256": "f2cd44c120cd20ac915af6ba6feabe96a1c3a642fcf521e4ed64473895748c50"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 988,
+    "00": 11,
+    "10": 1
+   },
+   "isa_sha256": "4159d493822840dcb69b83f96b439b5ab0e229855372e9aa21a3ba899801145d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 977,
+    "00": 11,
+    "11": 12
+   },
+   "isa_sha256": "b52e50aadd0d3daf7d6bcf67fe7aa4b45bdc553c10e68f1e32daafac26cb63bd"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 8,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 946,
+    "11": 21,
+    "00": 16,
+    "01": 17
+   },
+   "isa_sha256": "d100b514a4d86fa446cd434368469839ec4a01ec507a829235a31e5e02ee7bdf"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 534,
+    "01": 462,
+    "11": 2,
+    "10": 2
+   },
+   "isa_sha256": "04898c99d77979864b47f7a9c725c282fccaab308294e7a1175b85899c6e3330"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 16,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 975,
+    "00": 25
+   },
+   "isa_sha256": "85ffc57d9018d6217a7471fde622fc0b0ba344b1b53bc592a1fa663a084ccb1a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 977,
+    "10": 7,
+    "01": 14,
+    "11": 2
+   },
+   "isa_sha256": "1a0656007c2d2ab99262d2013b19484e49fbdaed43f15a552682c2b0892bda78"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 470,
+    "10": 525,
+    "00": 1,
+    "01": 4
+   },
+   "isa_sha256": "45707e66f1f553c179d3ed7769d9e10382da8a420c705dfe55492c37dc00d5ca"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 530,
+    "01": 466,
+    "11": 3,
+    "10": 1
+   },
+   "isa_sha256": "34ab662776a4114c08d68084e81e2e35025f28e2bc8bcc829d60b9447a017e82"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 604,
+    "01": 394,
+    "11": 2
+   },
+   "isa_sha256": "a69dcbf6da58cddaa6924f993b19084e6bc1eea93d03e2531b930bf288f6a1fb"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 975,
+    "10": 2,
+    "00": 19,
+    "11": 4
+   },
+   "isa_sha256": "1ae469b502ffaab832827a7255dd74d0882930092895309bfa6c285c37e4c361"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 746,
+    "01": 251,
+    "10": 3
+   },
+   "isa_sha256": "ed09880cee2fbf031818a7ed0b29db42a144408a895069d904204a6fe94e287d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 937,
+    "00": 59,
+    "11": 2,
+    "10": 2
+   },
+   "isa_sha256": "ec09b7158baa90d0d8317be21cd76958640f1856b694d5bc1095b643d64bc096"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "anchor"
+   },
+   "counts": {
+    "01": 547,
+    "00": 450,
+    "10": 3
+   },
+   "isa_sha256": "8e1f7f2323ede8c09867b398357dfa69fc20a7c374eaec58da59f9f2edee0f76"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 990,
+    "01": 7,
+    "10": 3
+   },
+   "isa_sha256": "ac28f30883208e78a65c527dc5e910e2a6fc855f7371d89f400850756f12ed69"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 64,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 500,
+    "01": 497,
+    "10": 3
+   },
+   "isa_sha256": "46f1071564cbbaabbed917424d109e8f3139c88b6df79376616f3ba889f9640a"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 981,
+    "01": 7,
+    "10": 12
+   },
+   "isa_sha256": "abfd0373adc3e10f81c72d10f110b3edc650c2d1235fe4372446481b579760d3"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 528,
+    "01": 471,
+    "11": 1
+   },
+   "isa_sha256": "5f89978b4035d85c8f3348755beef6649a5411e0755d44d91b4ae425deb4ad16"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 2,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 975,
+    "00": 21,
+    "11": 3,
+    "10": 1
+   },
+   "isa_sha256": "2ad9e3b65aa1164243f50ed38ad23634121517db4cd3fca4237bd078fc59a194"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 6,
+    "11": 986,
+    "01": 6,
+    "00": 2
+   },
+   "isa_sha256": "5b4b389fe6366d2065c5d89cbab804b4c7da54ec4480588258b9cb79a8ceb5dc"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 64,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 110,
+    "01": 887,
+    "10": 3
+   },
+   "isa_sha256": "0c15741e139598b79d8c16ea4f8514ffaa938dd7861c9bd3e99d261abb6976f1"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 0.0,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "00": 510,
+    "01": 487,
+    "11": 1,
+    "10": 2
+   },
+   "isa_sha256": "2b21f2553d98ea5cc6a0616335684ebb0bef6311c4dc6ec9644a5d6bed6a985e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 1,
+    "control": 0,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "delay"
+   },
+   "counts": {
+    "01": 491,
+    "00": 506,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "9cd9f09a962c563a509a81e33873ab6be6ff0213a43450cf0837e9a94b62dfe7"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 478,
+    "11": 507,
+    "01": 10,
+    "00": 5
+   },
+   "isa_sha256": "d6ffb3706b53f7303a0c3a7610b3ad27fb122dfc974a15cae0cfe3bedbb48cc2"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 8,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 975,
+    "01": 23,
+    "11": 2
+   },
+   "isa_sha256": "6bc965e62a230df99463cd060f317a343b6963b1372eede7414dbe468ec1161d"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 1,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 975,
+    "00": 3,
+    "10": 13,
+    "01": 9
+   },
+   "isa_sha256": "fa59ec7d5ce1ac1fd241d938bd0a2cdf4d0195aa379244dfb64ab9bd15e4fbc9"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 4,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "00": 986,
+    "01": 8,
+    "10": 5,
+    "11": 1
+   },
+   "isa_sha256": "aa8252587c46cd559a10f3f87d78c81d53785418e8ebe371c9259c0f51e5dbde"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 1.347950023138716,
+    "k": 32,
+    "control": 1,
+    "role": 1,
+    "analysis_phase": 1.5707963267948966,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "11": 792,
+    "10": 176,
+    "00": 14,
+    "01": 18
+   },
+   "isa_sha256": "1a133ae313e75699f52c297a7eb439ed4ceae592deacf44301ef5bba0d14b24b"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 1,
+    "role": 2,
+    "analysis_phase": 4.71238898038469,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "10": 697,
+    "11": 262,
+    "00": 25,
+    "01": 16
+   },
+   "isa_sha256": "bf5021297e47cb7c4c0109c0f30cd6e5b16ae4136a502eea58e0299bd158a24e"
+  },
+  {
+   "meta": {
+    "type": "probe",
+    "pair": [
+     53,
+     54
+    ],
+    "theta": 0.6118624420100085,
+    "k": 32,
+    "control": 0,
+    "role": 1,
+    "analysis_phase": 3.141592653589793,
+    "circuit_kind": "probe"
+   },
+   "counts": {
+    "01": 332,
+    "00": 665,
+    "11": 2,
+    "10": 1
+   },
+   "isa_sha256": "e40176cccb314b3606ca9e57d01bb620acbd6e114d7861d98bf117e0f3e11caa"
+  }
+ ]
+}
