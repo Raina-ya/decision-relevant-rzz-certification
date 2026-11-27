@@ -6,43 +6,43 @@
     13,
     14
   ],
-  "created_utc": "2026-11-27T05:45:21.613816+00:00",
+  "created_utc": "2026-11-27T05:50:37.408396+00:00",
   "blocks": [
     {
       "block": "A0-calibration",
       "circuits": 68,
       "shots": 500,
-      "digests_sha256": "2898b05cb930ed325e39f3ba991fafbd56ef6e3d73f9eb39b81fc47f4eb58d01"
+      "digests_sha256": "4653fd344bb5b1444d861211320a9d6ff8a4fdb612439eac46de3e56eb17ed14"
     },
     {
       "block": "A1-decision-2q",
       "circuits": 364,
       "shots": 1000,
-      "digests_sha256": "c26df8a9ced2f4bb6195c4ef7977be7ed1bfa9befc92793dcec656e689d6f411"
+      "digests_sha256": "aef88bfd21adde21d6e70cb2869fdc0a4ee31a368c2587a6148b2000f69a02dc"
     },
     {
       "block": "A6-sign-2q",
       "circuits": 364,
       "shots": 1000,
-      "digests_sha256": "bdf817a5de38afe4a8bd21d78fccc84d2a32e0243fc852349a9ea25badc9c627"
+      "digests_sha256": "68f70537452c3e11b953cbec26c26a569c50c58b3aa5a54e6a4c094a2cc70444"
     },
     {
       "block": "A5-decision-circuits-2q",
       "circuits": 8,
       "shots": 20000,
-      "digests_sha256": "d10e9ec4df89771e996e302ef89014f57b4e314bf59beff021aba3e97c246820"
+      "digests_sha256": "8dafb7e7a3e1eded63fc7ad7fd54c54f11513452190297d65c156c7a3d912dcc"
     },
     {
       "block": "A2-decision-3q-pairA",
       "circuits": 364,
       "shots": 1000,
-      "digests_sha256": "78da2c57f152d62ec6c94b272323dbdf539f97c0024c050ba38f2c2f925fcecd"
+      "digests_sha256": "7478d41eac3dc37d342bb6fae05dd5747f4655f9837e8d911ea781558bbdf9d1"
     },
     {
       "block": "A3-grid",
       "circuits": 532,
       "shots": 500,
-      "digests_sha256": "8a1a1c54768c9da85a5ebb47dae60735ccb7a99a0251200203a56bf45d9cc363"
+      "digests_sha256": "94646269f01ff019bdae0606c4ad8cbc0f8c8db932c7cc793d0f840e1291c7a4"
     }
   ]
 }
