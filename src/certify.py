@@ -4,6 +4,8 @@ from dataclasses import dataclass
 from enum import Enum
 from math import isfinite
 
+from .decision import Candidate, EdgeError, MaxCutInstance, signed_gap
+
 
 class Verdict(str, Enum):
     HARMLESS = "harmless"
@@ -36,3 +38,30 @@ def certify(interval: GammaInterval, margin: float) -> Verdict:
         return Verdict.HARMFUL
     return Verdict.INCONCLUSIVE
 
+
+def gamma_interval_from_error_box(
+    instance: MaxCutInstance,
+    first: Candidate,
+    second: Candidate,
+    centers: tuple[EdgeError, ...],
+    radii: tuple[EdgeError, ...],
+    confidence: float,
+) -> GammaInterval:
+    """Project a simultaneous M0 error box to a conservative gamma interval.
+
+    For a MaxCut observable with operator norm at most the number of edges,
+    each unitary angle derivative of one candidate expectation is bounded by
+    that norm. A gap between two candidates is therefore `2 * edges` Lipschitz
+    in every angle under the L1 norm. This is deliberately conservative.
+    """
+    if len(centers) != len(instance.edges) or len(radii) != len(instance.edges):
+        raise ValueError("one center and radius triple is required per edge")
+    total_radius = 0.0
+    for radius in radii:
+        values = (radius.epsilon, radius.local_left, radius.local_right)
+        if any(value < 0.0 or not isfinite(value) for value in values):
+            raise ValueError("error radii must be finite and non-negative")
+        total_radius += sum(values)
+    center = signed_gap(instance, first, second, centers)
+    gap_radius = 2.0 * len(instance.edges) * total_radius
+    return GammaInterval(center - gap_radius, center + gap_radius, confidence)
