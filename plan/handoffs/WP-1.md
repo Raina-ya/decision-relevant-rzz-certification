@@ -18,7 +18,7 @@
   decision-induced framing in `gap_map.md` Section 3 as the chapter thesis.
 - What the next WP needs to know: the probe principle (CHAI2026) and the
   three-outcome mechanics (DENG2026) are prior art; do not describe them as
-  contributions. 121 of 138 entries are abstract-only.
+  contributions. 117 of 138 entries are abstract-only or bibliographic-only (105 + 12).
 - Anything I was unsure about or could not verify: RYBOTYCKI2025's full-text
   RZZ statement; ARUTE2019SUPP calibration details; arXiv:2611.20613 could not
   be read (rate limiting). Forward-citation passes on RUDINGER2025, CHAI2026
