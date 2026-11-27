@@ -126,3 +126,26 @@ def globally_depolarized_gap(gap: float, visibility: float) -> float:
         raise ValueError("visibility must lie in [0, 1]")
     return visibility * gap
 
+
+
+def signed_gap_per_candidate(
+    instance: MaxCutInstance,
+    first: Candidate,
+    second: Candidate,
+    first_errors: tuple[EdgeError, ...],
+    second_errors: tuple[EdgeError, ...],
+) -> float:
+    """Signed gap when each candidate's RZZ angle carries its own residual [exact].
+
+    Hardware residuals depend on the angle, and the two candidates use different
+    angles, so each candidate is evaluated with the residual measured at its
+    own angle.
+    """
+    ideal = decision_gap(instance, first, second)
+    if ideal == 0.0:
+        raise ValueError("the ideal decision must not be tied")
+    sign = 1.0 if ideal > 0.0 else -1.0
+    return sign * (
+        exact_expected_cut(instance, first, first_errors)
+        - exact_expected_cut(instance, second, second_errors)
+    )

@@ -1,0 +1,3 @@
+# Versions used for the HW-P2 dry run and mock submission tests (2026-11-27).
+qiskit==2.6.2
+qiskit-ibm-runtime==0.52.1

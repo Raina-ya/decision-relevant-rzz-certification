@@ -1,0 +1,42 @@
+{
+  "label": "A",
+  "backend": "fake_marrakesh+fractional[fake-backend]",
+  "chain": [
+    12,
+    13,
+    14
+  ],
+  "created_utc": "2026-11-27T03:51:03.260140+00:00",
+  "blocks": [
+    {
+      "block": "A0-calibration",
+      "circuits": 68,
+      "shots": 500,
+      "digests_sha256": "68390d229858b2421535a6bd2d64bafafaf86a2c690b067843be60f0e0550242"
+    },
+    {
+      "block": "A1-decision-2q",
+      "circuits": 364,
+      "shots": 1000,
+      "digests_sha256": "4966f4329ac0144826e6dd4814bea7920b797229cd6a659f593ef86012f53db8"
+    },
+    {
+      "block": "A5-decision-circuits-2q",
+      "circuits": 4,
+      "shots": 20000,
+      "digests_sha256": "3d080d8338173a4fc92cb27b298807a770129123f81fc45c2a00d4a984ec78c9"
+    },
+    {
+      "block": "A2-decision-3q-pairA",
+      "circuits": 364,
+      "shots": 1000,
+      "digests_sha256": "978e60097269d05d67ef45e2aba849fcc57c528f52fe18fe36ef5904a63f05e8"
+    },
+    {
+      "block": "A3-grid",
+      "circuits": 868,
+      "shots": 500,
+      "digests_sha256": "b5652a506f831a9f95c6eae9745e0cbb3e0d98809db1b30eb2bb85e3c0183c7b"
+    }
+  ]
+}
