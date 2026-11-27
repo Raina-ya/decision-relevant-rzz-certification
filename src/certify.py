@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from enum import Enum
 from math import isfinite
 
-from .decision import Candidate, EdgeError, MaxCutInstance, signed_gap
+from .decision import Candidate, EdgeError, MaxCutInstance, signed_gap, signed_gap_per_candidate
 
 
 class Verdict(str, Enum):
@@ -65,3 +65,36 @@ def gamma_interval_from_error_box(
     center = signed_gap(instance, first, second, centers)
     gap_radius = 2.0 * len(instance.edges) * total_radius
     return GammaInterval(center - gap_radius, center + gap_radius, confidence)
+
+
+def gamma_interval_per_candidate(
+    instance: MaxCutInstance,
+    first: Candidate,
+    second: Candidate,
+    first_centers: tuple[EdgeError, ...],
+    first_radii: tuple[EdgeError, ...],
+    second_centers: tuple[EdgeError, ...],
+    second_radii: tuple[EdgeError, ...],
+    confidence: float,
+) -> GammaInterval:
+    """Conservative gamma interval with separate residual boxes per candidate.
+
+    Each candidate expectation is `edges`-Lipschitz in every residual angle
+    under the L1 norm (same argument as `gamma_interval_from_error_box`), so
+    the gap radius is `edges * (R_first + R_second)`. With identical boxes this
+    reduces to the existing `2 * edges * R`.
+    """
+    totals = []
+    for radii in (first_radii, second_radii):
+        if len(radii) != len(instance.edges):
+            raise ValueError("one radius triple is required per edge")
+        total = 0.0
+        for radius in radii:
+            values = (radius.epsilon, radius.local_left, radius.local_right)
+            if any(value < 0.0 or not isfinite(value) for value in values):
+                raise ValueError("error radii must be finite and non-negative")
+            total += sum(values)
+        totals.append(total)
+    center = signed_gap_per_candidate(instance, first, second, first_centers, second_centers)
+    radius = len(instance.edges) * (totals[0] + totals[1])
+    return GammaInterval(center - radius, center + radius, confidence)

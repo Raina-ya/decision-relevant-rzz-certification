@@ -1,0 +1,42 @@
+{
+  "label": "B",
+  "backend": "fake_marrakesh+fractional[fake-backend]",
+  "chain": [
+    12,
+    13,
+    14
+  ],
+  "created_utc": "2026-11-27T03:51:11.557005+00:00",
+  "blocks": [
+    {
+      "block": "B0-calibration",
+      "circuits": 68,
+      "shots": 500,
+      "digests_sha256": "fe1f09652733fa8cd2a48b3294a208b26f77ff14384d9edb5d7760229a9e109b"
+    },
+    {
+      "block": "B2-replicate-2q-pairA",
+      "circuits": 364,
+      "shots": 1000,
+      "digests_sha256": "adb4da20953f50c4edf7e858d6ae1295e9df4cdd4a288ad955d6400e653a1bba"
+    },
+    {
+      "block": "B1-decision-3q-pairB",
+      "circuits": 364,
+      "shots": 1000,
+      "digests_sha256": "6c3a1fd078cd7385af9d6bcf237e5c66230dd6214dd86d2e8447aeae0f7be1f4"
+    },
+    {
+      "block": "B3-decision-circuits-3q",
+      "circuits": 4,
+      "shots": 20000,
+      "digests_sha256": "bb71e3d609eac9e81bef8aaadcba35db9b72b2fa5b9a6992a00b359f343e8d9f"
+    },
+    {
+      "block": "B4-grid-pairB",
+      "circuits": 868,
+      "shots": 500,
+      "digests_sha256": "ea982faa55aa96596ab46f59321a0b21be4f6766e99694a3698721c32c17d24e"
+    }
+  ]
+}
