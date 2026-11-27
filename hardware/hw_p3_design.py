@@ -15,7 +15,8 @@ from dataclasses import dataclass
 from math import pi
 
 from hardware.hw_p2_design import DECISION_2Q, SIGN_2Q, angle_keys, zero_keys
-from src.types import ProbeKey
+from src.probes import ANALYSIS_PHASES
+from src.types import CircuitKind, ProbeKey
 
 KS_P3 = (1, 2, 4, 8, 16, 32)  # k = 64 dropped: HW-P2 showed M0 breaks there on q53
 FORCED_PAIR = (53, 54)
@@ -34,6 +35,23 @@ def parallel_block(name: str, theta: float, shots: int, purpose: str) -> Paralle
     return ParallelBlock(name, angle_keys((theta,), KS_P3) + zero_keys(), shots, purpose)
 
 
+def parallel_t1_reference(name: str, shots: int) -> ParallelBlock:
+    """Control in |1>, equal-duration delay instead of RZZ on every pair (no RZZ).
+
+    Added after HW-P3's first four blocks: Z conservation triggered on about
+    60% of pairs, and HW-P2 showed part of such triggers is idle relaxation.
+    Control flips here versus the probe blocks at equal k separate the two.
+    Taken hours after the probe blocks, so drift between them is possible.
+    """
+    keys = tuple(
+        ProbeKey(DECISION_2Q[0], k, 1, role, phase, CircuitKind.DELAY)
+        for k in KS_P3
+        for role in (1, 2)
+        for phase in ANALYSIS_PHASES
+    )
+    return ParallelBlock(name, keys, shots, "chip-wide T1 reference for the Z-conservation diagnostic")
+
+
 PLANS_P3: dict[str, tuple[ParallelBlock, ...]] = {
     "A": (
         parallel_block("P3A1-parallel-0.612", DECISION_2Q[0], 1000, "all pairs at the path-2q angle; context versus HW-P2"),
@@ -42,6 +60,7 @@ PLANS_P3: dict[str, tuple[ParallelBlock, ...]] = {
     "B": (
         parallel_block("P3B1-parallel-1.348", DECISION_2Q[1], 1000, "all pairs at the second path-2q angle"),
         parallel_block("P3B2-parallel-pi8", SIGN_2Q[1], 1000, "all pairs at the sign-sensitive angle pi/8"),
+        parallel_t1_reference("P3B3-parallel-t1-reference", 1500),
     ),
 }
 

@@ -238,6 +238,11 @@
       "block": "P3B2-parallel-pi8",
       "circuits": 164,
       "shots": 1000
+    },
+    {
+      "block": "P3B3-parallel-t1-reference",
+      "circuits": 52,
+      "shots": 1500
     }
   ]
 }
