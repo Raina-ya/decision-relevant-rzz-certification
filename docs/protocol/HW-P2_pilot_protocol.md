@@ -46,8 +46,10 @@ the runner stops before any block whose estimated cost would exceed the
 | A | A1 | pair A at the 2q decision angles, k = 1..64, delay controls, 8 anchors | 364 x 1000 |
 | A | A5 | 2q decision circuits, native RZZ and CZ-decomposed | 4 x 20000 |
 | A | A2 | pair A at the 3q decision angles | 364 x 1000 |
-| A | A3 | pair A at five grid angles pi/16..pi/2 | 868 x 500 |
+| A | A7 | T1 reference: control in |1>, delay only, k = 1..64 (added after the first A run) | 60 x 1000 |
+| A | A3 | pair A at grid angles pi/4, 3pi/8, pi/2 | 532 x 500 |
 | B | B0 | as A0 on pair B | 68 x 500 |
+| B | B5 | T1 reference on pair B | 60 x 1000 |
 | B | B2 | cross-account replication of A1 on pair A | 364 x 1000 |
 | B | B1 | pair B at the 3q decision angles | 364 x 1000 |
 | B | B3 | 3q decision circuits on the chain, native and CZ | 4 x 20000 |
@@ -77,3 +79,14 @@ Z-conservation threshold, and `gamma_interval_per_candidate` for verdicts.
 - Job IDs stay in `hardware/private/` (git-ignored) until the owner clears
   them.
 - Deviations are logged in `docs/protocol/deviations.md`.
+
+## Amendment 1 (2026-11-27, after account A blocks A0-A2, A5, A6)
+
+Account A's prespecified Z-conservation diagnostic triggered only for
+control = 1 at k = 64. Because the diagnostic cannot distinguish idle
+relaxation of the control from gate-induced flips, blocks A7 and B5 add a
+delay-only reference with the control in |1> at the same elapsed times, and
+`control_flip_comparison` reports probe minus delay flip rates. This is a
+result-informed addition: it is labelled as such, it does not change any
+existing block, threshold or verdict rule, and the A results already
+recorded are analysed exactly as before. Logged in deviations.md.

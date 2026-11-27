@@ -72,6 +72,22 @@ def characterization(name, pair, thetas, ks, shots, purpose, anchors=True) -> Bl
     return Block(name, pair, "probe", keys, 2, shots, purpose)
 
 
+def t1_reference(name, pair, shots=1000) -> Block:
+    """Control prepared in |1>, equal-duration delay instead of RZZ (no RZZ).
+
+    Added after account A's first run: Z conservation triggered only for
+    control = 1 at k = 64. Comparing control flips here with the probe
+    circuits at the same k separates idle relaxation from gate-induced flips.
+    """
+    keys = tuple(
+        ProbeKey(DECISION_2Q[0], k, 1, role, phase, CircuitKind.DELAY)
+        for k in KS_FULL
+        for role in (1, 2)
+        for phase in ANALYSIS_PHASES
+    )
+    return Block(name, pair, "probe", keys, 2, shots, "T1 reference for the Z-conservation diagnostic")
+
+
 def calibration(name, pair) -> Block:
     keys = zero_keys() + angle_keys((pi / 4,), (1, 16))
     return Block(name, pair, "probe", keys, 2, 500, "G0 platform check and per-shot timing")
@@ -90,10 +106,12 @@ PLANS: dict[str, tuple[Block, ...]] = {
         characterization("A6-sign-2q", "A", SIGN_2Q, KS_FULL, 1000, "residuals at the sign-sensitive instance angles"),
         decision("A5-decision-circuits-2q", ("path-2q", "path-2q-sign")),
         characterization("A2-decision-3q-pairA", "A", DECISION_3Q, KS_FULL, 1000, "pair-A residuals at 3q decision angles"),
+        t1_reference("A7-t1-reference", "A"),
         characterization("A3-grid", "A", GRID_REST, KS_FULL, 500, "angle dependence over the native range"),
     ),
     "B": (
         calibration("B0-calibration", "B"),
+        t1_reference("B5-t1-reference", "B"),
         characterization("B2-replicate-2q-pairA", "A", DECISION_2Q + SIGN_2Q, KS_FULL, 1000, "cross-account replication of A1 and A6"),
         characterization("B1-decision-3q-pairB", "B", DECISION_3Q, KS_FULL, 1000, "pair-B residuals at 3q decision angles"),
         decision("B3-decision-circuits-3q", ("path-3q", "path-2q-sign")),
