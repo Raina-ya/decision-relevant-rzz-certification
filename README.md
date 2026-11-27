@@ -1,35 +1,47 @@
 # decision-relevant-rzz-certification
 
-Planning and analysis code for thesis Chapter 4: fixed-budget certification of
-whether native fractional `RZZ(theta)` gate errors are harmless, harmful, or
+Thesis Chapter 4: fixed-budget certification of whether the coherent residual
+of IBM Heron's native fractional `RZZ(theta)` gate is harmless, harmful, or
 inconclusive for a prespecified downstream decision.
 
 ## Status
 
-This repository is an **unlocked implementation draft**. No hardware job has
-been submitted, no protocol has been frozen, and nothing is preregistered.
-Current results are analytic or exact-computation development checks only.
+**Unlocked development.** No hardware job has been submitted, no protocol has
+been frozen, and nothing is preregistered. All results are `[exact]`,
+`[sim]` or `[theory, draft]`.
 
-## Current scope
+## Why this question
 
-- Typed probe and result interfaces.
-- Exact analytic model for the diagonal coherent-error model `M0`.
-- Four-phase readout-cycle calculations.
-- Initial exact-recovery tests supporting draft lemmas L0-L2.
+Fractional gates cannot be Pauli-twirled, and IBM reports an angle-averaged
+RZZ error. Averaged and twirled metrics discard exactly the coherent,
+sign-carrying part of the error. `theory/average_metric_insufficiency.md`
+shows exact cases where two residuals with identical average gate fidelity
+lead to opposite decisions.
 
-Qiskit ISA generation, fake-backend checks, statistical confidence bounds,
-power analysis, and hardware preflight remain future gated work.
+## What is implemented
+
+| Area | Files | State |
+|---|---|---|
+| Diagonal model M0, probes, four-phase cycling | `src/model.py`, `src/probes.py`, `src/circuits.py` | exact checks; no Qiskit ISA yet |
+| Finite-sample intervals, unwrapping, verdict rule | `src/estimate.py`, `src/certify.py` | partial alpha allocation |
+| Exact decision functional, tolerance inner sets | `src/decision.py`, `analysis/tolerance/` | development family (unlocked) |
+| Average-metric insufficiency (C7) | `analysis/tolerance/average_metric.py` | exact witnesses |
+| Model diagnostics | `src/diagnostics.py` | thresholds uncalibrated |
+| Power bounds, ADEMP pipeline | `analysis/power/`, `analysis/simulation/` | G3 not evaluated |
+| Offline preflight, fail-closed runner | `hardware/` | no network, no jobs |
+| Literature (138 sources), gap map | `docs/literature/` | G1 open |
 
 ## Run checks
 
 ```powershell
 python -m unittest discover -s tests -v
+python tools/build_bib.py   # after editing docs/literature/library.csv
 ```
 
-All contributors must follow [AGENTS.md](AGENTS.md). The working plan baseline
-is [plan/ch4_plan_v1.md](plan/ch4_plan_v1.md).
+All contributors must follow [AGENTS.md](AGENTS.md). The working plan is
+[plan/ch4_plan_v1.md](plan/ch4_plan_v1.md); the research-gap map is
+[docs/literature/gap_map.md](docs/literature/gap_map.md).
 
 ## Author
 
 Zhen-Jun Liu
-
