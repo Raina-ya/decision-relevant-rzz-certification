@@ -1,0 +1,73 @@
+{
+  "instances": [
+    {
+      "attempts": 1,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "evidence": "[exact]",
+      "first_beta": -0.7274492093535737,
+      "first_theta": 0.6118624420100085,
+      "ideal_gap": -0.4203626988868886,
+      "instance_id": "path-2q",
+      "margin": 0.2101813494434443,
+      "qubits": 2,
+      "second_beta": -0.3744608022189777,
+      "second_theta": 1.347950023138716
+    },
+    {
+      "attempts": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "evidence": "[exact]",
+      "first_beta": -0.5231752672456104,
+      "first_theta": 1.5057887057410613,
+      "ideal_gap": 0.1545771396026765,
+      "instance_id": "path-3q",
+      "margin": 0.07728856980133825,
+      "qubits": 3,
+      "second_beta": -0.16716749399792485,
+      "second_theta": 0.5647605185118689
+    },
+    {
+      "attempts": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "evidence": "[exact]",
+      "first_beta": -0.6494591599291943,
+      "first_theta": 0.24327769802903948,
+      "ideal_gap": -0.3348020010631405,
+      "instance_id": "path-4q",
+      "margin": 0.16740100053157025,
+      "qubits": 4,
+      "second_beta": -0.5313736804106406,
+      "second_theta": 1.4571471222062358
+    }
+  ],
+  "schema": "rzz-decision-family-development-v1",
+  "seed": 20261127,
+  "status": "unlocked-development"
+}
