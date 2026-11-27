@@ -51,6 +51,14 @@ class LiteratureLibraryTests(unittest.TestCase):
                 arxiv_id = row["identifier"].removeprefix("arXiv:")
                 self.assertIn(f"eprint = {{{arxiv_id}}}", bib_text)
 
+    def test_bibtex_contains_every_verified_doi(self):
+        bib_path = Path(__file__).resolve().parents[1] / "docs" / "literature" / "references.bib"
+        bib_text = bib_path.read_text(encoding="utf-8")
+        for row in self.rows:
+            if row["identifier"].startswith("DOI:"):
+                doi = row["identifier"].removeprefix("DOI:")
+                self.assertIn(f"doi = {{{doi}}}", bib_text)
+
 
 if __name__ == "__main__":
     unittest.main()

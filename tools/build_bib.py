@@ -31,6 +31,8 @@ def build_entry(row: dict[str, str]) -> str:
                 ("archivePrefix", "{arXiv}"),
             ]
         )
+    elif identifier.startswith("DOI:"):
+        fields.append(("doi", "{" + identifier.removeprefix("DOI:") + "}"))
     fields.extend(
         [
             ("url", "{" + row["source_url"] + "}"),
