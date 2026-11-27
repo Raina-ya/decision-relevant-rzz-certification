@@ -3,7 +3,7 @@
   "issued_by": "Zhen-Jun Liu",
   "scope": "HW-P3 exploratory chip-wide parallel probe pilot (docs/protocol/HW-P3_parallel_protocol.md)",
   "authorization": "Owner chat of 2026-11-27 (11:37, 11:41, 13:38, 14:22, 14:31 +08:00): run IBM Quantum hardware with the remaining quota on two accounts, with larger circuits. The owner executes the runner personally.",
-  "commit": "d286c99dba016a300a00cc6651fbf0520dc1f5ff",
+  "commit": "017d308e73339742af0c5d9926bc0edc2be1b0ed",
   "script": "hardware/run_hw_p3.py",
   "script_sha256": "7b59224d8d367c1b7cb1d7fc5b9733df591228276bba30f7466eef541f659721",
   "backends": [
