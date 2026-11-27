@@ -3,7 +3,7 @@
   "issued_by": "Zhen-Jun Liu",
   "scope": "HW-P3 exploratory chip-wide parallel probe pilot (docs/protocol/HW-P3_parallel_protocol.md)",
   "authorization": "Owner chat of 2026-11-27 (11:37, 11:41, 13:38, 14:22, 14:31 +08:00): run IBM Quantum hardware with the remaining quota on two accounts, with larger circuits. The owner executes the runner personally.",
-  "commit": "42aeefb8e9b64fc70ffccebcf02d394887b5a347",
+  "commit": "bbfa058f7a4bee2db8d2de5f17dfc76844156493",
   "script": "hardware/run_hw_p3.py",
   "script_sha256": "7b59224d8d367c1b7cb1d7fc5b9733df591228276bba30f7466eef541f659721",
   "backends": [
@@ -14,5 +14,5 @@
     "B"
   ],
   "recorded_by": "Claude (agent), 2026-11-27",
-  "amendment": "Re-issued 2026-11-27 15:00 +08:00 for block P3B3-parallel-t1-reference (owner chat 14:54: account B has 0.63 RU left; standing delegation to use remaining quota). Shots reduced to 1000 at owner request (14:59) to keep quota."
+  "amendment": "Re-issued 2026-11-27 15:00 +08:00 for block P3B3-parallel-t1-reference (owner chat 14:54: account B has 0.63 RU left; standing delegation to use remaining quota). Shots set to 2200 at owner request (15:04): use all remaining quota on account B."
 }
