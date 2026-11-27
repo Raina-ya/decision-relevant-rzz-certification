@@ -3,11 +3,22 @@
   "issued_by": "Zhen-Jun Liu",
   "scope": "HW-P2 exploratory hardware pilot only (docs/protocol/HW-P2_pilot_protocol.md); not the confirmatory G5 run",
   "authorization": "Owner chat messages of 2026-11-27 11:37 and 11:41 +08:00: accepted all proposals, delegated all decisions except git push, and asked to run IBM Quantum cloud hardware using the remaining quota on two accounts. The owner executes the runner personally with their own saved accounts.",
-  "commit": "b5c754e32fc3d70ea452075766e1b78eef97716f",
+  "commit": "21460a4b5388e99e64126ca58b2639e0bb077d67",
   "script": "hardware/run_hw_p2.py",
-  "script_sha256": "d4b17f9de9c16a7562e37e54743989817b0f42b7ff6de4cfe8516aaa342b1341",
-  "backends": ["ibm_marrakesh", "ibm_fez", "ibm_kingston", "ibm_torino", "ibm_aachen", "ibm_boston"],
-  "accounts": ["A", "B"],
+  "script_sha256": "4f0b8198a2ad57d8379e801294ff1b5bd4df9a745b25655ab2236420401263c7",
+  "backends": [
+    "ibm_marrakesh",
+    "ibm_fez",
+    "ibm_kingston",
+    "ibm_torino",
+    "ibm_aachen",
+    "ibm_boston"
+  ],
+  "accounts": [
+    "A",
+    "B"
+  ],
   "max_qpu_seconds_per_account_default": 420,
-  "recorded_by": "Claude (agent), 2026-11-27"
+  "recorded_by": "Claude (agent), 2026-11-27",
+  "revision": "v2 (2026-11-27 13:xx +08:00): re-issued after adding the sign-sensitive instance, A6 block and grid-bound analysis; supersedes the first approval, under which no job was submitted"
 }
