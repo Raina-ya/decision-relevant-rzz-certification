@@ -15,7 +15,11 @@ class OfflinePreflightTests(unittest.TestCase):
         receipt = offline_capability_receipt(repo)
         self.assertFalse(receipt.network_queried)
         self.assertFalse(receipt.hardware_job_submitted)
-        self.assertIsNotNone(receipt.git_commit)
+        if (repo / ".git").exists():
+            self.assertIsNotNone(receipt.git_commit)
+        else:
+            # Exported source trees (git archive, sdist) have no commit to record.
+            self.assertIsNone(receipt.git_commit)
 
     def test_circuit_receipt_preserves_repetition(self):
         receipt = circuit_receipt(ProbeKey(math.pi / 8, 16, 0, 1, 0.0))
