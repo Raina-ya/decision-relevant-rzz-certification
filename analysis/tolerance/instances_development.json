@@ -15,6 +15,7 @@
       "instance_id": "path-2q",
       "margin": 0.2101813494434443,
       "qubits": 2,
+      "scope": "hardware-primary",
       "second_beta": -0.3744608022189777,
       "second_theta": 1.347950023138716
     },
@@ -37,6 +38,7 @@
       "instance_id": "path-3q",
       "margin": 0.07728856980133825,
       "qubits": 3,
+      "scope": "method-extension",
       "second_beta": -0.16716749399792485,
       "second_theta": 0.5647605185118689
     },
@@ -63,6 +65,7 @@
       "instance_id": "path-4q",
       "margin": 0.16740100053157025,
       "qubits": 4,
+      "scope": "method-extension",
       "second_beta": -0.5313736804106406,
       "second_theta": 1.4571471222062358
     }

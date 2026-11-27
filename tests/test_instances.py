@@ -12,6 +12,8 @@ class DecisionFamilyTests(unittest.TestCase):
     def test_family_has_three_heavy_hex_subgraphs_and_two_angles_each(self):
         family = generate_decision_family(20261127)
         self.assertEqual([decision.qubits for decision in family], [2, 3, 4])
+        self.assertEqual(family[0].scope, "hardware-primary")
+        self.assertTrue(all(decision.scope == "method-extension" for decision in family[1:]))
         for decision in family:
             self.assertEqual(decision.edges, tuple((i, i + 1) for i in range(decision.qubits - 1)))
             self.assertGreater(decision.first_theta, 0.0)
@@ -30,4 +32,3 @@ class DecisionFamilyTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

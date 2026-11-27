@@ -21,6 +21,7 @@ class GeneratedDecision:
     ideal_gap: float
     margin: float
     attempts: int
+    scope: str
     evidence: str = "[exact]"
 
     def objects(self) -> tuple[MaxCutInstance, Candidate, Candidate]:
@@ -71,6 +72,7 @@ def generate_decision_family(
                     ideal_gap=gap,
                     margin=margin_fraction * abs(gap),
                     attempts=attempt,
+                    scope="hardware-primary" if qubits == 2 else "method-extension",
                 )
             )
             break
@@ -87,4 +89,3 @@ def write_family(path: Path, family: tuple[GeneratedDecision, ...], seed: int) -
         "instances": [asdict(decision) for decision in family],
     }
     path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-
