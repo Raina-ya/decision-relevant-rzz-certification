@@ -1,0 +1,58 @@
+{
+  "status": "unlocked-development",
+  "evidence": "[exact]",
+  "statement": "theory/average_metric_insufficiency.md",
+  "grid": {
+    "half_width": 0.6,
+    "step": 0.05
+  },
+  "family": "/sessions/rcw-01wfauszumw6ejkyhvktc3xx/mnt/decision-relevant-rzz-certification/analysis/tolerance/instances_development.json",
+  "results": [
+    {
+      "instance_id": "path-2q",
+      "witness": null
+    },
+    {
+      "instance_id": "path-3q",
+      "witness": {
+        "instance_id": "path-3q",
+        "margin": 0.07728856980133825,
+        "average_fidelity": 0.9875649686842578,
+        "harmless_residual": [
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "harmless_gamma": 0.35257606214871107,
+        "harmful_residual": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "harmful_gamma": -0.03256708081869486,
+        "evidence": "[exact]"
+      }
+    },
+    {
+      "instance_id": "path-4q",
+      "witness": {
+        "instance_id": "path-4q",
+        "margin": 0.16740100053157025,
+        "average_fidelity": 0.9875649686842578,
+        "harmless_residual": [
+          -0.25,
+          0.0,
+          0.0
+        ],
+        "harmless_gamma": 0.6850341711315686,
+        "harmful_residual": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "harmful_gamma": -0.03164820146875558,
+        "evidence": "[exact]"
+      }
+    }
+  ]
+}
