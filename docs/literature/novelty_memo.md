@@ -3,7 +3,7 @@
 Status: **G1 open**. Search pass dated 2026-11-27. This is not a systematic
 review conclusion and does not support a novelty claim.
 
-## Update after library expansion (2026-11-27, 138 sources)
+## Update after library expansion (2026-11-27, 142 sources)
 
 The second search pass (S016-S027) found two sources that sit closer to Ch4
 than anything in the first pass, and changes the classification as follows.

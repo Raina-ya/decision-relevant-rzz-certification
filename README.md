@@ -6,9 +6,12 @@ inconclusive for a prespecified downstream decision.
 
 ## Status
 
-**Unlocked development.** No hardware job has been submitted, no protocol has
-been frozen, and nothing is preregistered. All results are `[exact]`,
-`[sim]` or `[theory, draft]`.
+**Unlocked development with exploratory hardware evidence.** HW-P2 was run on
+`ibm_marrakesh` under a separate owner-approved pilot lock. Its outputs are
+labelled `[hardware-locked, exploratory pilot HW-P2]`; they are not a G5
+confirmatory result. No G4 protocol has been frozen or externally timestamped,
+and nothing is preregistered. HW-P3 is approved as a separate exploratory pilot
+but has no committed result report.
 
 ## Why this question
 
@@ -22,14 +25,15 @@ lead to opposite decisions.
 
 | Area | Files | State |
 |---|---|---|
-| Diagonal model M0, probes, four-phase cycling | `src/model.py`, `src/probes.py`, `src/circuits.py` | exact checks; no Qiskit ISA yet |
+| Diagonal model M0, probes, four-phase cycling | `src/model.py`, `src/probes.py`, `src/circuits.py` | exact checks; HW-P2 circuits passed ISA checks on the pilot backend |
 | Finite-sample intervals, unwrapping, verdict rule | `src/estimate.py`, `src/certify.py` | partial alpha allocation |
 | Exact decision functional, tolerance inner sets | `src/decision.py`, `analysis/tolerance/` | development family (unlocked) |
 | Average-metric insufficiency (C7) | `analysis/tolerance/average_metric.py` | exact witnesses |
 | Model diagnostics | `src/diagnostics.py` | thresholds uncalibrated |
 | Power bounds, ADEMP pipeline | `analysis/power/`, `analysis/simulation/` | G3 not evaluated |
-| Offline preflight, fail-closed runner | `hardware/` | no network, no jobs |
-| Literature (138 sources), gap map | `docs/literature/` | G1 open |
+| Preflight, approval guard, pilot runners | `hardware/` | HW-P2 completed; HW-P3 approved but not reported |
+| Exploratory hardware evidence | `results/hw_p2/` | model-inadequate/inconclusive; not confirmatory |
+| Literature (142 sources), gap map | `docs/literature/` | G1 open; 19 papers read at relevant-section level or deeper |
 
 ## Run checks
 
@@ -40,7 +44,8 @@ python tools/build_bib.py   # after editing docs/literature/library.csv
 
 All contributors must follow [AGENTS.md](AGENTS.md). The working plan is
 [plan/ch4_plan_v1.md](plan/ch4_plan_v1.md); the research-gap map is
-[docs/literature/gap_map.md](docs/literature/gap_map.md).
+[docs/literature/gap_map.md](docs/literature/gap_map.md). The current gate and
+work-package audit is [docs/audits/2026-11-27-completion-audit.md](docs/audits/2026-11-27-completion-audit.md).
 
 ## Author
 

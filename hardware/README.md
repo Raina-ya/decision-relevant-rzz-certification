@@ -1,12 +1,18 @@
-# Hardware preflight status
+# Hardware tooling and evidence status
 
-Only offline preflight utilities exist. They inspect local package availability,
-create semantic circuit receipts, and verify the future approval contract.
-They do not instantiate `QiskitRuntimeService`, query a backend, or submit a
-job.
+The repository contains offline preflight utilities, exact approval guards and
+separate runners for owner-approved exploratory pilots. The default development
+environment does not contain `qiskit` or `qiskit-ibm-runtime`, so its Qiskit
+adapter tests are skipped rather than treated as passing evidence.
 
-G0 remains open because Qiskit and `qiskit-ibm-runtime` are not installed in
-the current environment, and backend fractional-gate support has not been
-queried. `run_hardware.py` is deliberately fail-closed and contains no
-submission adapter.
+HW-P2 was executed by the owner on `ibm_marrakesh`. Its stored report provides
+exploratory G0 evidence: fractional RZZ gates were exposed, submitted circuits
+passed ISA checks and repeated RZZ operations were retained. The pilot
+certificates were inconclusive because the model-adequacy diagnostic triggered;
+this is not a G5 confirmatory result.
 
+HW-P3 has a separate owner approval and prespecified exploratory protocol. A
+selection file alone is not hardware-result evidence; a raw-output bundle and
+analysis report are required before HW-P3 can be described as executed.
+
+No exploratory approval substitutes for the G4 freeze required before G5-G6.

@@ -1,7 +1,8 @@
 # Research-gap map after library expansion
 
-Status: WP1 working document, 2026-11-27. Based on 138 library entries
-(17 read at relevant-section level or deeper, the rest abstract only). G1
+Status: WP1 working document, 2026-11-27. Based on 142 library entries
+(19 papers read at relevant-section level or deeper, three documentation pages
+reviewed, 108 abstract-only and 12 bibliographic-only). G1
 remains open; nothing here is a novelty claim. Wording follows AGENTS.md
 Section 2: no "first" or "novel".
 
