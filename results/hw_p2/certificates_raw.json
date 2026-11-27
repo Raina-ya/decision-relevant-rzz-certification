@@ -1,0 +1,204 @@
+{
+ "A (A1,A6,A2) + B1 | k<=64 | path-2q": {
+  "instance_id": "path-2q",
+  "margin": 0.2101813494434443,
+  "gamma_point": 0.4198417072336744,
+  "gamma_interval": [
+   0.40214733266047675,
+   0.4375164603703705
+  ],
+  "confidence": 0.9,
+  "verdict": "harmless",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    0.35705630715912334,
+    0.4826271073082255
+   ],
+   "verdict": "harmless"
+  },
+  "z_triggered": true
+ },
+ "A (A1,A6,A2) + B1 | k<=64 | path-2q-sign": {
+  "instance_id": "path-2q-sign",
+  "margin": 0.07511333191880165,
+  "gamma_point": 0.15139225422650116,
+  "gamma_interval": [
+   0.13104538348429506,
+   0.1715986740856073
+  ],
+  "confidence": 0.9,
+  "verdict": "harmless",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    0.08811176777046924,
+    0.21467274068253306
+   ],
+   "verdict": "harmless"
+  },
+  "z_triggered": true
+ },
+ "A (A1,A6,A2) + B1 | k<=64 | path-3q": {
+  "instance_id": "path-3q",
+  "margin": 0.07728856980133825,
+  "gamma_point": 0.15781499869960425,
+  "gamma_interval": [
+   -0.015258698467218723,
+   0.33101173671155437
+  ],
+  "confidence": 0.8,
+  "verdict": "inconclusive",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    -0.17346984453809366,
+    0.48909984193730216
+   ],
+   "verdict": "inconclusive"
+  },
+  "z_triggered": true
+ },
+ "A (A1,A6,A2) + B1 | k<=16 | path-2q": {
+  "instance_id": "path-2q",
+  "margin": 0.2101813494434443,
+  "gamma_point": 0.4199544566164999,
+  "gamma_interval": [
+   0.35068247601603997,
+   0.48744770354405353
+  ],
+  "confidence": 0.9,
+  "verdict": "harmless",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    0.17981779712116924,
+    0.6600911161118306
+   ],
+   "verdict": "inconclusive"
+  },
+  "z_triggered": true
+ },
+ "A (A1,A6,A2) + B1 | k<=16 | path-2q-sign": {
+  "instance_id": "path-2q-sign",
+  "margin": 0.07511333191880165,
+  "gamma_point": 0.15256198678281196,
+  "gamma_interval": [
+   0.07507721684110152,
+   0.22907765399600521
+  ],
+  "confidence": 0.9,
+  "verdict": "inconclusive",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    -0.0855956554436984,
+    0.39071962900932233
+   ],
+   "verdict": "inconclusive"
+  },
+  "z_triggered": true
+ },
+ "A (A1,A6,A2) + B1 | k<=16 | path-3q": {
+  "instance_id": "path-3q",
+  "margin": 0.07728856980133825,
+  "gamma_point": 0.15813268453373253,
+  "gamma_interval": [
+   -0.37632233432570095,
+   0.6932893288697493
+  ],
+  "confidence": 0.8,
+  "verdict": "inconclusive",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    -0.8673302636623497,
+    1.1835956327298147
+   ],
+   "verdict": "inconclusive"
+  },
+  "z_triggered": true
+ },
+ "B replicate (B2) + B1 | k<=64 | path-2q": {
+  "instance_id": "path-2q",
+  "margin": 0.2101813494434443,
+  "gamma_point": 0.4200351645870142,
+  "gamma_interval": [
+   0.3929617651023617,
+   0.44698125480423534
+  ],
+  "confidence": 0.9,
+  "verdict": "harmless",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    0.3245694857077488,
+    0.5155008434662796
+   ],
+   "verdict": "harmless"
+  },
+  "z_triggered": true
+ },
+ "B replicate (B2) + B1 | k<=64 | path-2q-sign": {
+  "instance_id": "path-2q-sign",
+  "margin": 0.07511333191880165,
+  "gamma_point": 0.1516147521160096,
+  "gamma_interval": [
+   0.12205819394334982,
+   0.1808970665612788
+  ],
+  "confidence": 0.9,
+  "verdict": "harmless",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    0.05969230837337601,
+    0.2435371958586432
+   ],
+   "verdict": "inconclusive"
+  },
+  "z_triggered": true
+ },
+ "B replicate (B2) + B1 | k<=64 | path-3q": {
+  "instance_id": "path-3q",
+  "verdict": "not evaluable",
+  "reason": "no identified residual box for pair [53, 54] at theta 1.5057887057410613",
+  "z_triggered": true
+ },
+ "B replicate (B2) + B1 | k<=16 | path-2q": {
+  "instance_id": "path-2q",
+  "margin": 0.2101813494434443,
+  "gamma_point": 0.420053795844735,
+  "gamma_interval": [
+   0.34339861897605817,
+   0.49443884806692895
+  ],
+  "confidence": 0.9,
+  "verdict": "harmless",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    0.1549905152318949,
+    0.6851170764575751
+   ],
+   "verdict": "inconclusive"
+  },
+  "z_triggered": true
+ },
+ "B replicate (B2) + B1 | k<=16 | path-2q-sign": {
+  "instance_id": "path-2q-sign",
+  "margin": 0.07511333191880165,
+  "gamma_point": 0.15086413830090206,
+  "gamma_interval": [
+   0.06575367443003322,
+   0.23479776504291366
+  ],
+  "confidence": 0.9,
+  "verdict": "inconclusive",
+  "secondary_lipschitz": {
+   "gamma_interval": [
+    -0.1117728679840081,
+    0.4135011445858122
+   ],
+   "verdict": "inconclusive"
+  },
+  "z_triggered": true
+ },
+ "B replicate (B2) + B1 | k<=16 | path-3q": {
+  "instance_id": "path-3q",
+  "verdict": "not evaluable",
+  "reason": "no identified residual box for pair [53, 54] at theta 1.5057887057410613",
+  "z_triggered": true
+ }
+}
