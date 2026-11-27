@@ -31,3 +31,15 @@ ball contains the origin, the phase interval is the full circle.
 This phase interval is one input toward a gamma interval; it is not by itself
 an end-to-end decision certificate.
 
+## Conservative error-box projection
+
+For the MaxCut observable `C`, `||C||` is at most the number of graph edges.
+For a parameter entering a unitary as `exp(-i x P/2)` with `||P|| = 1`, the
+absolute derivative of one candidate expectation is at most `||C||`. The gap
+of two candidates is consequently `2||C||`-Lipschitz in each error angle.
+
+`gamma_interval_from_error_box` applies this bound to a simultaneous box for
+all `epsilon`, local-left, and local-right angles. The projection is globally
+valid under the exact model but deliberately loose. Its confidence is only as
+valid as the simultaneous input box; independent marginal intervals cannot be
+passed in without a valid multiplicity adjustment.
