@@ -22,6 +22,9 @@ from src.types import CircuitKind, ProbeKey
 DECISION_2Q = (0.6118624420100085, 1.347950023138716)
 DECISION_3Q = (1.5057887057410613, 0.5647605185118689)
 GRID = (pi / 16, pi / 8, pi / 4, 3 * pi / 8, pi / 2)
+# OD1 v2: sign-sensitive 2q instance (analysis/tolerance/instances_sign_sensitive.json)
+SIGN_2Q = (pi / 16, pi / 8)
+GRID_REST = (pi / 4, 3 * pi / 8, pi / 2)
 KS = (1, 2, 4, 8, 16)
 DEEP_KS = (32, 64)
 KS_FULL = KS + DEEP_KS  # deep k narrows boxes ~2.5x at equal shots [sim]
@@ -74,23 +77,26 @@ def calibration(name, pair) -> Block:
     return Block(name, pair, "probe", keys, 2, 500, "G0 platform check and per-shot timing")
 
 
-def decision(name, instance_id, shots=20000) -> Block:
-    return Block(name, instance_id, "decision", (), 0, shots, "direct decision circuits, native and CZ-decomposed")
+def decision(name, instance_ids, shots=20000) -> Block:
+    """`pair` holds comma-separated instance ids for decision blocks."""
+    return Block(name, ",".join(instance_ids), "decision", (), 0, shots,
+                 "direct decision circuits, native and CZ-decomposed")
 
 
 PLANS: dict[str, tuple[Block, ...]] = {
     "A": (
         calibration("A0-calibration", "A"),
         characterization("A1-decision-2q", "A", DECISION_2Q, KS_FULL, 1000, "residuals at 2q decision angles, k=1..64"),
-        decision("A5-decision-circuits-2q", "path-2q"),
+        characterization("A6-sign-2q", "A", SIGN_2Q, KS_FULL, 1000, "residuals at the sign-sensitive instance angles"),
+        decision("A5-decision-circuits-2q", ("path-2q", "path-2q-sign")),
         characterization("A2-decision-3q-pairA", "A", DECISION_3Q, KS_FULL, 1000, "pair-A residuals at 3q decision angles"),
-        characterization("A3-grid", "A", GRID, KS_FULL, 500, "angle dependence over the native range"),
+        characterization("A3-grid", "A", GRID_REST, KS_FULL, 500, "angle dependence over the native range"),
     ),
     "B": (
         calibration("B0-calibration", "B"),
-        characterization("B2-replicate-2q-pairA", "A", DECISION_2Q, KS_FULL, 1000, "cross-account replication of A1"),
+        characterization("B2-replicate-2q-pairA", "A", DECISION_2Q + SIGN_2Q, KS_FULL, 1000, "cross-account replication of A1 and A6"),
         characterization("B1-decision-3q-pairB", "B", DECISION_3Q, KS_FULL, 1000, "pair-B residuals at 3q decision angles"),
-        decision("B3-decision-circuits-3q", "path-3q"),
+        decision("B3-decision-circuits-3q", ("path-3q", "path-2q-sign")),
         characterization("B4-grid-pairB", "B", GRID, KS_FULL, 500, "angle dependence on pair B"),
     ),
 }
@@ -98,7 +104,7 @@ PLANS: dict[str, tuple[Block, ...]] = {
 
 def block_shots(block: Block) -> int:
     if block.kind == "decision":
-        return 4 * block.shots
+        return 4 * len(block.pair.split(",")) * block.shots
     readout = 2 ** block.readout_qubits
     return (len(block.keys) + readout) * block.shots
 
@@ -108,7 +114,7 @@ def plan_summary(label: str) -> list[dict]:
         {
             "block": block.name,
             "pair": block.pair,
-            "circuits": (4 if block.kind == "decision" else len(block.keys) + 2**block.readout_qubits),
+            "circuits": (4 * len(block.pair.split(",")) if block.kind == "decision" else len(block.keys) + 2**block.readout_qubits),
             "shots_per_circuit": block.shots,
             "total_shots": block_shots(block),
             "purpose": block.purpose,

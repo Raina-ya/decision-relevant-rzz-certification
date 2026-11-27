@@ -47,6 +47,17 @@ REPO = Path(__file__).resolve().parents[1]
 MAX_PUBS_PER_JOB = 290  # backend configuration reports max_experiments = 300
 APPROVAL = REPO / "docs" / "decisions" / "HW-P2-approval.json"
 FAMILY = REPO / "analysis" / "tolerance" / "instances_development.json"
+SIGN_FAMILY = REPO / "analysis" / "tolerance" / "instances_sign_sensitive.json"
+
+
+def load_family() -> dict:
+    """Development family plus the OD1-v2 sign-sensitive instance."""
+    records = {}
+    for path in (FAMILY, SIGN_FAMILY):
+        if path.exists():
+            for record in json.loads(path.read_text(encoding="utf-8"))["instances"]:
+                records[record["instance_id"]] = {k: v for k, v in record.items() if k != "witness"}
+    return records
 
 
 def utc_now() -> str:
@@ -142,7 +153,7 @@ def qaoa_circuit(record: dict, which: str, native: bool):
 
 def build_block(block: Block, target, chain: tuple[int, int, int]):
     """Return [(metadata, isa_circuit)] in prespecified randomized order."""
-    family = {r["instance_id"]: r for r in json.loads(FAMILY.read_text(encoding="utf-8"))["instances"]}
+    family = load_family()
     items = []
     if block.kind == "probe":
         pair = (chain[0], chain[1]) if block.pair == "A" else (chain[1], chain[2])
@@ -157,18 +168,19 @@ def build_block(block: Block, target, chain: tuple[int, int, int]):
         for meta, circuit in readout_circuits(2):
             items.append(({**meta, "pair": list(pair)}, to_isa(circuit, target, pair)))
     else:
-        record = family[block.pair]
-        physical = chain[: record["qubits"]]
-        for which in ("first", "second"):
-            for native in (True, False):
-                meta, circuit = qaoa_circuit(record, which, native)
-                isa = to_isa(circuit, target, physical)
-                names = {inst.operation.name for inst in isa.data}
-                if native and "rzz" not in names:
-                    raise RuntimeError("native decision circuit lost its rzz gates")
-                if not native and "rzz" in names:
-                    raise RuntimeError("cz-decomposed decision circuit contains rzz")
-                items.append(({**meta, "qubits": list(physical)}, isa))
+        for instance_id in block.pair.split(","):
+            record = family[instance_id]
+            physical = chain[: record["qubits"]]
+            for which in ("first", "second"):
+                for native in (True, False):
+                    meta, circuit = qaoa_circuit(record, which, native)
+                    isa = to_isa(circuit, target, physical)
+                    names = {inst.operation.name for inst in isa.data}
+                    if native and "rzz" not in names:
+                        raise RuntimeError("native decision circuit lost its rzz gates")
+                    if not native and "rzz" in names:
+                        raise RuntimeError("cz-decomposed decision circuit contains rzz")
+                    items.append(({**meta, "qubits": list(physical)}, isa))
     order = list(range(len(items)))
     random.Random(SEED + sum(map(ord, block.name))).shuffle(order)
     return [items[i] for i in order]
