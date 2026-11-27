@@ -1,0 +1,224 @@
+{
+ "schema": "hw-p2-block-v1",
+ "evidence": "[hardware-locked, exploratory pilot HW-P2]",
+ "label": "B",
+ "block": "B3-decision-circuits-3q",
+ "purpose": "direct decision circuits, native and CZ-decomposed",
+ "backend": "ibm_marrakesh",
+ "chain": [
+  53,
+  54,
+  55
+ ],
+ "shots": 20000,
+ "submitted_utc": "2026-11-27T06:20:37.728049+00:00",
+ "finished_utc": "2026-11-27T06:21:32.552670+00:00",
+ "quantum_seconds": 44.0,
+ "approval_commit": "bb3cc9b75b6780ca2f7c61a5886580e14c5989e0",
+ "records": [
+  {
+   "meta": {
+    "type": "decision",
+    "instance_id": "path-2q-sign",
+    "candidate": "first",
+    "implementation": "cz-decomposed",
+    "beta": -1.1693705988362009,
+    "theta": 0.19634954084936207,
+    "margin": 0.07511333191880165,
+    "ideal_gap": -0.1502266638376033,
+    "qubits": [
+     53,
+     54
+    ]
+   },
+   "counts": {
+    "00": 6186,
+    "11": 5400,
+    "01": 4265,
+    "10": 4149
+   },
+   "isa_sha256": "3b17f4eee7f7f2ee0db446e947ea1d5675babe0c76882a3aa163afb8f6d4ad52"
+  },
+  {
+   "meta": {
+    "type": "decision",
+    "instance_id": "path-3q",
+    "candidate": "first",
+    "implementation": "native-rzz",
+    "beta": -0.5231752672456104,
+    "theta": 1.5057887057410613,
+    "margin": 0.07728856980133825,
+    "ideal_gap": 0.1545771396026765,
+    "qubits": [
+     53,
+     54,
+     55
+    ]
+   },
+   "counts": {
+    "010": 6024,
+    "101": 6563,
+    "111": 2124,
+    "000": 2277,
+    "110": 551,
+    "001": 877,
+    "100": 1026,
+    "011": 558
+   },
+   "isa_sha256": "bc04877839b63cd29301ca77e471e1590cd8cf1daba0673d2e99cc8000507fda"
+  },
+  {
+   "meta": {
+    "type": "decision",
+    "instance_id": "path-3q",
+    "candidate": "first",
+    "implementation": "cz-decomposed",
+    "beta": -0.5231752672456104,
+    "theta": 1.5057887057410613,
+    "margin": 0.07728856980133825,
+    "ideal_gap": 0.1545771396026765,
+    "qubits": [
+     53,
+     54,
+     55
+    ]
+   },
+   "counts": {
+    "111": 1908,
+    "101": 6292,
+    "010": 5979,
+    "011": 653,
+    "100": 1340,
+    "000": 2229,
+    "001": 978,
+    "110": 621
+   },
+   "isa_sha256": "ca0478b254f68b5c1b0cedc0f648822ae98bd687653a455aad56513230b8e6f7"
+  },
+  {
+   "meta": {
+    "type": "decision",
+    "instance_id": "path-3q",
+    "candidate": "second",
+    "implementation": "native-rzz",
+    "beta": -0.16716749399792485,
+    "theta": 0.5647605185118689,
+    "margin": 0.07728856980133825,
+    "ideal_gap": 0.1545771396026765,
+    "qubits": [
+     53,
+     54,
+     55
+    ]
+   },
+   "counts": {
+    "101": 4022,
+    "100": 2759,
+    "110": 2143,
+    "010": 3892,
+    "001": 2691,
+    "000": 1561,
+    "011": 2095,
+    "111": 837
+   },
+   "isa_sha256": "b92cc017d6fe992a4c3b512121ca8cd97d25264a40c1086283a1e4c9a41c68bd"
+  },
+  {
+   "meta": {
+    "type": "decision",
+    "instance_id": "path-2q-sign",
+    "candidate": "second",
+    "implementation": "cz-decomposed",
+    "beta": -0.7155849933176751,
+    "theta": 0.39269908169872414,
+    "margin": 0.07511333191880165,
+    "ideal_gap": -0.1502266638376033,
+    "qubits": [
+     53,
+     54
+    ]
+   },
+   "counts": {
+    "10": 5398,
+    "11": 4001,
+    "01": 5421,
+    "00": 5180
+   },
+   "isa_sha256": "bb3e7ac59e71f4ffe26ca17bbe64b54b7796d46a67a6e4eaefa4de7ed18afbf5"
+  },
+  {
+   "meta": {
+    "type": "decision",
+    "instance_id": "path-2q-sign",
+    "candidate": "first",
+    "implementation": "native-rzz",
+    "beta": -1.1693705988362009,
+    "theta": 0.19634954084936207,
+    "margin": 0.07511333191880165,
+    "ideal_gap": -0.1502266638376033,
+    "qubits": [
+     53,
+     54
+    ]
+   },
+   "counts": {
+    "00": 6211,
+    "11": 5521,
+    "01": 4397,
+    "10": 3871
+   },
+   "isa_sha256": "63fc1c702f03ce90a1f0333da7f372243cd555f93bec671d2ff078c701bc313e"
+  },
+  {
+   "meta": {
+    "type": "decision",
+    "instance_id": "path-2q-sign",
+    "candidate": "second",
+    "implementation": "native-rzz",
+    "beta": -0.7155849933176751,
+    "theta": 0.39269908169872414,
+    "margin": 0.07511333191880165,
+    "ideal_gap": -0.1502266638376033,
+    "qubits": [
+     53,
+     54
+    ]
+   },
+   "counts": {
+    "01": 5681,
+    "00": 5263,
+    "11": 4047,
+    "10": 5009
+   },
+   "isa_sha256": "4937269393efd1d6b01f2983352d618116f27f826619d9b7fbde498583cd1fda"
+  },
+  {
+   "meta": {
+    "type": "decision",
+    "instance_id": "path-3q",
+    "candidate": "second",
+    "implementation": "cz-decomposed",
+    "beta": -0.16716749399792485,
+    "theta": 0.5647605185118689,
+    "margin": 0.07728856980133825,
+    "ideal_gap": 0.1545771396026765,
+    "qubits": [
+     53,
+     54,
+     55
+    ]
+   },
+   "counts": {
+    "101": 3984,
+    "010": 3707,
+    "000": 1694,
+    "111": 869,
+    "011": 2079,
+    "001": 2794,
+    "110": 2074,
+    "100": 2799
+   },
+   "isa_sha256": "66cd4dba17bf1ab9df3ac7ea8a099b76cf6a11bd98b369aee39ce045c0c78dc9"
+  }
+ ]
+}
