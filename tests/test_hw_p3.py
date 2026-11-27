@@ -1,7 +1,7 @@
 import importlib.util
 import unittest
 
-from analysis.hardware.analyze_hw_p3 import analyze_block
+from analysis.hardware.analyze_hw_p3 import analyze_block, t1_excess_analysis
 from analysis.hardware.simulate_hw_p2 import SimModel, simulate_block
 from hardware.hw_p2_design import characterization
 from hardware.hw_p3_design import KS_P3
@@ -29,6 +29,30 @@ class HwP3AnalysisTests(unittest.TestCase):
             self.assertLessEqual(eps, entry["epsilon"][1])
             self.assertLessEqual(entry["b"][0], b)
             self.assertLessEqual(b, entry["b"][1])
+
+    def test_t1_excess_is_angle_matched_and_detects_clear_excess(self):
+        def record(theta, kind, wrong, shots=10000):
+            return {
+                "meta": {
+                    "type": "probe", "theta": theta, "k": 4, "control": 1,
+                    "role": 1, "analysis_phase": 0.0, "circuit_kind": kind,
+                },
+                "pair_counts": [{"10": shots - wrong, "00": wrong}],
+            }
+
+        probe = {"block": "probe", "pairs": [[1, 2]], "records": [record(0.2, "probe", 1000)]}
+        reference = {
+            "block": "t1-reference", "pairs": [[1, 2]],
+            "records": [record(0.2, "delay", 100), record(0.4, "delay", 3000)],
+        }
+        result = t1_excess_analysis([probe], reference, alpha=0.05)
+        self.assertEqual(result["matched_rows"], 1)
+        self.assertEqual(result["triggered_pairs"], [[1, 2]])
+
+    def test_t1_excess_without_matching_records_has_no_rows(self):
+        empty = {"block": "empty", "pairs": [[1, 2]], "records": []}
+        result = t1_excess_analysis([empty], empty)
+        self.assertEqual(result["rows"], [])
 
 
 @unittest.skipUnless(HAVE_QISKIT, "qiskit not installed")

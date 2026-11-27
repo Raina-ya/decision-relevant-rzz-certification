@@ -101,3 +101,27 @@ conditional on M0, and the OD11 gate is what keeps them from being reported
 unconditionally. Which version of the diagnostic is primary must be fixed
 before any confirmatory run (open decision; the absolute-threshold version
 stays primary for HW-P2 and HW-P3 because it was the prespecified one).
+
+## 6. Family-wise angle-matched sensitivity analysis
+
+The raw P3B3 metadata contains only theta = 0.6119. Reusing its delay rates for
+the other three angles assumes their RZZ durations are exchangeable; Section 5
+is therefore a post-hoc sensitivity analysis, not an angle-matched comparison.
+Its per-cell alpha = 0.05 also does not control a family-wise rate over 2,352
+cells.
+
+`t1_excess_analysis.json` supplies a stricter complementary analysis. It uses
+only the 588 rows matched on pair, recorded angle, k, and role, Bonferroni
+splits family-wise alpha = 0.05, and triggers only when the lower bound for
+probe-minus-delay exceeds 0.02.
+
+- 54/588 rows trigger, spanning 17/49 pairs, all at theta = 0.6119.
+- Idle relaxation therefore does not explain every original trigger at the
+  referenced angle. Non-triggering on the remaining pairs is not proof of no
+  gate-induced effect.
+- No family-wise angle-matched correction exists for pi/16, pi/8, or theta =
+  1.348. Their original OD11 statuses remain unchanged.
+
+The prespecified absolute-threshold column in Section 3 remains primary. Both
+post-hoc versions are retained to expose the sensitivity to reference matching,
+threshold choice, and multiplicity rather than selecting a favorable result.

@@ -10,8 +10,8 @@ inconclusive for a prespecified downstream decision.
 `ibm_marrakesh` under a separate owner-approved pilot lock. Its outputs are
 labelled `[hardware-locked, exploratory pilot HW-P2]`; they are not a G5
 confirmatory result. No G4 protocol has been frozen or externally timestamped,
-and nothing is preregistered. HW-P3 is approved as a separate exploratory pilot
-but has no committed result report.
+and nothing is preregistered. HW-P3 was also completed under a separate
+exploratory pilot lock; neither pilot is confirmatory.
 
 ## Why this question
 
@@ -26,14 +26,15 @@ lead to opposite decisions.
 | Area | Files | State |
 |---|---|---|
 | Diagonal model M0, probes, four-phase cycling | `src/model.py`, `src/probes.py`, `src/circuits.py` | exact checks; HW-P2 circuits passed ISA checks on the pilot backend |
-| Finite-sample intervals, unwrapping, verdict rule | `src/estimate.py`, `src/certify.py` | partial alpha allocation |
+| Finite-sample intervals, unwrapping, verdict rule | `src/estimate.py`, `src/certify.py` | finite-sample sets and development alpha allocations tested |
 | Exact decision functional, tolerance inner sets | `src/decision.py`, `analysis/tolerance/` | development family (unlocked) |
 | Average-metric insufficiency (C7) | `analysis/tolerance/average_metric.py` | exact witnesses |
-| Model diagnostics | `src/diagnostics.py` | thresholds uncalibrated |
-| Power bounds, ADEMP pipeline | `analysis/power/`, `analysis/simulation/` | G3 not evaluated |
-| Preflight, approval guard, pilot runners | `hardware/` | HW-P2 completed; HW-P3 approved but not reported |
-| Exploratory hardware evidence | `results/hw_p2/` | model-inadequate/inconclusive; not confirmatory |
+| Model diagnostics | `src/diagnostics.py`, `analysis/diagnostics/` | development calibration complete; G2.5 not evaluated |
+| Power bounds, ADEMP pipeline | `analysis/power/`, `analysis/simulation/` | one-edge two-angle grid complete; G3 not evaluated |
+| Preflight, approval guard, pilot runners | `hardware/` | HW-P2 and HW-P3 exploratory pilots completed |
+| Exploratory hardware evidence | `results/hw_p2/`, `results/hw_p3/` | model limitations disclosed; not confirmatory |
 | Literature (142 sources), gap map | `docs/literature/` | G1 open; 19 papers read at relevant-section level or deeper |
+| Claim ledger and manuscript | `docs/claim_ledger.md`, `paper/` | unlocked source draft; not TeX-compiled |
 
 ## Run checks
 

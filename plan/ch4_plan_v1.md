@@ -56,9 +56,15 @@ See `docs/literature/gap_map.md` for the feature matrix and sources.
   bibliographic integrity tests do not by themselves verify scientific claims.
   Forward-citation passes on RUDINGER2025, CHAI2026 and DENG2026 are
   required before G1 can pass.
-- G2 identifiability: L0-L2 draft with exact checks; C7.1-C7.4 draft added.
-- G2.5 model diagnostics: logic implemented; thresholds not calibrated.
-- G3 prospective power: formulas and ADEMP pipeline exist; not evaluated.
+- G2 theory: L0-L2 identifiability, T1 directional error control, T2
+  two-point sample lower bound and C7.1-C7.4 are drafts with exact checks where
+  computational. Independent mathematical audit remains open.
+- G2.5 model diagnostics: logic, finite-sample contrast intervals and a seeded
+  development calibration exist; final thresholds/budgets and WP10 audit are
+  open, so the gate is not evaluated.
+- G3 prospective power: analytic bounds and a seeded one-edge two-angle grid
+  exist; multi-edge and diagnostic-inclusive power remain open, so the gate is
+  not evaluated.
 - G4 lock and external timestamp: prohibited until prior gates pass.
 - G5-G6 confirmatory hardware and replication: prohibited until a valid G4
   approval. Exploratory HW-P2/HW-P3 pilot approvals do not satisfy G4.
@@ -84,6 +90,15 @@ HW-P2 produced platform evidence but no certificate: all prespecified pilot
 certificates were inconclusive because the model-adequacy diagnostic triggered.
 The result is retained as a negative exploratory finding. See
 `results/hw_p2/HW-P2_report.md`.
+
+HW-P3 subsequently measured 49 disjoint RZZ pairs in parallel under its own
+exploratory lock. It is chip-wide exploratory evidence, not G5. Its report
+records 195/196 identified boxes, pair- and angle-dependent residual patterns,
+and substantial Z-conservation triggering. A result-informed T1 amendment
+later supplied a family-wise, angle-matched sensitivity analysis at theta =
+0.6119 only; the other angles remain uncorrected. No chip-level confirmatory
+conclusion is claimed here. See
+`results/hw_p3/HW-P3_report.md`.
 
 ## Delegation record
 
