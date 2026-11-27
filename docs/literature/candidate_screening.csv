@@ -1,0 +1,9 @@
+candidate_id,title,year,identifier,source_url,search_ids,stage,decision,reason,full_text_status
+MIKLIN2026,Sound and Efficient Certification of High-Quality Qubit Operations: Theory and Experiment,2026,arXiv:2608.17005,https://arxiv.org/abs/2608.17005,S001,title_abstract,include,"Finite-sample gate certification under SPAM; direct C2/C3 comparator",not_retrieved
+NOLLER2024,Classical certification of quantum gates under the dimension assumption,2024,arXiv:2401.17006,https://arxiv.org/abs/2401.17006,"S001;S002",title_abstract,include,"Gate certification and sample complexity",not_retrieved
+ZHANG2021,Efficient Experimental Verification of Quantum Gates with Local Operations,2021,arXiv:2107.02365,https://arxiv.org/abs/2107.02365,"S001;S002",title_abstract,include,"Two-qubit gate verification with confidence and sample cost",not_retrieved
+LUBINSKI2021,Application-Oriented Performance Benchmarks for Quantum Computing,2021,arXiv:2110.03137,https://arxiv.org/abs/2110.03137,S003,title_abstract,include,"Application-oriented benchmarking comparator for C2",not_retrieved
+WALLMAN2014,Randomized Benchmarking with Confidence,2014,arXiv:1404.6025,https://arxiv.org/abs/1404.6025,S001,title_abstract,include,"Finite-sampling confidence bounds for RB",not_retrieved
+HELSEN2019,Multi-qubit Randomized Benchmarking Using Few Samples,2019,arXiv:1701.04299,https://arxiv.org/abs/1701.04299,S001,title_abstract,include,"Rigorous confidence intervals and sample complexity for multi-qubit RB",not_retrieved
+TORNOW2022,Minimum quantum run-time characterization and calibration via restless measurements with dynamic repetition rates,2022,arXiv:2202.06981,https://arxiv.org/abs/2202.06981,S001,title_abstract,include,"Error-amplifying calibration sequences and runtime cost",not_retrieved
+

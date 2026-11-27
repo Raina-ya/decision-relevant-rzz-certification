@@ -1,0 +1,6 @@
+search_id,date,source,query_or_route,results_screened,included_ids,notes
+S001,2026-11-27,arXiv/web,"quantum gate certification finite sample confidence region sample complexity",9,"MIKLIN2026;NOLLER2024;ZHANG2021;WALLMAN2014;HELSEN2019","Initial title/abstract screening; counts reflect returned primary candidates, not an exhaustive database export."
+S002,2026-11-27,arXiv/web,"quantum process certification hypothesis testing equivalence test",9,"NOLLER2024;ZHANG2021","Initial title/abstract screening; dedicated equivalence search still required."
+S003,2026-11-27,arXiv/web,"task application oriented quantum benchmarking algorithm output",9,"LUBINSKI2021","Initial title/abstract screening."
+S004,2026-11-27,arXiv/web,"QAOA coherent overrotation error sensitivity robustness",9,"","Returned set did not yet yield a verified directly relevant primary paper; rerun with narrower terms."
+

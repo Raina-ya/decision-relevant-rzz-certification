@@ -20,7 +20,7 @@ class LiteratureLibraryTests(unittest.TestCase):
     def test_arxiv_identifiers_have_canonical_shape(self):
         for row in self.rows:
             if row["identifier"].startswith("arXiv:"):
-                self.assertRegex(row["identifier"], re.compile(r"^arXiv:\d{4}\.\d{5}$"))
+                self.assertRegex(row["identifier"], re.compile(r"^arXiv:\d{4}\.\d{4,5}$"))
                 self.assertIn(row["identifier"].removeprefix("arXiv:"), row["source_url"])
 
     def test_abstract_only_rows_are_explicitly_limited(self):
