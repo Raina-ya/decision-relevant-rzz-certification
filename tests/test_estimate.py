@@ -2,7 +2,16 @@ import math
 import random
 import unittest
 
-from src.estimate import BinomialCount, four_phase_confidence, hoeffding_signed_mean_radius
+from src.estimate import (
+    BinomialCount,
+    CircularInterval,
+    LinearInterval,
+    UnwrapStatus,
+    four_phase_confidence,
+    hoeffding_signed_mean_radius,
+    recover_m0_intervals,
+    unwrap_phase_intervals,
+)
 from src.model import phase_cycle_signals
 
 
@@ -49,6 +58,58 @@ class FiniteConfidenceTests(unittest.TestCase):
             BinomialCount(11, 10)
 
 
+def wrap(angle: float) -> float:
+    return (angle + math.pi) % (2.0 * math.pi) - math.pi
+
+
+class IntervalUnwrappingTests(unittest.TestCase):
+    def test_power_of_two_ladder_identifies_large_slope(self):
+        slope = 1.2
+        observations = tuple(
+            (k, CircularInterval(wrap(k * slope), 0.08, 0.99)) for k in (1, 2, 4, 8, 16)
+        )
+        result = unwrap_phase_intervals(observations)
+        self.assertEqual(result.status, UnwrapStatus.IDENTIFIED)
+        self.assertTrue(result.interval.contains(slope))
+        self.assertLessEqual(result.interval.upper - result.interval.lower, 0.01)
+
+    def test_missing_coarse_stage_is_reported_ambiguous(self):
+        slope = 1.2
+        result = unwrap_phase_intervals(
+            ((8, CircularInterval(wrap(8 * slope), 0.05, 0.95)),)
+        )
+        self.assertEqual(result.status, UnwrapStatus.AMBIGUOUS)
+
+    def test_contradictory_stage_is_reported_inconsistent(self):
+        observations = (
+            (1, CircularInterval(0.2, 0.01, 0.95)),
+            (2, CircularInterval(2.0, 0.01, 0.95)),
+        )
+        result = unwrap_phase_intervals(observations)
+        self.assertEqual(result.status, UnwrapStatus.INCONSISTENT)
+
+    def test_full_circle_stage_does_not_fake_information(self):
+        result = unwrap_phase_intervals(((1, CircularInterval(0.0, math.pi, 0.95)),))
+        self.assertEqual(result.interval, LinearInterval(-math.pi, math.pi))
+
+    def test_m0_interval_recovery_contains_truth(self):
+        epsilon, a, b, d1, d2 = 0.03, -0.02, 0.04, 0.01, -0.015
+
+        def around(value: float, radius: float = 0.002) -> LinearInterval:
+            return LinearInterval(value - radius, value + radius)
+
+        box = recover_m0_intervals(
+            around(epsilon + a + d1),
+            around(-epsilon + a + d1),
+            around(d1),
+            around(epsilon + b + d2),
+            around(-epsilon + b + d2),
+            around(d2),
+        )
+        self.assertTrue(box.epsilon.contains(epsilon))
+        self.assertTrue(box.a.contains(a))
+        self.assertTrue(box.b.contains(b))
+
+
 if __name__ == "__main__":
     unittest.main()
-
