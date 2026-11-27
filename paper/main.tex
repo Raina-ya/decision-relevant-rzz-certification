@@ -1,0 +1,127 @@
+\documentclass[10pt,twocolumn]{article}
+
+\usepackage[a4paper,margin=0.72in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx,microtype}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\RZZ}{\mathrm{RZZ}}
+\newcommand{\evidence}[1]{\textnormal{[#1]}}
+
+\title{Decision-Relevant Certification of Native Fractional RZZ Gates}
+\author{Zhen-Jun Liu}
+\date{Development draft, 2026-11-27}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study whether coherent residual error in a native fractional
+$\RZZ(\theta)$ gate is harmless, harmful, or statistically inconclusive for a
+fixed downstream candidate-selection decision.  The development framework
+combines angle-local phase probes, finite-sample confidence sets, a
+decision-induced tolerance, model diagnostics, and a three-outcome rule.  An
+exploratory pilot on IBM hardware established platform feasibility but
+triggered model-inadequacy diagnostics; all pilot certificates were therefore
+inconclusive.  Seeded development simulations identify informative regimes
+for the proposed rule while also showing weak sensitivity to small visibility
+curvature.  The literature, theory, diagnostics, and power gates remain open,
+so this draft makes no confirmatory hardware or novelty claim.
+\end{abstract}
+
+\section{Introduction}
+Average and twirled gate metrics need not determine a downstream decision when
+the residual error is coherent.  This distinction is especially relevant to
+continuously parameterized native gates, for which the implemented angle is
+part of the decision circuit.  Prior work supplies robust phase-estimation
+ideas, branch-resolved phase probes, structured diagonal learning, and
+three-outcome classification mechanics
+\cite{RUDINGER2025,CHAI2026,DENG2026}.  The candidate contribution examined
+here is their integration with a nonlinear decision-induced tolerance and
+strict finite-sample projection for native fractional $\RZZ$ gates.  This
+positioning remains preliminary because the G1 review is open.
+
+\section{Methodology}
+At each decision angle, the coherent diagonal residual is modeled as
+\begin{equation}
+ U_e=\exp[-i(\epsilon ZZ+aZI+bIZ)/2].
+\end{equation}
+Control-state differencing identifies $\epsilon$ under the stated model;
+matched delays and role reversal separate the two local phases
+\evidence{theory, draft}.  Four analysis phases produce a confidence rectangle
+for the in-phase and quadrature contrasts.  Hoeffding bounds and a union bound
+give a finite-sample circular phase set and a contrast-amplitude interval
+\cite{HOEFFDING1963}.
+
+Let $\gamma(e)$ be the signed decision gap and $m\geq0$ the harmless margin.
+Given a uniformly valid interval $[L,U]$, the rule reports harmless if
+$L\geq m$, harmful if $U<0$, and inconclusive otherwise.  A wrong directional
+claim implies noncoverage, so its probability is at most the allocated error
+level \evidence{theory, draft}.  A named harmless/unsafe pair also yields a
+Bretagnolle--Huber necessary sample bound; this is pair-specific and not yet a
+matching characterization of the composite optimum.
+
+\section{Experiment Setup}
+The unlocked development decision family contains two- to four-qubit
+$p=1$ MaxCut instances.  The prospective two-angle study uses only the
+single-edge sign-sensitive instance, with independent confidence boxes at its
+two decision angles.  It evaluates 1,000 seeded trials per cell at 500, 1,000,
+2,000, and 4,000 shots per phase.  Diagnostic calibration uses 2,000 trials per
+scenario and a family-wise development allocation of $\alpha_{\rm diag}=0.05$.
+
+The exploratory HW-P2 pilot used \texttt{ibm\_marrakesh} under a separate
+owner-approved pilot lock.  Its evidence label is
+\evidence{hardware-locked, exploratory pilot HW-P2}; it is not a G5 run.
+
+\section{Results}
+Exact development witnesses show that equal average gate fidelity can coexist
+with opposite decisions on named instances \evidence{exact, development},
+consistent with the known separation between average and worst-case coherent
+error metrics \cite{KUENG2016}.
+
+In the diagnostic simulation, the M0 null triggered in 0 of 2,000 trials
+(95\% Wilson upper bound 0.00192).  Detection was 98.4\% for a control-flip
+rate of 0.03 and 87.3\% for phase curvature 0.005, but only 22.0\% for
+visibility curvature 0.010 \evidence{sim, development}.  Non-triggering is
+therefore not evidence that exponential visibility decay is valid.
+
+For the sign-sensitive prospective grid, a harmful residual $\epsilon=-0.4$
+was certified in 100\% of trials at 4,000 shots per phase.  At $\epsilon=0$,
+the harmless rate was 95.1\% at the same budget.  A separated harmless value
+$\epsilon=0.1$ reached 100\% observed power at 2,000 shots per phase.  The true
+gray-zone value $\epsilon=-0.2$ remained inconclusive at every tested budget
+\evidence{sim, development}.
+
+HW-P2 exposed native fractional $\RZZ$ and all submitted circuits passed the
+stored ISA checks.  Nevertheless, the model diagnostic triggered, and all
+three pilot certificates were reported as inconclusive (model-inadequate)
+\evidence{hardware-locked, exploratory pilot HW-P2}.
+
+\section{Conclusion}
+The current evidence supports a reproducible development framework and a
+narrow platform-feasibility statement.  It does not support a confirmatory
+decision certificate.  The three-outcome rule correctly preserves
+inconclusive outcomes when either the decision boundary or the model
+diagnostic is unresolved.
+
+\section{Discussion}
+Directly supported findings are limited to exact calculations, named
+simulations, and the exploratory HW-P2 records.  A possible cause of the HW-P2
+diagnostic trigger is excited-control relaxation at large repetition counts,
+but the pilot does not establish a mechanism.  Generalization is limited by
+the angle-local diagonal model, selected backend snapshot, one-edge power
+grid, conservative interval projection, and incomplete literature review.
+Multi-edge allocation, angle-dependent alternatives, drift, diagnostic cost,
+and an independent mathematical audit remain open.  G4 locking and
+confirmatory hardware are prohibited until the preceding gates pass.
+
+\bibliographystyle{abbrv}
+\bibliography{../docs/literature/references}
+
+\appendix
+\section{Evidence provenance}
+The authoritative claim-to-file mapping is maintained in
+\texttt{docs/claim\_ledger.md}.  Generated simulation outputs record seeds and
+inputs in JSON.  The manuscript is a development artifact and is not a
+preregistration.
+
+\end{document}
