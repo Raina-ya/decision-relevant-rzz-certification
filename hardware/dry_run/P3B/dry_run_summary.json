@@ -242,7 +242,7 @@
     {
       "block": "P3B3-parallel-t1-reference",
       "circuits": 52,
-      "shots": 1500
+      "shots": 1000
     }
   ]
 }

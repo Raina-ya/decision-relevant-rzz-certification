@@ -60,7 +60,7 @@ PLANS_P3: dict[str, tuple[ParallelBlock, ...]] = {
     "B": (
         parallel_block("P3B1-parallel-1.348", DECISION_2Q[1], 1000, "all pairs at the second path-2q angle"),
         parallel_block("P3B2-parallel-pi8", SIGN_2Q[1], 1000, "all pairs at the sign-sensitive angle pi/8"),
-        parallel_t1_reference("P3B3-parallel-t1-reference", 1500),
+        parallel_t1_reference("P3B3-parallel-t1-reference", 1000),
     ),
 }
 
