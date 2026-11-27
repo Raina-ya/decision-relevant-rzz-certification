@@ -13,16 +13,27 @@ $ErrorActionPreference = "Stop"
 Set-Location (Split-Path $PSScriptRoot -Parent)
 if ($Account -eq "") { $Account = "acct$Label" }
 
-if (-not (Test-Path ".venv-hw\Scripts\python.exe")) {
-    $made = $false
-    foreach ($v in @("3.12", "3.13", "3.11")) {
-        try { py -$v -m venv .venv-hw; if ($LASTEXITCODE -eq 0) { $made = $true; break } } catch {}
-    }
-    if (-not $made) { throw "Need Python 3.11-3.13 (install from python.org), then rerun." }
+# Pick a Python: an existing venv, else the current `python` if it already
+# has qiskit + qiskit-ibm-runtime, else a new venv from any available Python.
+$py = $null
+if (Test-Path ".venv-hw\Scripts\python.exe") { $py = ".\.venv-hw\Scripts\python.exe" }
+if (-not $py) {
+    try {
+        & python -c "import qiskit, qiskit_ibm_runtime" 2>$null
+        if ($LASTEXITCODE -eq 0) { $py = "python" }
+    } catch {}
 }
-$py = ".\.venv-hw\Scripts\python.exe"
-& $py -m pip install -q --upgrade pip
-& $py -m pip install -q -r requirements-hardware.txt
+if (-not $py) {
+    foreach ($v in @("3.13", "3.12", "3.11")) {
+        try { & py -$v -m venv .venv-hw 2>$null; if ($LASTEXITCODE -eq 0) { $py = ".\.venv-hw\Scripts\python.exe"; break } } catch {}
+    }
+    if (-not $py) { & python -m venv .venv-hw; $py = ".\.venv-hw\Scripts\python.exe" }
+    & $py -m pip install -q --upgrade pip
+    & $py -m pip install -q -r requirements-hardware.txt
+    if ($LASTEXITCODE -ne 0) { throw "pip install failed; install qiskit and qiskit-ibm-runtime into your Python and rerun." }
+}
+Write-Host "Using Python: $py"
+& $py -c "import qiskit, qiskit_ibm_runtime; print('qiskit', qiskit.__version__, '| runtime', qiskit_ibm_runtime.__version__)"
 
 & $py -c "import sys; from qiskit_ibm_runtime import QiskitRuntimeService as S; sys.exit(0 if '$Account' in S.saved_accounts() else 1)"
 if ($LASTEXITCODE -ne 0) {

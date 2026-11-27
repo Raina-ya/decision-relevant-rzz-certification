@@ -47,16 +47,29 @@ def verify_hardware_approval(
 
 
 
-ALLOWED_POST_APPROVAL_PREFIXES = ("docs/decisions/", "results/", "plan/handoffs/", "hardware/private/")
+ALLOWED_POST_APPROVAL_PREFIXES = ("docs/decisions/", "results/", "plan/handoffs/", "hardware/private/", "hardware/dry_run/")
 
 
-def _git(repo: Path, *args: str) -> str:
+def _git(repo: Path, *args: str, strip: bool = True) -> str:
     import subprocess
 
     completed = subprocess.run(["git", *args], cwd=repo, check=False, capture_output=True, text=True)
     if completed.returncode != 0:
         raise ApprovalError(f"git {' '.join(args)} failed: {completed.stderr.strip()}")
-    return completed.stdout.strip()
+    return completed.stdout.strip() if strip else completed.stdout
+
+
+def _dirty_paths(repo: Path) -> list[str]:
+    """Paths of tracked files with uncommitted changes (porcelain v1, no stripping)."""
+    paths = []
+    for line in _git(repo, "status", "--porcelain", "--untracked-files=no", strip=False).splitlines():
+        if len(line) < 4:
+            continue
+        path = line[3:]
+        if " -> " in path:
+            path = path.split(" -> ", 1)[1]
+        paths.append(path.strip('"'))
+    return paths
 
 
 def verify_pilot_approval(repo: Path, approval_path: Path, script_path: Path) -> dict[str, object]:
@@ -86,8 +99,7 @@ def verify_pilot_approval(repo: Path, approval_path: Path, script_path: Path) ->
         offending = [name for name in changed if not name.startswith(ALLOWED_POST_APPROVAL_PREFIXES)]
         if offending:
             raise ApprovalError(f"files changed since the approved commit: {offending}")
-    dirty = [line[3:] for line in _git(repo, "status", "--porcelain", "--untracked-files=no").splitlines() if line]
-    dirty = [name for name in dirty if not name.startswith(ALLOWED_POST_APPROVAL_PREFIXES)]
+    dirty = [name for name in _dirty_paths(repo) if not name.startswith(ALLOWED_POST_APPROVAL_PREFIXES)]
     if dirty:
         raise ApprovalError(f"uncommitted changes outside allowed paths: {dirty}")
     relative = script_path.resolve().relative_to(repo.resolve()).as_posix()
