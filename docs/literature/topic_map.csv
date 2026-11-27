@@ -1,0 +1,139 @@
+id,themes,tier,relation
+RUDINGER2025,A,core,C1
+KIMMEL2015,A,core,C1;C3
+RUDINGER2017,A,adjacent,C1
+RUSSO2020,A;G,core,C1;diagnostics
+IBM-FRACTIONAL,D,core,premise;G0
+IBM-FRACTIONAL-TUTORIAL,D,core,G0
+IBM-QPU-INFO,D,core,premise;B2
+MIKLIN2026,B,core,C2;C3
+NOLLER2024,B,adjacent,C2
+ZHANG2021,B,core,C3
+LUBINSKI2021,C,adjacent,positioning
+WALLMAN2014,C,background,benchmarking background
+HELSEN2019,C,background,benchmarking background
+TORNOW2022,C,background,benchmarking background
+MORELLI2026,B,core,C2;C3
+BRAVYI2024,C,background,benchmarking background
+HARPER2019,C,background,benchmarking background
+CAMPOS2021,E,adjacent,C3
+HELSEN2021,C,background,benchmarking background
+EPSTEIN2024,A,adjacent,C1
+BLUMEKOHOUT2013,C,background,benchmarking background
+NIELSEN2020,C,adjacent,C1
+FLAMMIA2011,C,background,benchmarking background
+HARPER2016,C,background,benchmarking background
+FIGUEROAROMERO2021,C,background,benchmarking background
+FIGUEROAROMERO2022,C,background,benchmarking background
+SHAFFER2022,B;D,core,C2;C3
+LAZAR2022,D,adjacent,C1
+FLAMMIA2021,C,background,benchmarking background
+WYSOCKI2026,C,background,benchmarking background
+BARBERARODRIGUEZ2026,C,background,benchmarking background
+KONG2021,C,background,benchmarking background
+MAGESAN2010,C,background,benchmarking background
+SHELDON2015,C,background,benchmarking background
+KNILL2007,C,background,benchmarking background
+ONORATI2018,C,background,benchmarking background
+HASHAGEN2018,C,background,benchmarking background
+COMBES2017,C,background,benchmarking background
+CROSS2015,C,background,benchmarking background
+WALLMAN2017,C,background,benchmarking background
+WALLMAN2014LEAKAGE,C,background,benchmarking background
+GRANADE2014,C,background,benchmarking background
+GRANADE2016,F,background,tools
+MUHONEN2014,C,background,benchmarking background
+FOGARTY2015,C,background,benchmarking background
+WOOD2017,C,background,benchmarking background
+DIRKSE2018,C,background,benchmarking background
+EPSTEIN2013,C,background,benchmarking background
+BALL2015,C,background,benchmarking background
+PROCTOR2021,C,background,benchmarking background
+WALLMAN2015,C,background,benchmarking background
+PROCTOR2018,C,background,benchmarking background
+GAMBETTA2012,G,adjacent,context
+POLLORENO2023,C,background,benchmarking background
+TJANDRA2026,E,adjacent,C3
+CROOKS2018,C,background,benchmarking background
+ZHOU2018,C,background,benchmarking background
+WALLMAN2015UNITARITY,C,background,benchmarking background
+HOTHEM2024,C,background,benchmarking background
+VIKSTAL2023,C,background,benchmarking background
+SCHUIRMANN1987,F,core,C2
+LAKENS2017,F,core,C2
+LAKENS2018,F,core,C2
+ARBORETTI2018,F,adjacent,C2
+QUIROZ2021,E,core,C3
+DONG2019,E,adjacent,C3
+ALAM2019,E,adjacent,C3
+WANG2020NIBP,E,background,background
+SCAVINO2026,E,core,C3;C5
+MCKAY2017,D,core,native-gates
+FOXEN2020,D,core,native-gates
+LACROIX2020,D;E,core,native-gates;qaoa
+EARNEST2021,D;E,adjacent,native-gates;qaoa
+SUNG2021,D;G,adjacent,crosstalk;native-gates
+STEHLIK2021,D,adjacent,native-gates
+SUNDARESAN2020,G,adjacent,crosstalk
+SAROVAR2020,G,adjacent,crosstalk;model-adequacy
+ZHAO2022,G,adjacent,crosstalk
+EISERT2020,C,adjacent,qcvv-survey
+KLIESCH2021,B;C,adjacent,qcvv-survey;certification
+KUENG2016,C,core,coherent-vs-average
+SANDERS2016,C,adjacent,coherent-vs-average
+PROCTOR2020DRIFT,G,core,drift
+HASHIM2025,C,adjacent,qcvv-survey
+HUANG2022LEARN,A,core,identifiability
+CHEN2023LEARN,A,core,identifiability
+HANGLEITER2024,A,adjacent,hamiltonian-learning;identifiability
+FAIST2016,B,adjacent,confidence-regions
+CHRISTANDL2012,B,adjacent,confidence-regions
+BLUMEKOHOUT2012,B,adjacent,confidence-regions
+SMITH2021,H,core,readout
+VANDENBERG2022TREX,H,core,readout
+NATION2021,H,adjacent,readout
+GRANADE2012,A;F,adjacent,hamiltonian-learning;design
+FARHI2014,E,adjacent,qaoa
+WANG2018FERMION,E,core,qaoa
+MARSHALL2020,E,adjacent,qaoa-noise
+XUE2021,E,adjacent,qaoa-noise
+HARRIGAN2021,D;E,adjacent,qaoa;hardware
+STILCKFRANCA2021,E,adjacent,qaoa-noise
+BLEKOS2024,E,adjacent,qaoa
+BARRON2024,B;D;E,core,certification;qaoa;hardware
+HOWARD2021,F,core,anytime-valid
+WAUDBYSMITH2024,F,core,anytime-valid;concentration
+RAMDAS2023,F,adjacent,anytime-valid
+GIOVANNETTI2011,A,adjacent,metrology
+HIGGINS2007,A,adjacent,metrology;phase-estimation
+ERHARD2019,C,adjacent,benchmarking
+BLUMEKOHOUT2017,B;C,adjacent,certification;gst
+ARUTE2019SUPP,C;D,adjacent,native-gates;benchmarking
+RYBOTYCKI2025,D,core,fractional-gates;hardware
+MONTANEZBARRERA2025,C;D;E,adjacent,fractional-gates;benchmarking;qaoa
+HUNG2025,D,adjacent,fractional-gates;hardware
+WANG2025LCQAOA,D;E,adjacent,fractional-gates;qaoa
+AWUAH2026,D,adjacent,fractional-gates;hardware
+YALE2025,D,core,native-gates;calibration
+YALE2024,D,adjacent,native-gates;compilation
+SCARATO2025,D,adjacent,native-gates
+CHAI2026,A;B,core,probe-design;identifiability;critical-overlap
+DENG2026,A;B,core,identifiability;certification;critical-overlap
+CHO2026,B;C,adjacent,coherent-vs-average;certification
+MCKAY2023LF,C;D,adjacent,benchmarking;ibm
+MERKEL2025,C;D,core,benchmarking;ibm
+KOSTER2026,F;G,adjacent,reproducibility;statistics
+CHEN2026SCREEN,F;G,adjacent,drift;design
+MILAZZO2023,B;F,core,certification;design
+EGGERS2026,F,core,statistics;equivalence
+SUGIYAMA2015,A;B,core,confidence-regions;metrology
+MORRIS2019,F,core,statistics;simulation
+HOEFFDING1963,F,core,statistics;concentration
+BERGER1996,F,core,statistics;equivalence
+CLOPPER1934,F,adjacent,statistics;concentration
+BROWN2001,F,adjacent,statistics
+LINDLEY1998,F,adjacent,statistics;decision-theory
+JAVADIABHARI2024,D,adjacent,software;ibm
+PROCTOR2022CAP,C,core,benchmarking;application-level
+DASGUPTA2021,G,adjacent,drift;reproducibility
+DASGUPTA2024,B;G,adjacent,drift;certification
