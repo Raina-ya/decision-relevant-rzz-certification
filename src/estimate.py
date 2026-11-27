@@ -1,7 +1,8 @@
 """Finite-sample confidence sets for four-phase probe measurements."""
 
 from dataclasses import dataclass
-from math import asin, atan2, hypot, log, pi, sqrt
+from enum import Enum
+from math import asin, atan2, ceil, floor, hypot, log, pi, sqrt
 
 
 @dataclass(frozen=True, slots=True)
@@ -42,6 +43,36 @@ class PhaseEstimate:
     signed_mean_radius: float
 
 
+@dataclass(frozen=True, slots=True)
+class LinearInterval:
+    lower: float
+    upper: float
+
+    def __post_init__(self) -> None:
+        if self.lower > self.upper:
+            raise ValueError("lower cannot exceed upper")
+
+    def contains(self, value: float, tolerance: float = 1e-12) -> bool:
+        return self.lower - tolerance <= value <= self.upper + tolerance
+
+    def intersection(self, other: "LinearInterval") -> "LinearInterval | None":
+        lower, upper = max(self.lower, other.lower), min(self.upper, other.upper)
+        return None if lower > upper else LinearInterval(lower, upper)
+
+
+class UnwrapStatus(str, Enum):
+    IDENTIFIED = "identified"
+    AMBIGUOUS = "ambiguous"
+    INCONSISTENT = "inconsistent"
+
+
+@dataclass(frozen=True, slots=True)
+class UnwrapResult:
+    interval: LinearInterval
+    status: UnwrapStatus
+    last_k: int
+
+
 def hoeffding_signed_mean_radius(shots: int, alpha: float, comparisons: int = 4) -> float:
     """Two-sided Hoeffding radius with a union bound over `comparisons` means."""
     if shots <= 0:
@@ -78,3 +109,76 @@ def four_phase_confidence(
     interval = CircularInterval(center, angular_radius, 1.0 - alpha)
     return PhaseEstimate(x, y, center, interval, component_radius)
 
+
+def unwrap_phase_intervals(
+    observations: tuple[tuple[int, CircularInterval], ...],
+    prior: LinearInterval = LinearInterval(-pi, pi),
+) -> UnwrapResult:
+    """Sequentially unwrap intervals for observations of `k * slope` modulo 2pi.
+
+    The routine refines only when exactly one branch intersects the current
+    interval. It never resolves ambiguity by selecting a closest point.
+    """
+    current = prior
+    last_k = 0
+    for k, circular in sorted(observations, key=lambda item: item[0]):
+        if k <= 0 or k <= last_k:
+            raise ValueError("k values must be positive and unique")
+        last_k = k
+        if circular.radius >= pi:
+            continue
+        n_min = ceil((k * current.lower - circular.center - circular.radius) / (2.0 * pi))
+        n_max = floor((k * current.upper - circular.center + circular.radius) / (2.0 * pi))
+        intersections: list[LinearInterval] = []
+        for branch in range(n_min, n_max + 1):
+            candidate = LinearInterval(
+                (circular.center - circular.radius + 2.0 * pi * branch) / k,
+                (circular.center + circular.radius + 2.0 * pi * branch) / k,
+            )
+            overlap = current.intersection(candidate)
+            if overlap is not None:
+                intersections.append(overlap)
+        if not intersections:
+            return UnwrapResult(current, UnwrapStatus.INCONSISTENT, k)
+        if len(intersections) > 1:
+            return UnwrapResult(current, UnwrapStatus.AMBIGUOUS, k)
+        current = intersections[0]
+    return UnwrapResult(current, UnwrapStatus.IDENTIFIED, last_k)
+
+
+@dataclass(frozen=True, slots=True)
+class M0Interval:
+    epsilon: LinearInterval
+    a: LinearInterval
+    b: LinearInterval
+
+
+def recover_m0_intervals(
+    role1_control0: LinearInterval,
+    role1_control1: LinearInterval,
+    role1_delay: LinearInterval,
+    role2_control0: LinearInterval,
+    role2_control1: LinearInterval,
+    role2_delay: LinearInterval,
+) -> M0Interval:
+    """Map simultaneous slope intervals to an M0 parameter box."""
+    epsilon_1 = LinearInterval(
+        0.5 * (role1_control0.lower - role1_control1.upper),
+        0.5 * (role1_control0.upper - role1_control1.lower),
+    )
+    epsilon_2 = LinearInterval(
+        0.5 * (role2_control0.lower - role2_control1.upper),
+        0.5 * (role2_control0.upper - role2_control1.lower),
+    )
+    epsilon = epsilon_1.intersection(epsilon_2)
+    if epsilon is None:
+        raise ValueError("role-specific epsilon intervals are inconsistent")
+    a = LinearInterval(
+        0.5 * (role1_control0.lower + role1_control1.lower) - role1_delay.upper,
+        0.5 * (role1_control0.upper + role1_control1.upper) - role1_delay.lower,
+    )
+    b = LinearInterval(
+        0.5 * (role2_control0.lower + role2_control1.lower) - role2_delay.upper,
+        0.5 * (role2_control0.upper + role2_control1.upper) - role2_delay.lower,
+    )
+    return M0Interval(epsilon, a, b)

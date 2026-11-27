@@ -37,3 +37,16 @@ same result for `b`.
 Exact arithmetic checks implementing these constructions are in
 `tests/test_model.py`. They are development evidence, not a completed G2 audit.
 
+## Interval branch handling
+
+`unwrap_phase_intervals` intersects each circular observation of `k*x` with
+the current linear interval for `x`. Refinement occurs only when exactly one
+integer branch intersects. Zero branches are reported as inconsistent and two
+or more as ambiguous. Therefore the implementation does not turn a branch
+choice heuristic into evidence of identifiability.
+
+If all circular intervals simultaneously cover their true phases and the true
+slope lies in the prespecified prior, every identified output interval contains
+the true slope. `recover_m0_intervals` then applies interval arithmetic to the
+two control states, two roles, and matched delays. Its coverage is inherited
+from the joint input event; marginal intervals require multiplicity control.
