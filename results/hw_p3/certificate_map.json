@@ -1,0 +1,1567 @@
+[
+ {
+  "instance": "path-2q",
+  "pair": [
+   1,
+   2
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.3839301475393422,
+   0.4550201330873428
+  ],
+  "gamma_point": 0.41986851308111006,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   3,
+   4
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38483836728458654,
+   0.4557426504207771
+  ],
+  "gamma_point": 0.42060388190403375,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   5,
+   6
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38514499080336106,
+   0.4535525164241042
+  ],
+  "gamma_point": 0.41947054666496864,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   7,
+   8
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38013840234424123,
+   0.4566734432939785
+  ],
+  "gamma_point": 0.41871542034082454,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   9,
+   10
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38238635366571117,
+   0.45423421386598206
+  ],
+  "gamma_point": 0.4183924543656684,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   11,
+   12
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.384017084400061,
+   0.45613220741422067
+  ],
+  "gamma_point": 0.4203691971521455,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   14,
+   15
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38263823819473874,
+   0.45589588764521405
+  ],
+  "gamma_point": 0.41927896120185504,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   19,
+   35
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38254830689469155,
+   0.45499796695409145
+  ],
+  "gamma_point": 0.41906875610501415,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   21,
+   22
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3785456935725253,
+   0.4579595871770291
+  ],
+  "gamma_point": 0.4185924883225106,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   24,
+   25
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38153821073344085,
+   0.45736779679728445
+  ],
+  "gamma_point": 0.4200146361188133,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   27,
+   28
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3716639887186064,
+   0.4507512623490981
+  ],
+  "gamma_point": 0.4111764309645436,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   30,
+   31
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3814885857768585,
+   0.4592328269255792
+  ],
+  "gamma_point": 0.4206935607608152,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   32,
+   33
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.37383655052136533,
+   0.4636542340765819
+  ],
+  "gamma_point": 0.419204471491574,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   36,
+   41
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.348594056864719,
+   0.48712883486071934
+  ],
+  "gamma_point": 0.4190222950671012,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   42,
+   43
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38051283756151133,
+   0.46266297936648093
+  ],
+  "gamma_point": 0.42187624326379436,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   44,
+   45
+  ],
+  "raw_verdict": "inconclusive",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   -1.6688944972200699,
+   2.0270682075068427
+  ],
+  "gamma_point": 0.42268061073697494,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   49,
+   50
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3808944263138344,
+   0.46047432058633764
+  ],
+  "gamma_point": 0.4209236498743969,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   53,
+   54
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3841118907689939,
+   0.4553544618340898
+  ],
+  "gamma_point": 0.41994009996103765,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   63,
+   64
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3818305196876486,
+   0.4585178390209875
+  ],
+  "gamma_point": 0.4202883033721123,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   65,
+   66
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.371208147460368,
+   0.4682866184256367
+  ],
+  "gamma_point": 0.4203080271270351,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   67,
+   68
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.3721524487292869,
+   0.46166249162867534
+  ],
+  "gamma_point": 0.4172274640798389,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   69,
+   78
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3823734361664972,
+   0.45716272687144244
+  ],
+  "gamma_point": 0.4200063156345598,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   70,
+   71
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38220476650510116,
+   0.4581718436357428
+  ],
+  "gamma_point": 0.4202582110155987,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   80,
+   81
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3750095602391016,
+   0.46693826286077833
+  ],
+  "gamma_point": 0.42145566162518244,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   84,
+   85
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38371280875043146,
+   0.45609079437590283
+  ],
+  "gamma_point": 0.4200208269843331,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   87,
+   88
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.37108856860035644,
+   0.4490989231918703
+  ],
+  "gamma_point": 0.41009083342298946,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   89,
+   90
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38082473331275346,
+   0.4605539961340954
+  ],
+  "gamma_point": 0.42125630511235546,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   91,
+   92
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3854148556693676,
+   0.45597779304790287
+  ],
+  "gamma_point": 0.4209955177083402,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   97,
+   107
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.37070925977047764,
+   0.4692645120786808
+  ],
+  "gamma_point": 0.4209627816912811,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   99,
+   115
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38360499218164523,
+   0.45722866165786835
+  ],
+  "gamma_point": 0.4204313901727973,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   100,
+   101
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38059209838822705,
+   0.46203275164670843
+  ],
+  "gamma_point": 0.42148623884397773,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   102,
+   103
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3748208821408704,
+   0.46015766363007415
+  ],
+  "gamma_point": 0.41806652051879967,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   104,
+   105
+  ],
+  "raw_verdict": "not evaluable",
+  "od11_verdict": "not evaluable",
+  "gamma_interval": null,
+  "gamma_point": null,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   109,
+   110
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3842713669226264,
+   0.4559936326985241
+  ],
+  "gamma_point": 0.4204397720216321,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   111,
+   112
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38482995466574654,
+   0.4558850179882784
+  ],
+  "gamma_point": 0.42047676233616194,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   117,
+   125
+  ],
+  "raw_verdict": "inconclusive",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   -1.670619037274085,
+   2.0281143622010944
+  ],
+  "gamma_point": 0.4216094001718331,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   120,
+   121
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38239944698271444,
+   0.45618597995183596
+  ],
+  "gamma_point": 0.41962541606045134,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   123,
+   136
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3847777276596527,
+   0.4575632558492476
+  ],
+  "gamma_point": 0.42148968634778594,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   126,
+   127
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3723691760108905,
+   0.46788251171231643
+  ],
+  "gamma_point": 0.42054401874617,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   128,
+   129
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38521466431975393,
+   0.45660059705045775
+  ],
+  "gamma_point": 0.42099954016856944,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   131,
+   132
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38697486323439234,
+   0.4562501076895493
+  ],
+  "gamma_point": 0.4214796986566852,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   133,
+   134
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38109681026971753,
+   0.45825343690065556
+  ],
+  "gamma_point": 0.42013555119586543,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   135,
+   139
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.38484902362385887,
+   0.45518412766760963
+  ],
+  "gamma_point": 0.4202316935642698,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   137,
+   147
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38358160431352195,
+   0.4589069797283205
+  ],
+  "gamma_point": 0.421494826095405,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   140,
+   141
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.38172266379940445,
+   0.4554726484897762
+  ],
+  "gamma_point": 0.4186397589226515,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   142,
+   143
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.3838899707514989,
+   0.45682213293540186
+  ],
+  "gamma_point": 0.420692116187509,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   149,
+   150
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.3843372859301367,
+   0.4550223834756122
+  ],
+  "gamma_point": 0.42000963959184867,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   151,
+   152
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.2682709244840128,
+   0.4869631274751475
+  ],
+  "gamma_point": 0.37980582648763705,
+  "margin": 0.2101813494434443,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q",
+  "pair": [
+   153,
+   154
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.3841102095745247,
+   0.45506012287132724
+  ],
+  "gamma_point": 0.4199904599025175,
+  "margin": 0.2101813494434443,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   1,
+   2
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11168386157098675,
+   0.19068257426688878
+  ],
+  "gamma_point": 0.1511996353913856,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   3,
+   4
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11051571346713918,
+   0.19410062662969918
+  ],
+  "gamma_point": 0.15233585232312774,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   5,
+   6
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11565932330054263,
+   0.19360282323220912
+  ],
+  "gamma_point": 0.15472768477812665,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   7,
+   8
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11744855405936205,
+   0.20300053303064625
+  ],
+  "gamma_point": 0.1602911219024984,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   9,
+   10
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11854327814020776,
+   0.19853902349768232
+  ],
+  "gamma_point": 0.15872536867946674,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   11,
+   12
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11141334806950243,
+   0.192713102448496
+  ],
+  "gamma_point": 0.15215492685366727,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   14,
+   15
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11187419211133787,
+   0.19114632266663023
+  ],
+  "gamma_point": 0.15185201192490427,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   19,
+   35
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11169103456402413,
+   0.19461954792432418
+  ],
+  "gamma_point": 0.1532278651748426,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   21,
+   22
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.10642520267740319,
+   0.19734073055265677
+  ],
+  "gamma_point": 0.15206892077850004,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   24,
+   25
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11068989798865886,
+   0.2016287524439025
+  ],
+  "gamma_point": 0.15614891316113805,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   27,
+   28
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.14374310774892235,
+   0.23226571391891487
+  ],
+  "gamma_point": 0.18817442936436457,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   30,
+   31
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11350057976773559,
+   0.1980233247166448
+  ],
+  "gamma_point": 0.1559182059239551,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   32,
+   33
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11035479509366586,
+   0.1931625950414203
+  ],
+  "gamma_point": 0.15183692323597336,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   36,
+   41
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.08456184297016339,
+   0.22278442549758265
+  ],
+  "gamma_point": 0.15364458027262284,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   42,
+   43
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11287827555882562,
+   0.19493052800929517
+  ],
+  "gamma_point": 0.15399337872822122,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   44,
+   45
+  ],
+  "raw_verdict": "inconclusive",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   -1.5066117936795254,
+   1.7645983902573084
+  ],
+  "gamma_point": 0.1551054979976687,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   49,
+   50
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.10631342359767387,
+   0.19519311348502993
+  ],
+  "gamma_point": 0.15092568126491857,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   53,
+   54
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11270532944336731,
+   0.1922812905745639
+  ],
+  "gamma_point": 0.15264725387976863,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   63,
+   64
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.1091696859823833,
+   0.195185613937579
+  ],
+  "gamma_point": 0.1523921223297936,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   65,
+   66
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.0990971811991731,
+   0.20937261877137192
+  ],
+  "gamma_point": 0.15432609837469546,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   67,
+   68
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.10535594027731593,
+   0.1937077354282904
+  ],
+  "gamma_point": 0.14976320946172528,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   69,
+   78
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11156126726569776,
+   0.19442691313903937
+  ],
+  "gamma_point": 0.15311631327220754,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   70,
+   71
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.10998499891443653,
+   0.19393564092405285
+  ],
+  "gamma_point": 0.15212188107596114,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   80,
+   81
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.10301653322184612,
+   0.20217539906966864
+  ],
+  "gamma_point": 0.1529589655063558,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   84,
+   85
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.109165028508313,
+   0.1916404696792523
+  ],
+  "gamma_point": 0.15053246978008605,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   87,
+   88
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.14261839207458826,
+   0.2252228956907636
+  ],
+  "gamma_point": 0.18378349829545704,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   89,
+   90
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.10843003471840695,
+   0.20074535232423635
+  ],
+  "gamma_point": 0.15462091815738793,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   91,
+   92
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11117368716050863,
+   0.19150116978048431
+  ],
+  "gamma_point": 0.15143281403543968,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   97,
+   107
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.10080466015970074,
+   0.20353971259525577
+  ],
+  "gamma_point": 0.15234470372311343,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   99,
+   115
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.10751465549453376,
+   0.19345384398645604
+  ],
+  "gamma_point": 0.15070064232000124,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   100,
+   101
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.10790653836077857,
+   0.19944702828430128
+  ],
+  "gamma_point": 0.15385788550676266,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   102,
+   103
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11143660278854461,
+   0.20202887258426183
+  ],
+  "gamma_point": 0.15678099327575779,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   104,
+   105
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11353467120306471,
+   0.19468709870339262
+  ],
+  "gamma_point": 0.1539472868072277,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   109,
+   110
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11153535673266324,
+   0.19413807270093214
+  ],
+  "gamma_point": 0.15287259314415946,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   111,
+   112
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.10683325193305993,
+   0.18640041129058477
+  ],
+  "gamma_point": 0.14679312297609665,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   117,
+   125
+  ],
+  "raw_verdict": "inconclusive",
+  "od11_verdict": "inconclusive",
+  "gamma_interval": [
+   -1.506908154957594,
+   1.7638599887301356
+  ],
+  "gamma_point": 0.15407188919567516,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   120,
+   121
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.10821906771160827,
+   0.1917874408023909
+  ],
+  "gamma_point": 0.15005560281834873,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   123,
+   136
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11229049814833802,
+   0.19534272407351871
+  ],
+  "gamma_point": 0.15383984185670918,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   126,
+   127
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.10296998262989882,
+   0.20354537949650153
+  ],
+  "gamma_point": 0.15343130860397114,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   128,
+   129
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11015078754332752,
+   0.19090259578022806
+  ],
+  "gamma_point": 0.15070630851805622,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   131,
+   132
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11198417546757322,
+   0.19185314923516206
+  ],
+  "gamma_point": 0.1521659065347543,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   133,
+   134
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11154524848729513,
+   0.19613047779589032
+  ],
+  "gamma_point": 0.1538102940908186,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   135,
+   139
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11433455851617297,
+   0.19412465462887313
+  ],
+  "gamma_point": 0.154351887735506,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   137,
+   147
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.11053958264466529,
+   0.19823975109633457
+  ],
+  "gamma_point": 0.15450168675425024,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   140,
+   141
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.105202818369166,
+   0.19378298037662411
+  ],
+  "gamma_point": 0.14962443986534163,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   142,
+   143
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11332112095546393,
+   0.19676832998565014
+  ],
+  "gamma_point": 0.1550749664778971,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   149,
+   150
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11255773645443051,
+   0.1919318186868489
+  ],
+  "gamma_point": 0.1523750866749024,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   151,
+   152
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "inconclusive (model-inadequate)",
+  "gamma_interval": [
+   0.15881245378091496,
+   0.32406060083191907
+  ],
+  "gamma_point": 0.24285262707775446,
+  "margin": 0.07511333191880165,
+  "z_triggered": true
+ },
+ {
+  "instance": "path-2q-sign",
+  "pair": [
+   153,
+   154
+  ],
+  "raw_verdict": "harmless",
+  "od11_verdict": "harmless",
+  "gamma_interval": [
+   0.11309808245597086,
+   0.19321362074201082
+  ],
+  "gamma_point": 0.15318774104434896,
+  "margin": 0.07511333191880165,
+  "z_triggered": false
+ }
+]
