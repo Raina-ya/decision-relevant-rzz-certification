@@ -24,7 +24,7 @@ Exploratory; outputs carry `[hardware-locked, exploratory pilot HW-P3]`.
 
 Block P3B3-parallel-t1-reference added for account B (remaining 0.63 RU):
 control prepared in |1>, delay equal to k RZZ durations on every pair,
-k = 1..32, both roles, four phases, 1000 shots (reduced from 1500 to leave owner quota for other work), no RZZ. Analysis: per pair,
+k = 1..32, both roles, four phases, 2200 shots (owner, 15:04: use all remaining quota on account B), no RZZ. Analysis: per pair,
 control-flip excess of the probe blocks over this reference at equal k; the
 OD11 column of the HW-P3 report is re-stated with and without this
 correction, both kept. Taken hours after the probe blocks (drift possible).
