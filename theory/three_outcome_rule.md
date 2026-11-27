@@ -21,6 +21,34 @@ The guarantee inherits every condition required for uniform interval coverage.
 A pointwise, asymptotic, or empirically calibrated interval is not silently
 promoted to this guarantee.
 
+### Draft theorem T1 - uniform directional error control
+
+Let `C(D)=[L(D),U(D)]` satisfy
+
+`inf_gamma P_gamma(gamma in C(D)) >= 1-alpha_work`
+
+uniformly over the prespecified model, where
+`alpha_work <= alpha_c`. Then the rule above satisfies
+
+- `sup_(gamma < m) P_gamma(harmless) <= alpha_c`, and
+- `sup_(gamma >= 0) P_gamma(harmful) <= alpha_c`.
+
+The proof is the event inclusion in the preceding paragraph. No assertion is
+made about the probability of an inconclusive result.
+
+### Draft corollary T1.1 - a conservative power construction
+
+For target missed-harmless probability `beta`, choose
+`alpha_work <= min(alpha_c, beta)`. If, at a harmless truth with
+`gamma >= m+d`, the random interval also has lower-end error at most `d` on
+the coverage event, then `P_gamma(harmless) >= 1-beta`. The analogous harmful
+statement holds when `gamma <= -d` and the upper-end error is at most `d`.
+
+This is a sufficient construction, not an optimized allocation. It makes the
+separation condition explicit: coverage alone controls wrong directional
+claims, but power additionally requires the interval to be narrow relative to
+the distance from the decision boundary.
+
 ## Four-phase input interval
 
 `src/estimate.py` applies a two-sided Hoeffding inequality to each of four

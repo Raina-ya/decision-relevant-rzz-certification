@@ -7,6 +7,7 @@ from analysis.power.power import (
     direct_hoeffding_shots,
     estimated_qpu_seconds,
     required_shots_phase_radius,
+    two_point_required_samples,
 )
 from src.estimate import hoeffding_signed_mean_radius
 
@@ -36,10 +37,19 @@ class PowerBoundTests(unittest.TestCase):
         self.assertEqual(bretagnolle_huber_required_samples(0.3, 0.3, 0.05), math.inf)
         self.assertGreater(bretagnolle_huber_required_samples(0.3, 0.4, 0.05), 1)
 
+    def test_general_two_point_bound_reduces_to_symmetric_bound(self):
+        symmetric = bretagnolle_huber_required_samples(0.3, 0.4, 0.05)
+        general = two_point_required_samples(0.3, 0.4, 0.05, 0.05)
+        self.assertEqual(general, symmetric)
+
+    def test_two_point_bound_detects_nonidentifiability(self):
+        self.assertEqual(two_point_required_samples(0.3, 0.3, 0.02, 0.1), math.inf)
+        with self.assertRaises(ValueError):
+            two_point_required_samples(0.3, 0.4, 0.25, 0.25)
+
     def test_qpu_estimate_reproduces_linear_arithmetic(self):
         self.assertAlmostEqual(estimated_qpu_seconds(256, 2000, 4.16e-4), 212.992)
 
 
 if __name__ == "__main__":
     unittest.main()
-

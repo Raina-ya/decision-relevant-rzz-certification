@@ -80,6 +80,31 @@ def bretagnolle_huber_required_samples(first: float, second: float, error: float
     return ceil(log(1.0 / (4.0 * error)) / divergence)
 
 
+def two_point_required_samples(
+    harmless_probability: float,
+    unsafe_probability: float,
+    false_harmless: float,
+    missed_harmless: float,
+) -> int | float:
+    """Necessary samples for a harmless-versus-unsafe two-point problem.
+
+    Let ``A`` be the event that a rule reports harmless. If
+    ``P_unsafe(A) <= false_harmless`` and
+    ``P_harmless(A) >= 1 - missed_harmless``, Bretagnolle-Huber implies
+    ``N * KL(P_harmless || P_unsafe) >= log(1 / (2*(alpha+beta)))``.
+    """
+    if not 0.0 < false_harmless < 1.0 or not 0.0 < missed_harmless < 1.0:
+        raise ValueError("error probabilities must lie in (0, 1)")
+    if false_harmless + missed_harmless >= 0.5:
+        raise ValueError("the nontrivial bound requires alpha + beta < 1/2")
+    divergence = bernoulli_kl(harmless_probability, unsafe_probability)
+    if divergence == 0.0:
+        return inf
+    if divergence == inf:
+        return 1
+    return ceil(log(1.0 / (2.0 * (false_harmless + missed_harmless))) / divergence)
+
+
 def estimated_qpu_seconds(circuits: int, shots_per_circuit: int, seconds_per_shot: float) -> float:
     """Linear development estimate; job overhead must be added after preflight."""
     if circuits <= 0 or shots_per_circuit <= 0:
@@ -87,4 +112,3 @@ def estimated_qpu_seconds(circuits: int, shots_per_circuit: int, seconds_per_sho
     if not isfinite(seconds_per_shot) or seconds_per_shot <= 0.0:
         raise ValueError("seconds_per_shot must be finite and positive")
     return circuits * shots_per_circuit * seconds_per_shot
-
