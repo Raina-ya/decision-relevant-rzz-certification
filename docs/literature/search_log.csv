@@ -3,4 +3,7 @@ S001,2026-11-27,arXiv/web,"quantum gate certification finite sample confidence r
 S002,2026-11-27,arXiv/web,"quantum process certification hypothesis testing equivalence test",9,"NOLLER2024;ZHANG2021","Initial title/abstract screening; dedicated equivalence search still required."
 S003,2026-11-27,arXiv/web,"task application oriented quantum benchmarking algorithm output",9,"LUBINSKI2021","Initial title/abstract screening."
 S004,2026-11-27,arXiv/web,"QAOA coherent overrotation error sensitivity robustness",9,"","Returned set did not yet yield a verified directly relevant primary paper; rerun with narrower terms."
-
+S005,2026-11-27,arXiv/web,"quantum equivalence testing gate tolerance region hypothesis testing",9,"MORELLI2026;BRAVYI2024","Parameter testing is methodologically relevant; circuit identity checking is a distance-computation comparator rather than experimental certification."
+S006,2026-11-27,arXiv/web,"quantum benchmarking downstream task decision confidence interval",9,"HARPER2019","No directly matching downstream-decision certificate identified in this pass; RB statistical analysis retained as a finite-data comparator."
+S007,2026-11-27,arXiv/web,"QAOA coherent gate errors over-rotation MaxCut robustness",9,"CAMPOS2021","Included for full-text screening; abstract concerns training saturation and coherent dephasing rather than a fixed downstream-decision certificate."
+S008,2026-11-27,arXiv/web,"RZZ gate calibration fractional gates IBM Heron",9,"","No new directly relevant primary paper verified in returned results; official IBM documentation remains the platform source."

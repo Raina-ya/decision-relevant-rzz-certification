@@ -6,4 +6,7 @@ LUBINSKI2021,Application-Oriented Performance Benchmarks for Quantum Computing,2
 WALLMAN2014,Randomized Benchmarking with Confidence,2014,arXiv:1404.6025,https://arxiv.org/abs/1404.6025,S001,title_abstract,include,"Finite-sampling confidence bounds for RB",not_retrieved
 HELSEN2019,Multi-qubit Randomized Benchmarking Using Few Samples,2019,arXiv:1701.04299,https://arxiv.org/abs/1701.04299,S001,title_abstract,include,"Rigorous confidence intervals and sample complexity for multi-qubit RB",not_retrieved
 TORNOW2022,Minimum quantum run-time characterization and calibration via restless measurements with dynamic repetition rates,2022,arXiv:2202.06981,https://arxiv.org/abs/2202.06981,S001,title_abstract,include,"Error-amplifying calibration sequences and runtime cost",not_retrieved
-
+MORELLI2026,Quantum sequential parameter testing,2026,arXiv:2608.01248,https://arxiv.org/abs/2608.01248,S005,title_abstract,include,"Continuous-parameter testing to a prescribed tolerance with error control; high-priority comparator",not_retrieved
+BRAVYI2024,Identity check problem for shallow quantum circuits,2024,arXiv:2401.16525,https://arxiv.org/abs/2401.16525,S005,title_abstract,include,"Approximate circuit equivalence and operational distance bounds; classical-input setting",not_retrieved
+HARPER2019,Statistical analysis of randomized benchmarking,2019,arXiv:1901.00535,https://arxiv.org/abs/1901.00535,S006,title_abstract,include,"Finite-data RB estimators, allocation and credible regions",not_retrieved
+CAMPOS2021,Training Saturation in Layerwise Quantum Approximate Optimisation,2021,arXiv:2106.13814,https://arxiv.org/abs/2106.13814,S007,title_abstract,include,"QAOA behavior under coherent dephasing; direct decision relevance uncertain",not_retrieved
