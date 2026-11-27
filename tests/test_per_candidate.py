@@ -1,6 +1,6 @@
 import unittest
 
-from src.certify import gamma_interval_from_error_box, gamma_interval_per_candidate
+from src.certify import gamma_interval_from_error_box, gamma_interval_grid_bound, gamma_interval_per_candidate
 from src.decision import Candidate, EdgeError, MaxCutInstance, signed_gap, signed_gap_per_candidate
 
 
@@ -49,6 +49,35 @@ class PerCandidateResidualTests(unittest.TestCase):
             )
             self.assertLessEqual(interval.lower - 1e-12, value)
             self.assertLessEqual(value, interval.upper + 1e-12)
+
+
+    def test_grid_bound_is_valid_and_tighter(self):
+        import random
+
+        rng = random.Random(3)
+        centers1 = (EdgeError(0.03, 0.01, -0.02), EdgeError(0.0, 0.02, 0.01))
+        centers2 = (EdgeError(-0.02, 0.0, 0.01), EdgeError(0.01, -0.01, 0.0))
+        radii = (EdgeError(0.02, 0.02, 0.02),) * 2
+        loose = gamma_interval_per_candidate(
+            self.instance, self.first, self.second, centers1, radii, centers2, radii, 0.95)
+        tight = gamma_interval_grid_bound(
+            self.instance, self.first, self.second, centers1, radii, centers2, radii, 0.95, points=3)
+        self.assertGreaterEqual(tight.lower, loose.lower - 1e-12)
+        self.assertLessEqual(tight.upper, loose.upper + 1e-12)
+        self.assertLess(tight.upper - tight.lower, 0.8 * (loose.upper - loose.lower))
+
+        def jitter(centers):
+            return tuple(
+                EdgeError(c.epsilon + rng.uniform(-0.02, 0.02), c.local_left + rng.uniform(-0.02, 0.02),
+                          c.local_right + rng.uniform(-0.02, 0.02))
+                for c in centers
+            )
+
+        for _ in range(200):
+            value = signed_gap_per_candidate(
+                self.instance, self.first, self.second, jitter(centers1), jitter(centers2))
+            self.assertLessEqual(tight.lower - 1e-12, value)
+            self.assertLessEqual(value, tight.upper + 1e-12)
 
 
 if __name__ == "__main__":

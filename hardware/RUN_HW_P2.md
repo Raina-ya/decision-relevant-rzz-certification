@@ -1,5 +1,13 @@
 # Running HW-P2 on IBM Quantum (owner only)
 
+Shortest path (does steps 1-4 for one account):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File hardware\run_hw_p2.ps1 -Label A -MaxQpuSeconds 420
+# later, second account:
+powershell -ExecutionPolicy Bypass -File hardware\run_hw_p2.ps1 -Label B -MaxQpuSeconds 420
+```
+
 Everything below runs on the owner's computer. No agent handles the token.
 
 ## 1. Environment (once)

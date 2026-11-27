@@ -1,0 +1,33 @@
+{
+  "status": "unlocked-development",
+  "rule": "Search for a 2-qubit decision instance where the ZZ sign ambiguity bites.",
+  "search": "analysis/tolerance/find_sign_sensitive.py (beta grid 181, eps step 0.02)",
+  "instances": [
+    {
+      "instance_id": "path-2q-sign",
+      "qubits": 2,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "first_beta": -1.1693705988362009,
+      "first_theta": 0.19634954084936207,
+      "second_beta": -0.7155849933176751,
+      "second_theta": 0.39269908169872414,
+      "ideal_gap": -0.1502266638376033,
+      "margin": 0.07511333191880165,
+      "attempts": 1,
+      "scope": "hardware-primary-sign-sensitive",
+      "evidence": "[exact]",
+      "witness": {
+        "eps": 0.28,
+        "gamma_plus": 0.31500414372794794,
+        "gamma_minus": -0.026251839207122818,
+        "robustness": 0.026251839207122818,
+        "average_gate_fidelity": 0.9844221753243083
+      }
+    }
+  ]
+}

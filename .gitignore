@@ -9,3 +9,4 @@ dist/
 
 # job IDs and other uncleared hardware identifiers
 hardware/private/
+.venv-hw/

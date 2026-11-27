@@ -12,6 +12,7 @@ decision. All numbers produced here are [exact]; the statement is
 from __future__ import annotations
 
 from cmath import exp
+from math import pi, sin
 from dataclasses import asdict, dataclass
 from itertools import product
 import json
@@ -38,6 +39,32 @@ def average_gate_fidelity(residual: Residual) -> float:
     dimension = 4
     process_fidelity = abs(residual_trace(residual)) ** 2 / dimension**2
     return (dimension * process_fidelity + 1.0) / (dimension + 1.0)
+
+
+def eigenphases(residual: Residual) -> tuple[float, ...]:
+    """Eigenphases phi(z) / 2 of E over z in {+1, -1}^2, wrapped to (-pi, pi]."""
+    epsilon, a, b = residual
+    phases = []
+    for z1 in (1, -1):
+        for z2 in (1, -1):
+            phi = -0.5 * (epsilon * z1 * z2 + a * z1 + b * z2)
+            phases.append((phi + pi) % (2 * pi) - pi)
+    return tuple(sorted(phases))
+
+
+def diamond_distance_to_identity(residual: Residual) -> float:
+    """Diamond distance between the unitary channels E(.)E^dagger and identity [exact].
+
+    For a unitary with eigenvalues on the unit circle, the distance is
+    2 sqrt(1 - d^2) with d the distance from the origin to their convex hull;
+    if the smallest arc containing all eigenvalues is ell < pi this equals
+    2 sin(ell / 2), otherwise 2.
+    """
+    phases = sorted(eigenphases(residual))
+    gaps = [phases[i + 1] - phases[i] for i in range(len(phases) - 1)]
+    gaps.append(2 * pi - (phases[-1] - phases[0]))
+    arc = 2 * pi - max(gaps)
+    return 2.0 if arc >= pi else 2.0 * sin(arc / 2.0)
 
 
 def fidelity_orbit(residual: Residual) -> tuple[Residual, ...]:

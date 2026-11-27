@@ -49,12 +49,42 @@ ambiguity alone does not flip the decision inside the box.
    instances. The OD1 choice should be revisited if the chapter wants a
    hardware instance where the average-metric argument bites.
 
+## Extension to every spectral figure of merit (C7.3) [theory, draft]
+
+**Lemma C7.3.** Every element of G maps the eigenvalue multiset of E(e) to
+itself (sign maps) or to its complex conjugate (global negation). Hence any
+figure of merit that depends on E only through its eigenvalue multiset up to
+conjugation is G-invariant. This includes average gate fidelity, process
+fidelity, the diamond distance to the identity channel
+(2 sin(ell/2), ell = smallest arc holding all eigenvalues; see
+`diamond_distance_to_identity`), operator-norm distance, and every
+unitarily invariant norm of E - I.
+
+**Corollary C7.4 (angle averages).** If the residual map theta -> e(theta) is
+replaced by theta -> g(e(theta)) for one fixed g in G, any average of such a
+figure of merit over theta (for example IBM's angle-averaged RZZ error) is
+unchanged, while the decision at the witness of Proposition C7.2 flips. So
+neither a per-angle nor an angle-averaged spectral metric can certify the
+decision.
+
+**Consequence for probe design.** A certificate must resolve the sign of the
+ZZ residual. In Ch4 the control-state switching resolves it, because
+epsilon = (slope(c=0) - slope(c=1))/2 changes sign under eps -> -eps
+(the probe principle shared with CHAI2026). Twirled or spectral benchmarks do
+not resolve it.
+
+Tests: `tests/test_average_metric.py` checks spectrum and diamond-distance
+invariance over the orbit [exact].
+
+## Sign-sensitive hardware instance
+
+`path-2q-sign` (OD1 v2) is a 2-qubit instance at angles pi/16 and pi/8 where
+eps = +0.28 is harmless (gamma = 0.315 >= m = 0.075) and eps = -0.28 is
+harmful (gamma = -0.026) at equal F_avg = 0.98442 [exact]. Both angles are
+measured on pair A by HW-P2.
+
 ## Open points
 
-- Extend from F_avg to any unitarily invariant figure of merit (process
-  fidelity, diamond distance for diagonal unitaries) and to angle-averaged
-  metrics; the invariance argument appears to carry over but is not yet
-  written.
 - Report the smallest-infidelity witness with a finer grid and with
   angle-dependent residuals.
 - Check whether the witness persists under global depolarization (it should,

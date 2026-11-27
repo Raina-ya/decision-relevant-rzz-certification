@@ -15,8 +15,10 @@ Prespecified choices (fixed before any data):
   per-gate slope; ambiguity or inconsistency is reported, never resolved.
 - Z conservation: control flip rate at the largest k, threshold = upper
   Hoeffding bound of the readout flip rate of that qubit plus 0.02.
-- Decisions: gamma interval from src/certify.gamma_interval_per_candidate
-  with the instance margin from the development family.
+- Decisions (primary): src/certify.gamma_interval_grid_bound, 5 grid points
+  per residual coordinate for 2 qubits and 3 for 3 qubits, with a Lipschitz
+  remainder; secondary: gamma_interval_per_candidate. Margins from the
+  development and sign-sensitive families.
 """
 
 from __future__ import annotations
@@ -27,7 +29,7 @@ from math import pi, sqrt, log
 from pathlib import Path
 
 from analysis.tolerance.instances import GeneratedDecision
-from src.certify import certify, gamma_interval_per_candidate
+from src.certify import certify, gamma_interval_grid_bound, gamma_interval_per_candidate
 from src.decision import EdgeError, signed_gap_per_candidate
 from src.diagnostics import z_conservation_diagnostic
 from src.estimate import (
@@ -44,6 +46,17 @@ from src.probes import ANALYSIS_PHASES
 ALPHA = 0.05
 REPO = Path(__file__).resolve().parents[2]
 FAMILY = REPO / "analysis" / "tolerance" / "instances_development.json"
+SIGN_FAMILY = REPO / "analysis" / "tolerance" / "instances_sign_sensitive.json"
+
+
+def load_family() -> dict:
+    """Development family plus the OD1-v2 sign-sensitive instance."""
+    records = {}
+    for path in (FAMILY, SIGN_FAMILY):
+        if path.exists():
+            for record in json.loads(path.read_text(encoding="utf-8"))["instances"]:
+                records[record["instance_id"]] = {k: v for k, v in record.items() if k != "witness"}
+    return records
 
 
 def _wrap(angle: float) -> float:
@@ -189,7 +202,7 @@ def _box(entry: dict) -> tuple[EdgeError, EdgeError] | None:
 
 
 def certify_instance(instance_id: str, residuals: list[dict], chain: list[int]) -> dict:
-    family = {r["instance_id"]: r for r in json.loads(FAMILY.read_text(encoding="utf-8"))["instances"]}
+    family = load_family()
     record = dict(family[instance_id])
     record["edges"] = tuple(tuple(edge) for edge in record["edges"])
     decision = GeneratedDecision(**record)
@@ -213,11 +226,15 @@ def certify_instance(instance_id: str, residuals: list[dict], chain: list[int]) 
             centers.append(box[0]); radii.append(box[1])
         boxes[which] = (tuple(centers), tuple(radii))
     confidence = 1 - 2 * ALPHA * len(pairs)  # union over candidate-angle boxes
-    interval = gamma_interval_per_candidate(instance, first, second, *boxes["first"], *boxes["second"], confidence)
+    points = 5 if instance.qubits == 2 else 3
+    interval = gamma_interval_grid_bound(instance, first, second, *boxes["first"], *boxes["second"], confidence, points)
+    lipschitz = gamma_interval_per_candidate(instance, first, second, *boxes["first"], *boxes["second"], confidence)
     point = signed_gap_per_candidate(instance, first, second, boxes["first"][0], boxes["second"][0])
     return {"instance_id": instance_id, "margin": decision.margin, "gamma_point": point,
             "gamma_interval": [interval.lower, interval.upper], "confidence": confidence,
-            "verdict": certify(interval, decision.margin).value}
+            "verdict": certify(interval, decision.margin).value,
+            "secondary_lipschitz": {"gamma_interval": [lipschitz.lower, lipschitz.upper],
+                                    "verdict": certify(lipschitz, decision.margin).value}}
 
 
 def analyze_decision_records(records: list[dict]) -> list[dict]:
@@ -226,7 +243,7 @@ def analyze_decision_records(records: list[dict]) -> list[dict]:
         meta = record["meta"]
         if meta["type"] != "decision":
             continue
-        family = {r["instance_id"]: r for r in json.loads(FAMILY.read_text(encoding="utf-8"))["instances"]}
+        family = load_family()
         edges = family[meta["instance_id"]]["edges"]
         total = sum(record["counts"].values())
         value = 0.0
@@ -262,7 +279,7 @@ def analyze(paths: list[Path]) -> dict:
                          for entry in analyze_probe_records(block["records"]))
         decisions.extend({**entry, "block": block["block"]} for entry in analyze_decision_records(block["records"]))
     certificates = []
-    for instance_id in ("path-2q", "path-3q"):
+    for instance_id in ("path-2q", "path-2q-sign", "path-3q"):
         certificates.append(certify_instance(instance_id, residuals, list(chain)) if chain else None)
     evidence = blocks[0].get("evidence", "[sim]") if blocks else "[sim]"
     return {"evidence": evidence, "residuals": residuals, "certificates": certificates, "direct_decisions": decisions}

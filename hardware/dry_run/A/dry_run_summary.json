@@ -6,37 +6,43 @@
     13,
     14
   ],
-  "created_utc": "2026-11-27T03:51:03.260140+00:00",
+  "created_utc": "2026-11-27T05:45:21.613816+00:00",
   "blocks": [
     {
       "block": "A0-calibration",
       "circuits": 68,
       "shots": 500,
-      "digests_sha256": "68390d229858b2421535a6bd2d64bafafaf86a2c690b067843be60f0e0550242"
+      "digests_sha256": "2898b05cb930ed325e39f3ba991fafbd56ef6e3d73f9eb39b81fc47f4eb58d01"
     },
     {
       "block": "A1-decision-2q",
       "circuits": 364,
       "shots": 1000,
-      "digests_sha256": "4966f4329ac0144826e6dd4814bea7920b797229cd6a659f593ef86012f53db8"
+      "digests_sha256": "c26df8a9ced2f4bb6195c4ef7977be7ed1bfa9befc92793dcec656e689d6f411"
+    },
+    {
+      "block": "A6-sign-2q",
+      "circuits": 364,
+      "shots": 1000,
+      "digests_sha256": "bdf817a5de38afe4a8bd21d78fccc84d2a32e0243fc852349a9ea25badc9c627"
     },
     {
       "block": "A5-decision-circuits-2q",
-      "circuits": 4,
+      "circuits": 8,
       "shots": 20000,
-      "digests_sha256": "3d080d8338173a4fc92cb27b298807a770129123f81fc45c2a00d4a984ec78c9"
+      "digests_sha256": "d10e9ec4df89771e996e302ef89014f57b4e314bf59beff021aba3e97c246820"
     },
     {
       "block": "A2-decision-3q-pairA",
       "circuits": 364,
       "shots": 1000,
-      "digests_sha256": "978e60097269d05d67ef45e2aba849fcc57c528f52fe18fe36ef5904a63f05e8"
+      "digests_sha256": "78da2c57f152d62ec6c94b272323dbdf539f97c0024c050ba38f2c2f925fcecd"
     },
     {
       "block": "A3-grid",
-      "circuits": 868,
+      "circuits": 532,
       "shots": 500,
-      "digests_sha256": "b5652a506f831a9f95c6eae9745e0cbb3e0d98809db1b30eb2bb85e3c0183c7b"
+      "digests_sha256": "8a1a1c54768c9da85a5ebb47dae60735ccb7a99a0251200203a56bf45d9cc363"
     }
   ]
 }

@@ -50,23 +50,31 @@ See `docs/literature/gap_map.md` for the feature matrix and sources.
 
 - G0 platform support: open; no Qiskit runtime is installed and no hardware
   query has been made.
-- G1 literature novelty: open; 138 verified sources, 17 read beyond the
+- G1 literature novelty: open; 142 verified sources, 18 read beyond the
   abstract; forward-citation passes on RUDINGER2025, CHAI2026, DENG2026 are
   required before G1 can pass.
-- G2 identifiability: L0-L2 draft with exact checks; C7 draft added.
+- G2 identifiability: L0-L2 draft with exact checks; C7.1-C7.4 draft added.
 - G2.5 model diagnostics: logic implemented; thresholds not calibrated.
 - G3 prospective power: formulas and ADEMP pipeline exist; not evaluated.
 - G4 lock and external timestamp: prohibited until prior gates pass.
 - G5-G6 hardware and replication: prohibited until a valid G4 approval.
 
-## Open design question raised by C7
+## Resolved design question (OD1 v2)
 
-The 2-qubit hardware-primary instance has no equal-fidelity witness within
-|e| <= 0.6, so it is insensitive to the ZZ sign ambiguity that motivates the
-chapter. OD1 should be reconsidered before G3: either keep the 2-qubit
-instance as a "robust" control and add a second instance where the
-average-metric argument bites, or move the hardware-primary instance to a
-3-qubit path (which needs two probed pairs and a larger budget).
+C7 showed the original 2-qubit instance is insensitive to the ZZ sign
+ambiguity. OD1 v2 keeps it as a robust control and adds `path-2q-sign`
+(angles pi/16 and pi/8, both measured on pair A), where equal-fidelity
+residuals eps = +0.28 and -0.28 give opposite verdicts [exact]. See
+`docs/decisions/OD1-v2-sign-sensitive.md`.
+
+## Hardware pilot HW-P2 (exploratory)
+
+Protocol `docs/protocol/HW-P2_pilot_protocol.md`; runner
+`hardware/run_hw_p2.py` (or `hardware/run_hw_p2.ps1`), executed by the owner
+with two IBM Quantum accounts. Outputs calibrate G3 and G2.5; they are not the
+confirmatory G5 run. The primary gamma bound is now
+`gamma_interval_grid_bound` (valid, about 3x narrower than the L1 Lipschitz
+projection [sim]).
 
 ## Delegation record
 

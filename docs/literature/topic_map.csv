@@ -137,3 +137,7 @@ JAVADIABHARI2024,D,adjacent,software;ibm
 PROCTOR2022CAP,C,core,benchmarking;application-level
 DASGUPTA2021,G,adjacent,drift;reproducibility
 DASGUPTA2024,B;G,adjacent,drift;certification
+TIWARI2026,A;D,adjacent,phase-estimation;native-gates
+HURANT2024,A;F,adjacent,phase-estimation;design
+DENEEVE2025,A;F,adjacent,phase-estimation;design
+LI2026QST,B,background,certification;software-testing

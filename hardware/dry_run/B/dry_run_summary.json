@@ -6,37 +6,37 @@
     13,
     14
   ],
-  "created_utc": "2026-11-27T03:51:11.557005+00:00",
+  "created_utc": "2026-11-27T05:45:31.051210+00:00",
   "blocks": [
     {
       "block": "B0-calibration",
       "circuits": 68,
       "shots": 500,
-      "digests_sha256": "fe1f09652733fa8cd2a48b3294a208b26f77ff14384d9edb5d7760229a9e109b"
+      "digests_sha256": "574efcc7d78832e6d7f6e5e874cd685cc0aecf00e2981651b6516092277c66ee"
     },
     {
       "block": "B2-replicate-2q-pairA",
-      "circuits": 364,
+      "circuits": 700,
       "shots": 1000,
-      "digests_sha256": "adb4da20953f50c4edf7e858d6ae1295e9df4cdd4a288ad955d6400e653a1bba"
+      "digests_sha256": "a9cbc54cdd83695c17b6dcd5d63123c4d73bacbedc56e9b216f0b6399101e0dd"
     },
     {
       "block": "B1-decision-3q-pairB",
       "circuits": 364,
       "shots": 1000,
-      "digests_sha256": "6c3a1fd078cd7385af9d6bcf237e5c66230dd6214dd86d2e8447aeae0f7be1f4"
+      "digests_sha256": "8b45d6913849db1e13180dcfb65bc924ede7db5f506dc21cf0cef907795a490b"
     },
     {
       "block": "B3-decision-circuits-3q",
-      "circuits": 4,
+      "circuits": 8,
       "shots": 20000,
-      "digests_sha256": "bb71e3d609eac9e81bef8aaadcba35db9b72b2fa5b9a6992a00b359f343e8d9f"
+      "digests_sha256": "c998f2b5ffbe676708d87b42772275357ce082f7fb33db9dfb4bdcd74ab7c035"
     },
     {
       "block": "B4-grid-pairB",
       "circuits": 868,
       "shots": 500,
-      "digests_sha256": "ea982faa55aa96596ab46f59321a0b21be4f6766e99694a3698721c32c17d24e"
+      "digests_sha256": "23ff672af2e17c1b79d92b2bec64a6a676c63a6855ff9068617e7b4118554180"
     }
   ]
 }
