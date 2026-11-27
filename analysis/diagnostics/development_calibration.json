@@ -1,0 +1,250 @@
+{
+  "design": {
+    "allowed_flip_rate": 0.02,
+    "alpha_diag": 0.05,
+    "ks": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "readout_offset": -0.03,
+    "readout_scale": 0.94,
+    "shots_per_phase": 16000,
+    "z_shots": 32000
+  },
+  "label": "development simulation; not a G2.5 gate",
+  "summaries": [
+    {
+      "any_trigger_rate": 0.0,
+      "any_trigger_wilson95": [
+        0.0,
+        0.001917047281252934
+      ],
+      "inconclusive_rate": 0.0005,
+      "phase_trigger_rate": 0.0,
+      "scenario": {
+        "flip_rate": 0.01,
+        "name": "m0-null",
+        "phase_curvature": 0.0,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.0,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112700,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.0,
+      "z_trigger_rate": 0.0
+    },
+    {
+      "any_trigger_rate": 0.0,
+      "any_trigger_wilson95": [
+        0.0,
+        0.001917047281252934
+      ],
+      "inconclusive_rate": 1.0,
+      "phase_trigger_rate": 0.0,
+      "scenario": {
+        "flip_rate": 0.02,
+        "name": "z-boundary-null",
+        "phase_curvature": 0.0,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.0,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112701,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.0,
+      "z_trigger_rate": 0.0
+    },
+    {
+      "any_trigger_rate": 0.984,
+      "any_trigger_wilson95": [
+        0.9775005335818276,
+        0.9886437646499193
+      ],
+      "inconclusive_rate": 0.016,
+      "phase_trigger_rate": 0.0,
+      "scenario": {
+        "flip_rate": 0.03,
+        "name": "z-alternative-0.03",
+        "phase_curvature": 0.0,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.0,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112702,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.0,
+      "z_trigger_rate": 0.984
+    },
+    {
+      "any_trigger_rate": 1.0,
+      "any_trigger_wilson95": [
+        0.9980829527187469,
+        1.0
+      ],
+      "inconclusive_rate": 0.0,
+      "phase_trigger_rate": 0.0,
+      "scenario": {
+        "flip_rate": 0.05,
+        "name": "z-alternative-0.05",
+        "phase_curvature": 0.0,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.0,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112703,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.0,
+      "z_trigger_rate": 1.0
+    },
+    {
+      "any_trigger_rate": 1.0,
+      "any_trigger_wilson95": [
+        0.9980829527187469,
+        1.0
+      ],
+      "inconclusive_rate": 0.0,
+      "phase_trigger_rate": 0.0,
+      "scenario": {
+        "flip_rate": 0.08,
+        "name": "z-alternative",
+        "phase_curvature": 0.0,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.0,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112704,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.0,
+      "z_trigger_rate": 1.0
+    },
+    {
+      "any_trigger_rate": 0.8725,
+      "any_trigger_wilson95": [
+        0.8571650426124494,
+        0.8864067571630171
+      ],
+      "inconclusive_rate": 0.0,
+      "phase_trigger_rate": 0.8725,
+      "scenario": {
+        "flip_rate": 0.01,
+        "name": "phase-curvature-0.005",
+        "phase_curvature": 0.005,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.0,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112705,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.0,
+      "z_trigger_rate": 0.0
+    },
+    {
+      "any_trigger_rate": 1.0,
+      "any_trigger_wilson95": [
+        0.9980829527187469,
+        1.0
+      ],
+      "inconclusive_rate": 0.0,
+      "phase_trigger_rate": 1.0,
+      "scenario": {
+        "flip_rate": 0.01,
+        "name": "phase-curvature-0.015",
+        "phase_curvature": 0.015,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.0,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112706,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.0,
+      "z_trigger_rate": 0.0
+    },
+    {
+      "any_trigger_rate": 1.0,
+      "any_trigger_wilson95": [
+        0.9980829527187469,
+        1.0
+      ],
+      "inconclusive_rate": 0.0,
+      "phase_trigger_rate": 1.0,
+      "scenario": {
+        "flip_rate": 0.01,
+        "name": "phase-curvature",
+        "phase_curvature": 0.03,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.0,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112707,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.0,
+      "z_trigger_rate": 0.0
+    },
+    {
+      "any_trigger_rate": 0.0,
+      "any_trigger_wilson95": [
+        0.0,
+        0.001917047281252934
+      ],
+      "inconclusive_rate": 0.001,
+      "phase_trigger_rate": 0.0,
+      "scenario": {
+        "flip_rate": 0.01,
+        "name": "visibility-curvature-0.005",
+        "phase_curvature": 0.0,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.005,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112708,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.0,
+      "z_trigger_rate": 0.0
+    },
+    {
+      "any_trigger_rate": 0.22,
+      "any_trigger_wilson95": [
+        0.2023914311650162,
+        0.23868211531248537
+      ],
+      "inconclusive_rate": 0.0005,
+      "phase_trigger_rate": 0.0,
+      "scenario": {
+        "flip_rate": 0.01,
+        "name": "visibility-curvature-0.010",
+        "phase_curvature": 0.0,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.01,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112709,
+      "trials": 2000,
+      "visibility_trigger_rate": 0.22,
+      "z_trigger_rate": 0.0
+    },
+    {
+      "any_trigger_rate": 1.0,
+      "any_trigger_wilson95": [
+        0.9980829527187469,
+        1.0
+      ],
+      "inconclusive_rate": 0.0,
+      "phase_trigger_rate": 0.0,
+      "scenario": {
+        "flip_rate": 0.01,
+        "name": "visibility-curvature",
+        "phase_curvature": 0.0,
+        "phase_slope": 0.12,
+        "visibility_curvature": 0.02,
+        "visibility_decay": 0.015
+      },
+      "seed": 2026112710,
+      "trials": 2000,
+      "visibility_trigger_rate": 1.0,
+      "z_trigger_rate": 0.0
+    }
+  ]
+}

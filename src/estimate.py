@@ -44,6 +44,19 @@ class PhaseEstimate:
 
 
 @dataclass(frozen=True, slots=True)
+class FourPhaseEstimate:
+    """Joint phase and contrast-amplitude confidence sets.
+
+    The amplitude is the norm of the phase-cycle contrast vector. It equals
+    readout_scale * visibility under M0, so a constant readout scale is absorbed
+    by the intercept of the log-linear visibility diagnostic.
+    """
+
+    phase: PhaseEstimate
+    amplitude_interval: "LinearInterval"
+
+
+@dataclass(frozen=True, slots=True)
 class LinearInterval:
     lower: float
     upper: float
@@ -108,6 +121,24 @@ def four_phase_confidence(
     angular_radius = pi if norm <= vector_radius else asin(min(1.0, vector_radius / norm))
     interval = CircularInterval(center, angular_radius, 1.0 - alpha)
     return PhaseEstimate(x, y, center, interval, component_radius)
+
+
+def four_phase_joint_confidence(
+    counts: tuple[BinomialCount, BinomialCount, BinomialCount, BinomialCount],
+    alpha: float,
+) -> FourPhaseEstimate:
+    """Construct simultaneous phase and contrast-amplitude confidence sets.
+
+    On the same four-mean Hoeffding event used by :func:`four_phase_confidence`,
+    the true contrast vector lies in an axis-aligned rectangle with component
+    radius ``r``. Euclidean projection therefore gives amplitude error at most
+    ``sqrt(2) * r``. The physical amplitude is clipped to ``[0, 1]``.
+    """
+    phase = four_phase_confidence(counts, alpha)
+    norm = hypot(phase.x, phase.y)
+    radius = sqrt(2.0) * phase.signed_mean_radius
+    amplitude = LinearInterval(max(0.0, norm - radius), min(1.0, norm + radius))
+    return FourPhaseEstimate(phase, amplitude)
 
 
 def unwrap_phase_intervals(

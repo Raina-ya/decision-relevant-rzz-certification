@@ -26,6 +26,27 @@ class DiagnosticResult:
     detail: str
 
 
+@dataclass(frozen=True, slots=True)
+class DiagnosticAlphaAllocation:
+    total: float
+    z_conservation: float
+    phase_linearity: float
+    visibility_linearity: float
+
+
+def allocate_diagnostic_alpha(alpha_diag: float) -> DiagnosticAlphaAllocation:
+    """Bonferroni allocation over the three primary diagnostic families."""
+    if not 0.0 < alpha_diag < 1.0:
+        raise ValueError("alpha_diag must lie in (0, 1)")
+    per_family = alpha_diag / 3.0
+    return DiagnosticAlphaAllocation(
+        total=alpha_diag,
+        z_conservation=per_family,
+        phase_linearity=per_family,
+        visibility_linearity=per_family,
+    )
+
+
 def z_conservation_diagnostic(
     flips: int,
     shots: int,
@@ -117,4 +138,3 @@ def combine_diagnostics(results: tuple[DiagnosticResult, ...]) -> ModelStatus:
     if any(result.status is DiagnosticStatus.INCONCLUSIVE for result in results):
         return ModelStatus.DIAGNOSTIC_INCONCLUSIVE
     return ModelStatus.ADEQUATE_NOT_REJECTED
-

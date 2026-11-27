@@ -8,6 +8,7 @@ from src.estimate import (
     LinearInterval,
     UnwrapStatus,
     four_phase_confidence,
+    four_phase_joint_confidence,
     hoeffding_signed_mean_radius,
     recover_m0_intervals,
     unwrap_phase_intervals,
@@ -31,6 +32,27 @@ class FiniteConfidenceTests(unittest.TestCase):
         estimate = four_phase_confidence(counts, alpha=0.05)
         self.assertEqual(estimate.confidence_interval.radius, math.pi)
         self.assertTrue(estimate.confidence_interval.contains(-2.7))
+
+    def test_joint_amplitude_interval_contains_true_contrast(self):
+        phase = 0.43
+        visibility = 0.82
+        readout_scale = 0.91
+        signals = phase_cycle_signals(
+            phase, visibility=visibility, readout_scale=readout_scale, readout_offset=-0.06
+        )
+        shots = 20000
+        counts = tuple(
+            BinomialCount(round(shots * (signal + 1.0) / 2.0), shots)
+            for signal in signals
+        )
+        estimate = four_phase_joint_confidence(counts, alpha=0.01)
+        self.assertTrue(estimate.amplitude_interval.contains(visibility * readout_scale))
+
+    def test_joint_amplitude_interval_is_physical_when_unresolved(self):
+        counts = tuple(BinomialCount(5, 10) for _ in range(4))
+        estimate = four_phase_joint_confidence(counts, alpha=0.05)
+        self.assertEqual(estimate.amplitude_interval.lower, 0.0)
+        self.assertEqual(estimate.amplitude_interval.upper, 1.0)
 
     def test_fixed_seed_coverage_study(self):
         generator = random.Random(20261127)

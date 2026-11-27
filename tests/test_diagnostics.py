@@ -5,6 +5,7 @@ from src.diagnostics import (
     DiagnosticResult,
     DiagnosticStatus,
     ModelStatus,
+    allocate_diagnostic_alpha,
     combine_diagnostics,
     log_linear_visibility_diagnostic,
     phase_linearity_diagnostic,
@@ -18,6 +19,20 @@ def wrap(angle: float) -> float:
 
 
 class ModelDiagnosticTests(unittest.TestCase):
+    def test_alpha_allocation_is_positive_and_sums_to_total(self):
+        allocation = allocate_diagnostic_alpha(0.03)
+        self.assertAlmostEqual(
+            allocation.z_conservation
+            + allocation.phase_linearity
+            + allocation.visibility_linearity,
+            allocation.total,
+        )
+        self.assertGreater(allocation.z_conservation, 0.0)
+
+    def test_alpha_allocation_rejects_invalid_total(self):
+        with self.assertRaises(ValueError):
+            allocate_diagnostic_alpha(0.0)
+
     def test_z_conservation_triggers_only_when_lower_bound_exceeds_threshold(self):
         triggered = z_conservation_diagnostic(80, 1000, allowed_rate=0.02, alpha=0.01)
         uncertain = z_conservation_diagnostic(25, 1000, allowed_rate=0.02, alpha=0.01)
@@ -67,4 +82,3 @@ class ModelDiagnosticTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
