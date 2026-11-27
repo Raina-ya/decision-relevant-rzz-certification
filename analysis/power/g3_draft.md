@@ -27,5 +27,8 @@ development estimates, not a locked design.
 - A locked budget ceiling and multiplicity policy.
 - Full ADEMP coverage and power results with Monte Carlo uncertainty.
 
-Until these exist, reporting G3 as pass or fail would be unsupported.
+The end-to-end ADEMP pipeline now exists in `analysis/simulation/ademp.py`, but
+only its small deterministic plumbing test has run. The full prespecified grid
+and gate-quality Monte Carlo run remain outstanding.
 
+Until these exist, reporting G3 as pass or fail would be unsupported.
