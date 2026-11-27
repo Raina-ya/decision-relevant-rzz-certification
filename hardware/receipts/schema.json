@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RZZ offline preflight receipt",
+  "type": "object",
+  "required": ["capability", "circuits"],
+  "properties": {
+    "capability": {
+      "type": "object",
+      "required": [
+        "schema",
+        "created_utc",
+        "python_version",
+        "qiskit_available",
+        "qiskit_ibm_runtime_available",
+        "network_queried",
+        "hardware_job_submitted"
+      ]
+    },
+    "circuits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "circuit_hash",
+          "theta",
+          "k",
+          "control",
+          "role",
+          "analysis_phase",
+          "circuit_kind",
+          "rzz_count",
+          "operation_count"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}
+
