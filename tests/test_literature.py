@@ -33,6 +33,24 @@ class LiteratureLibraryTests(unittest.TestCase):
         self.assertNotIn("arXiv:2508.10997", identifiers)
         self.assertNotIn("arXiv:2609.28825", identifiers)
 
+    def test_thesis_scale_library_has_at_least_sixty_sources(self):
+        self.assertGreaterEqual(len(self.rows), 60)
+
+    def test_bibtex_has_exactly_one_key_for_every_library_row(self):
+        bib_path = Path(__file__).resolve().parents[1] / "docs" / "literature" / "references.bib"
+        bib_text = bib_path.read_text(encoding="utf-8")
+        keys = re.findall(r"^@\w+\{([^,]+),$", bib_text, flags=re.MULTILINE)
+        self.assertEqual(set(keys), {row["id"] for row in self.rows})
+        self.assertEqual(len(keys), len(set(keys)))
+
+    def test_bibtex_contains_every_verified_arxiv_identifier(self):
+        bib_path = Path(__file__).resolve().parents[1] / "docs" / "literature" / "references.bib"
+        bib_text = bib_path.read_text(encoding="utf-8")
+        for row in self.rows:
+            if row["identifier"].startswith("arXiv:"):
+                arxiv_id = row["identifier"].removeprefix("arXiv:")
+                self.assertIn(f"eprint = {{{arxiv_id}}}", bib_text)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -42,24 +42,38 @@ and transpiler version instead of relying on prose alone.
 
 ### C1 - Identifiability
 
-`arXiv:2502.06698` is directly relevant prior art for RPE-based coherent-error
-estimation in entangling gates. Only the abstract was reviewed in this pass.
-The full model, equivalence classes, idle-detuning treatment, and probe
-requirements must be compared before deciding whether L0-L7 add anything.
+**Preliminary classification: substantially overlapped; narrow or remove the
+claim.** Full-text review of `arXiv:2502.06698` shows that it already constructs
+three logarithmic-depth RPE experiments for a commuting two-qubit CZ model,
+estimates three independent relative phases, and linearly inverts them to the
+ZI, IZ and ZZ coefficients. Its atan2 branch selection and consistency checks
+also overlap the proposed mechanics. Ch4 can still investigate idle-detuning
+separation, fixed-shot confidence, explicit model-inadequacy diagnostics, and
+decision projection, but must cite/adapt the underlying identifiability result
+rather than present it as a new general construction.
 
 ### C2 - Three-outcome decision rule
 
-No primary source establishing the same downstream-decision tolerance region
-and finite-sample three-outcome rule was verified in this pass. Absence from
-this small search is not evidence of novelty. Searches for quantum gate
-certification, equivalence tests, intersection-union tests, and task-oriented
-benchmarking remain required.
+**Preliminary classification: narrowed, unresolved.** `arXiv:2608.01248`
+develops continuous-parameter testing with an acceptable neighborhood and
+rules out sufficiently separated competitors. This is close prior art for the
+tolerance-testing concept. Its main design is sequential; its convenient
+twin-peaks threshold is explicitly not an exact finite-sample error probability
+and is calibrated asymptotically. Ch4's possible distinction is a fixed-budget,
+frequentist finite-sample rule whose acceptable set is induced by a nonlinear
+downstream decision and whose terminal result may be inconclusive. Classical
+equivalence/noninferiority literature still must be reviewed before this can be
+called a gap.
 
 ### C3 - N-star bounds
 
-RPE efficiency and consistency testing are prior art. Whether projecting
-information onto a downstream decision functional and distinguishing
-non-identifiability from budget insufficiency is new remains open.
+**Preliminary classification: narrowed, unresolved.** RPE efficiency is prior
+art, and `arXiv:2608.01248` derives expected stopping costs governed by the
+least distinguishable outside-tolerance alternative through KL divergence and
+local Fisher information. A generic claim that Ch4 first connects tolerance,
+Fisher information, and sample cost is untenable. Fixed-budget minimax bounds
+for a downstream decision functional, and a formal split between observational
+non-identifiability and budget insufficiency, remain to be compared.
 
 ### C4 - Prospective power gate
 
@@ -84,4 +98,3 @@ and budget. It is not a novelty claim by itself.
 - https://eu-de.quantum.cloud.ibm.com/docs/en/ibm-quantum-compute/fractional-gates
 - https://quantum.cloud.ibm.com/docs/en/tutorials/fractional-gates
 - https://eu-de.quantum.cloud.ibm.com/docs/en/ibm-quantum-compute/qpu-information
-
