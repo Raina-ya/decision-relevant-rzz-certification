@@ -13,7 +13,9 @@
   ],
   "gamma_point": 0.41986851308111006,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -29,7 +31,9 @@
   ],
   "gamma_point": 0.42060388190403375,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -45,7 +49,9 @@
   ],
   "gamma_point": 0.41947054666496864,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -61,7 +67,9 @@
   ],
   "gamma_point": 0.41871542034082454,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -77,7 +85,9 @@
   ],
   "gamma_point": 0.4183924543656684,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -93,7 +103,9 @@
   ],
   "gamma_point": 0.4203691971521455,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -109,7 +121,9 @@
   ],
   "gamma_point": 0.41927896120185504,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -125,7 +139,9 @@
   ],
   "gamma_point": 0.41906875610501415,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -141,7 +157,9 @@
   ],
   "gamma_point": 0.4185924883225106,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -157,7 +175,9 @@
   ],
   "gamma_point": 0.4200146361188133,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -173,7 +193,9 @@
   ],
   "gamma_point": 0.4111764309645436,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -189,7 +211,9 @@
   ],
   "gamma_point": 0.4206935607608152,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -205,7 +229,9 @@
   ],
   "gamma_point": 0.419204471491574,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -221,7 +247,9 @@
   ],
   "gamma_point": 0.4190222950671012,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -237,7 +265,9 @@
   ],
   "gamma_point": 0.42187624326379436,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -253,7 +283,9 @@
   ],
   "gamma_point": 0.42268061073697494,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -269,7 +301,9 @@
   ],
   "gamma_point": 0.4209236498743969,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -285,7 +319,9 @@
   ],
   "gamma_point": 0.41994009996103765,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -301,7 +337,9 @@
   ],
   "gamma_point": 0.4202883033721123,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -317,7 +355,9 @@
   ],
   "gamma_point": 0.4203080271270351,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -333,7 +373,9 @@
   ],
   "gamma_point": 0.4172274640798389,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -349,7 +391,9 @@
   ],
   "gamma_point": 0.4200063156345598,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -365,7 +409,9 @@
   ],
   "gamma_point": 0.4202582110155987,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -381,7 +427,9 @@
   ],
   "gamma_point": 0.42145566162518244,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -397,7 +445,9 @@
   ],
   "gamma_point": 0.4200208269843331,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -413,7 +463,9 @@
   ],
   "gamma_point": 0.41009083342298946,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -429,7 +481,9 @@
   ],
   "gamma_point": 0.42125630511235546,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -445,7 +499,9 @@
   ],
   "gamma_point": 0.4209955177083402,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -461,7 +517,9 @@
   ],
   "gamma_point": 0.4209627816912811,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -477,7 +535,9 @@
   ],
   "gamma_point": 0.4204313901727973,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -493,7 +553,9 @@
   ],
   "gamma_point": 0.42148623884397773,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -509,7 +571,9 @@
   ],
   "gamma_point": 0.41806652051879967,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -522,7 +586,9 @@
   "gamma_interval": null,
   "gamma_point": null,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "not evaluable",
+  "od11_excess_over_threshold": "not evaluable"
  },
  {
   "instance": "path-2q",
@@ -538,7 +604,9 @@
   ],
   "gamma_point": 0.4204397720216321,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -554,7 +622,9 @@
   ],
   "gamma_point": 0.42047676233616194,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -570,7 +640,9 @@
   ],
   "gamma_point": 0.4216094001718331,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive"
  },
  {
   "instance": "path-2q",
@@ -586,7 +658,9 @@
   ],
   "gamma_point": 0.41962541606045134,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -602,7 +676,9 @@
   ],
   "gamma_point": 0.42148968634778594,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -618,7 +694,9 @@
   ],
   "gamma_point": 0.42054401874617,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -634,7 +712,9 @@
   ],
   "gamma_point": 0.42099954016856944,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -650,7 +730,9 @@
   ],
   "gamma_point": 0.4214796986566852,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -666,7 +748,9 @@
   ],
   "gamma_point": 0.42013555119586543,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -682,7 +766,9 @@
   ],
   "gamma_point": 0.4202316935642698,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -698,7 +784,9 @@
   ],
   "gamma_point": 0.421494826095405,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -714,7 +802,9 @@
   ],
   "gamma_point": 0.4186397589226515,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -730,7 +820,9 @@
   ],
   "gamma_point": 0.420692116187509,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -746,7 +838,9 @@
   ],
   "gamma_point": 0.42000963959184867,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q",
@@ -762,7 +856,9 @@
   ],
   "gamma_point": 0.37980582648763705,
   "margin": 0.2101813494434443,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q",
@@ -778,7 +874,9 @@
   ],
   "gamma_point": 0.4199904599025175,
   "margin": 0.2101813494434443,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -794,7 +892,9 @@
   ],
   "gamma_point": 0.1511996353913856,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -810,7 +910,9 @@
   ],
   "gamma_point": 0.15233585232312774,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -826,7 +928,9 @@
   ],
   "gamma_point": 0.15472768477812665,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -842,7 +946,9 @@
   ],
   "gamma_point": 0.1602911219024984,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -858,7 +964,9 @@
   ],
   "gamma_point": 0.15872536867946674,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -874,7 +982,9 @@
   ],
   "gamma_point": 0.15215492685366727,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -890,7 +1000,9 @@
   ],
   "gamma_point": 0.15185201192490427,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -906,7 +1018,9 @@
   ],
   "gamma_point": 0.1532278651748426,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -922,7 +1036,9 @@
   ],
   "gamma_point": 0.15206892077850004,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -938,7 +1054,9 @@
   ],
   "gamma_point": 0.15614891316113805,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -954,7 +1072,9 @@
   ],
   "gamma_point": 0.18817442936436457,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -970,7 +1090,9 @@
   ],
   "gamma_point": 0.1559182059239551,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -986,7 +1108,9 @@
   ],
   "gamma_point": 0.15183692323597336,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1002,7 +1126,9 @@
   ],
   "gamma_point": 0.15364458027262284,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1018,7 +1144,9 @@
   ],
   "gamma_point": 0.15399337872822122,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1034,7 +1162,9 @@
   ],
   "gamma_point": 0.1551054979976687,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1050,7 +1180,9 @@
   ],
   "gamma_point": 0.15092568126491857,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1066,7 +1198,9 @@
   ],
   "gamma_point": 0.15264725387976863,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1082,7 +1216,9 @@
   ],
   "gamma_point": 0.1523921223297936,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1098,7 +1234,9 @@
   ],
   "gamma_point": 0.15432609837469546,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1114,7 +1252,9 @@
   ],
   "gamma_point": 0.14976320946172528,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1130,7 +1270,9 @@
   ],
   "gamma_point": 0.15311631327220754,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1146,7 +1288,9 @@
   ],
   "gamma_point": 0.15212188107596114,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1162,7 +1306,9 @@
   ],
   "gamma_point": 0.1529589655063558,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1178,7 +1324,9 @@
   ],
   "gamma_point": 0.15053246978008605,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1194,7 +1342,9 @@
   ],
   "gamma_point": 0.18378349829545704,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1210,7 +1360,9 @@
   ],
   "gamma_point": 0.15462091815738793,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1226,7 +1378,9 @@
   ],
   "gamma_point": 0.15143281403543968,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1242,7 +1396,9 @@
   ],
   "gamma_point": 0.15234470372311343,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1258,7 +1414,9 @@
   ],
   "gamma_point": 0.15070064232000124,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1274,7 +1432,9 @@
   ],
   "gamma_point": 0.15385788550676266,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1290,7 +1450,9 @@
   ],
   "gamma_point": 0.15678099327575779,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1306,7 +1468,9 @@
   ],
   "gamma_point": 0.1539472868072277,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1322,7 +1486,9 @@
   ],
   "gamma_point": 0.15287259314415946,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1338,7 +1504,9 @@
   ],
   "gamma_point": 0.14679312297609665,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1354,7 +1522,9 @@
   ],
   "gamma_point": 0.15407188919567516,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive"
  },
  {
   "instance": "path-2q-sign",
@@ -1370,7 +1540,9 @@
   ],
   "gamma_point": 0.15005560281834873,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1386,7 +1558,9 @@
   ],
   "gamma_point": 0.15383984185670918,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1402,7 +1576,9 @@
   ],
   "gamma_point": 0.15343130860397114,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1418,7 +1594,9 @@
   ],
   "gamma_point": 0.15070630851805622,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1434,7 +1612,9 @@
   ],
   "gamma_point": 0.1521659065347543,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1450,7 +1630,9 @@
   ],
   "gamma_point": 0.1538102940908186,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1466,7 +1648,9 @@
   ],
   "gamma_point": 0.154351887735506,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1482,7 +1666,9 @@
   ],
   "gamma_point": 0.15450168675425024,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1498,7 +1684,9 @@
   ],
   "gamma_point": 0.14962443986534163,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1514,7 +1702,9 @@
   ],
   "gamma_point": 0.1550749664778971,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1530,7 +1720,9 @@
   ],
   "gamma_point": 0.1523750866749024,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  },
  {
   "instance": "path-2q-sign",
@@ -1546,7 +1738,9 @@
   ],
   "gamma_point": 0.24285262707775446,
   "margin": 0.07511333191880165,
-  "z_triggered": true
+  "z_triggered": true,
+  "od11_excess_any": "inconclusive (model-inadequate)",
+  "od11_excess_over_threshold": "inconclusive (model-inadequate)"
  },
  {
   "instance": "path-2q-sign",
@@ -1562,6 +1756,8 @@
   ],
   "gamma_point": 0.15318774104434896,
   "margin": 0.07511333191880165,
-  "z_triggered": false
+  "z_triggered": false,
+  "od11_excess_any": "harmless",
+  "od11_excess_over_threshold": "harmless"
  }
 ]

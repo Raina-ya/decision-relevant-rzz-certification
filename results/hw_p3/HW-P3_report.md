@@ -55,3 +55,49 @@ detectable on this pair at this precision.
    applied without over-flagging.
 4. Multiplicity across pairs needs an explicit rule (for example Holm over
    pairs) for any chip-level claim.
+
+## 5. Amendment 1: chip-wide T1 reference (block P3B3, account B, 07:06 UTC)
+
+Block P3B3: 52 circuits on all 49 pairs at once (control in |1>, delay equal
+to k RZZ durations, no RZZ, 2200 shots), 33 QPU s. Script:
+`analysis/hardware/t1_correct_hw_p3.py`; per-cell table `t1_excess.json`;
+both new OD11 columns added to `certificate_map.json`.
+[hardware-locked, exploratory pilot HW-P3; post-hoc analysis]
+
+- The section 3 expectation that OD11 over-flags because of idle
+  relaxation is **not supported**. Control flips in the RZZ probe circuits
+  exceed the equal-duration delay reference in 455 of 2352 (pair, angle, k,
+  role) cells (lower bound of the excess > 0), on 43 of 49 pairs, against
+  about 59 expected by chance. The median excess grows with k: +0.002 (k = 1),
+  +0.004 (k = 4), +0.012 (k = 16), +0.024 (k = 32), while the median delay
+  flip rate at k = 32 is 0.052.
+- 125 cells, on 23 pairs, exceed even the diagnostic's allowed rate (0.073)
+  in the excess alone.
+- Gate-induced control flips are therefore widespread across the chip in
+  this parallel context. Possible causes (not tested): leakage or an XY
+  component of the native RZZ, and crosstalk from the 48 simultaneous
+  neighbouring RZZs. The HW-P2 isolated pair 53-54 showed the same pattern
+  more weakly (k = 32 excess up to +0.09 here, versus +0.045 isolated).
+- Two pairs show near-complete control depolarization within one block,
+  (65, 66) at pi/8 even at k = 1 (probe flip rate 0.50 versus 0.06 delay) and
+  (36, 41) at pi/8. This is consistent with a transient defect during that
+  block (possible cause, not tested).
+- The reference was taken 18-28 minutes after the probe blocks, so drift
+  between them is possible.
+
+Re-stated OD11 verdicts (raw verdicts in section 3 unchanged):
+
+| Instance | OD11 absolute (section 3) | OD11, any excess over delay | OD11, excess over allowed rate |
+|---|---|---|---|
+| path-2q | 17 harmless / 31 model-inadequate | 8 / 40 | 30 / 17 (+1 inconclusive) |
+| path-2q-sign | 18 / 30 (+1 inconclusive) | 10 / 39 | 34 / 14 (+1 inconclusive) |
+
+(One path-2q pair is not evaluable in every column.)
+
+Consequence for the chapter: the diagonal model M0 does not hold on most of
+the chip at k up to 32 once gate-induced population transfer is resolved
+against a delay reference. The certificate's harmless verdicts are
+conditional on M0, and the OD11 gate is what keeps them from being reported
+unconditionally. Which version of the diagnostic is primary must be fixed
+before any confirmatory run (open decision; the absolute-threshold version
+stays primary for HW-P2 and HW-P3 because it was the prespecified one).
