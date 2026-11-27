@@ -3,7 +3,7 @@
   "issued_by": "Zhen-Jun Liu",
   "scope": "HW-P2 exploratory hardware pilot only (docs/protocol/HW-P2_pilot_protocol.md); not the confirmatory G5 run",
   "authorization": "Owner chat messages of 2026-11-27 11:37 and 11:41 +08:00: accepted all proposals, delegated all decisions except git push, and asked to run IBM Quantum cloud hardware using the remaining quota on two accounts. The owner executes the runner personally with their own saved accounts.",
-  "commit": "bb3cc9b75b6780ca2f7c61a5886580e14c5989e0",
+  "commit": "10cf56bd210e62c76027b6b570e143066220edc3",
   "script": "hardware/run_hw_p2.py",
   "script_sha256": "4f0b8198a2ad57d8379e801294ff1b5bd4df9a745b25655ab2236420401263c7",
   "backends": [
@@ -20,5 +20,5 @@
   ],
   "max_qpu_seconds_per_account_default": 420,
   "recorded_by": "Claude (agent), 2026-11-27",
-  "revision": "v3 (2026-11-27 ~14:00 +08:00): re-issued after fixing the approval dirty-path check and runner Python discovery; no job was submitted under v1 or v2"
+  "revision": "v4 (2026-11-27 ~14:25 +08:00): adds amendment-1 T1 reference blocks A7/B5; account A results under v3 are kept unchanged"
 }
