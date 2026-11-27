@@ -1,0 +1,684 @@
+{
+  "assumptions": {
+    "diagnostic_cost_included": false,
+    "seconds_per_shot": 0.00028,
+    "separate_confidence_boxes_per_angle": true,
+    "shared_truth_across_angles": true
+  },
+  "instance_id": "path-2q-sign",
+  "label": "prospective development simulation; not a G3 gate",
+  "summaries": [
+    {
+      "epsilon": -0.4,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 33.599999999999994,
+      "seed": 2026112800,
+      "shots_per_phase": 500,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 120000,
+      "trials": 1000,
+      "true_class": "harmful",
+      "true_gamma": -0.10206743873265517
+    },
+    {
+      "epsilon": -0.4,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 67.19999999999999,
+      "seed": 2026112801,
+      "shots_per_phase": 1000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 240000,
+      "trials": 1000,
+      "true_class": "harmful",
+      "true_gamma": -0.10206743873265517
+    },
+    {
+      "epsilon": -0.4,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 134.39999999999998,
+      "seed": 2026112802,
+      "shots_per_phase": 2000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 480000,
+      "trials": 1000,
+      "true_class": "harmful",
+      "true_gamma": -0.10206743873265517
+    },
+    {
+      "epsilon": -0.4,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 1.0,
+      "harmful_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 0.0,
+      "inconclusive_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 268.79999999999995,
+      "seed": 2026112803,
+      "shots_per_phase": 4000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 960000,
+      "trials": 1000,
+      "true_class": "harmful",
+      "true_gamma": -0.10206743873265517
+    },
+    {
+      "epsilon": -0.2,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 33.599999999999994,
+      "seed": 2026112804,
+      "shots_per_phase": 500,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 120000,
+      "trials": 1000,
+      "true_class": "inconclusive",
+      "true_gamma": 0.024569364058423027
+    },
+    {
+      "epsilon": -0.2,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 67.19999999999999,
+      "seed": 2026112805,
+      "shots_per_phase": 1000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 240000,
+      "trials": 1000,
+      "true_class": "inconclusive",
+      "true_gamma": 0.024569364058423027
+    },
+    {
+      "epsilon": -0.2,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 134.39999999999998,
+      "seed": 2026112806,
+      "shots_per_phase": 2000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 480000,
+      "trials": 1000,
+      "true_class": "inconclusive",
+      "true_gamma": 0.024569364058423027
+    },
+    {
+      "epsilon": -0.2,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 268.79999999999995,
+      "seed": 2026112807,
+      "shots_per_phase": 4000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 960000,
+      "trials": 1000,
+      "true_class": "inconclusive",
+      "true_gamma": 0.024569364058423027
+    },
+    {
+      "epsilon": 0.0,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 33.599999999999994,
+      "seed": 2026112808,
+      "shots_per_phase": 500,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 120000,
+      "trials": 1000,
+      "true_class": "harmless",
+      "true_gamma": 0.1502266638376033
+    },
+    {
+      "epsilon": 0.0,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 67.19999999999999,
+      "seed": 2026112809,
+      "shots_per_phase": 1000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 240000,
+      "trials": 1000,
+      "true_class": "harmless",
+      "true_gamma": 0.1502266638376033
+    },
+    {
+      "epsilon": 0.0,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 134.39999999999998,
+      "seed": 2026112810,
+      "shots_per_phase": 2000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 480000,
+      "trials": 1000,
+      "true_class": "harmless",
+      "true_gamma": 0.1502266638376033
+    },
+    {
+      "epsilon": 0.0,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.951,
+      "harmless_wilson95": [
+        0.9358092984933898,
+        0.9627389653526394
+      ],
+      "inconclusive_rate": 0.049,
+      "inconclusive_wilson95": [
+        0.037261034647360615,
+        0.06419070150661013
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 268.79999999999995,
+      "seed": 2026112811,
+      "shots_per_phase": 4000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 960000,
+      "trials": 1000,
+      "true_class": "harmless",
+      "true_gamma": 0.1502266638376033
+    },
+    {
+      "epsilon": 0.1,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 33.599999999999994,
+      "seed": 2026112812,
+      "shots_per_phase": 500,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 120000,
+      "trials": 1000,
+      "true_class": "harmless",
+      "true_gamma": 0.21111548026406646
+    },
+    {
+      "epsilon": 0.1,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 0.0,
+      "harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "inconclusive_rate": 1.0,
+      "inconclusive_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 67.19999999999999,
+      "seed": 2026112813,
+      "shots_per_phase": 1000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 240000,
+      "trials": 1000,
+      "true_class": "harmless",
+      "true_gamma": 0.21111548026406646
+    },
+    {
+      "epsilon": 0.1,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 1.0,
+      "harmless_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "inconclusive_rate": 0.0,
+      "inconclusive_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 134.39999999999998,
+      "seed": 2026112814,
+      "shots_per_phase": 2000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 480000,
+      "trials": 1000,
+      "true_class": "harmless",
+      "true_gamma": 0.21111548026406646
+    },
+    {
+      "epsilon": 0.1,
+      "false_harmful_rate": 0.0,
+      "false_harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "false_harmless_rate": 0.0,
+      "false_harmless_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmful_rate": 0.0,
+      "harmful_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "harmless_rate": 1.0,
+      "harmless_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "inconclusive_rate": 0.0,
+      "inconclusive_wilson95": [
+        0.0,
+        0.0038267584855551234
+      ],
+      "interval_available_rate": 1.0,
+      "joint_coverage_rate": 1.0,
+      "joint_coverage_wilson95": [
+        0.996173241514445,
+        1.0
+      ],
+      "qpu_seconds_linear_estimate": 268.79999999999995,
+      "seed": 2026112815,
+      "shots_per_phase": 4000,
+      "total_probe_circuits": 240,
+      "total_probe_shots": 960000,
+      "trials": 1000,
+      "true_class": "harmless",
+      "true_gamma": 0.21111548026406646
+    }
+  ]
+}

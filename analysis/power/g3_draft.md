@@ -20,15 +20,26 @@ development estimates, not a locked design.
 ## Missing inputs before a G3 verdict
 
 - Final decision instances, candidates, and margins.
-- Simultaneous unwrapped M0 confidence box construction across `k`, controls,
-  roles, angles, and delay controls.
-- Diagnostic thresholds and their allocated error probability.
+- Multi-edge simultaneous M0 boxes and their alpha allocation. The one-edge
+  two-angle construction is implemented and simulated.
+- Final diagnostic thresholds and diagnostic-inclusive cost/power accounting.
 - Preflight amplitude and timing bounds.
 - A locked budget ceiling and multiplicity policy.
-- Full ADEMP coverage and power results with Monte Carlo uncertainty.
+- Full multi-edge ADEMP coverage and power results with Monte Carlo
+  uncertainty.
 
-The end-to-end ADEMP pipeline now exists in `analysis/simulation/ademp.py`, but
-only its small deterministic plumbing test has run. The full prespecified grid
-and gate-quality Monte Carlo run remain outstanding.
+The end-to-end ADEMP pipeline exists in `analysis/simulation/ademp.py`. A
+two-angle development grid for the one-edge sign-sensitive instance is now
+recorded in `analysis/simulation/g3_development_grid.json` and
+`g3_development_report.md`. It allocates alpha separately across both decision
+angles and reports Monte Carlo intervals and a linear QPU-time estimate.
 
-Until these exist, reporting G3 as pass or fail would be unsupported.
+That grid is deliberately narrower than G3: the residual truth is shared
+across angles even though the confidence boxes are separate; multi-edge
+instances, diagnostic costs, drift and job overhead are excluded; and the
+instance family remains unlocked. It therefore provides prospective
+development evidence but not a gate verdict.
+
+Until the remaining inputs are owner-reviewed and the multi-edge and
+diagnostic-inclusive grid is complete, reporting G3 as pass or fail would be
+unsupported.

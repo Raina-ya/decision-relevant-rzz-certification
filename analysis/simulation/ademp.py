@@ -112,20 +112,17 @@ def _slope_interval(
     return result.interval if result.status is UnwrapStatus.IDENTIFIED else None
 
 
-def run_trial(
+def estimate_m0_box(
     generator: random.Random,
     scenario: AdempScenario,
-    instance: MaxCutInstance,
-    first: Candidate,
-    second: Candidate,
-) -> TrialResult:
+):
+    """Estimate one angle-local M0 box, or return ``None`` if unresolved."""
     if scenario.shots_per_phase <= 0:
         raise ValueError("shots_per_phase must be positive")
     if not 0.0 < scenario.alpha_total < 1.0:
         raise ValueError("alpha_total must lie in (0, 1)")
     if not 0.0 < scenario.visibility <= 1.0:
         raise ValueError("visibility must lie in (0, 1]")
-    # Six slopes per theta: c=0, c=1, and delay for each Ramsey role.
     alpha_cycle = scenario.alpha_total / (6 * len(scenario.ks))
     slopes = (
         scenario.epsilon + scenario.a + scenario.detuning_1,
@@ -138,13 +135,25 @@ def run_trial(
     intervals = tuple(
         _slope_interval(generator, slope, scenario, alpha_cycle) for slope in slopes
     )
+    if any(interval is None for interval in intervals):
+        return None
+    try:
+        return recover_m0_intervals(*intervals)  # type: ignore[arg-type]
+    except ValueError:
+        return None
+
+
+def run_trial(
+    generator: random.Random,
+    scenario: AdempScenario,
+    instance: MaxCutInstance,
+    first: Candidate,
+    second: Candidate,
+) -> TrialResult:
     truth = (EdgeError(scenario.epsilon, scenario.a, scenario.b),)
     true_gamma = signed_gap(instance, first, second, truth)
-    if any(interval is None for interval in intervals):
-        return TrialResult(False, Verdict.INCONCLUSIVE.value, true_gamma, False)
-    try:
-        box = recover_m0_intervals(*intervals)  # type: ignore[arg-type]
-    except ValueError:
+    box = estimate_m0_box(generator, scenario)
+    if box is None:
         return TrialResult(False, Verdict.INCONCLUSIVE.value, true_gamma, False)
     covered = (
         box.epsilon.contains(scenario.epsilon)
